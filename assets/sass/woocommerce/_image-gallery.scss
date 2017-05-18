@@ -1,0 +1,28 @@
+.woocommerce {
+	div.product {
+		div.images {
+			@extend .col-sm-6;
+			.woocommerce-product-gallery__wrapper {
+				margin-bottom: 0;
+
+				.woocommerce-product-gallery__image {
+					margin-bottom: $single-gutter;
+					&:nth-child(n+2) {
+						margin-bottom: 0;
+						width: 25%;
+						display: inline-block;
+					}
+					
+					figure {
+						margin-bottom: 0;
+					}
+
+					img {
+						@extend .img-fluid;
+					}
+					
+				}
+			}
+		}
+	}
+}

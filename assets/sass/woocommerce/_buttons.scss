@@ -1,0 +1,15 @@
+/*
+** NOTE: Button styles for messages are found in _message.scss
+*/
+.button {
+	@extend .btn;
+
+	&.single_add_to_cart_button {
+		@extend .btn-primary;
+	}
+
+}
+
+.submit {
+	@extend .btn, .btn-primary;
+}

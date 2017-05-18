@@ -1,0 +1,34 @@
+@import '_buttons';
+@import '_comments';
+@import '_forms';
+@import '_image-gallery';
+@import '_nav-tabs';
+@import '_message';
+@import '_pagination';
+@import '_product-lists';
+@import '_ratings';
+
+.woocommerce {
+	#container {
+		@extend .container;
+	}
+}
+
+// Archive Pages
+.woocommerce-result-count,
+.woocommerce-ordering {
+	@extend .col-sm-6;
+}
+
+.woocommerce-ordering {
+	text-align: right;
+}
+
+// Woocommerce Global Styles
+.summary.entry-summary {
+	@extend .col-sm-6;
+}
+
+.comment-reply-title {
+	@extend h4;
+}

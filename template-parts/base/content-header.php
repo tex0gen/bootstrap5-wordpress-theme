@@ -1,8 +1,16 @@
 <header>
 	<nav class="navbar navbar-expand-sm">
 		<div class="container">
-			<a class="navbar-brand" href="<?= get_bloginfo('url'); ?>">
-				<?= get_bloginfo('name'); ?>
+			<a class="navbar-brand" href="#">
+				<?php
+				$logo = get_field('logo', 'options');
+
+				if ( $logo ) {
+					echo $logo['sizes']['large'];
+				} else {
+					echo get_bloginfo('name');
+				}
+				?>
 			</a>
 
 			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

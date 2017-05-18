@@ -1,20 +1,25 @@
-@import '../sass/bootstrap/scss/bootstrap.scss'; // Import Bootstrap
-@import '../sass/font-awesome/font-awesome.scss'; // Import FontAwesome
+@import '../sass/bootstrap/scss/bootstrap'; // Import Bootstrap
+@import '../sass/font-awesome/font-awesome'; // Import FontAwesome
 
 // Variables
 @import '../sass/base/_variables';
 @import '../sass/base/_base';
 
 // Plugin Styles
-@import '../sass/woocommerce';
+@import '../sass/woocommerce/woocommerce';
 
-// Element Styles
-@import '../sass/elements/breadcrumbs';
-@import '../sass/elements/footer';
-@import '../sass/elements/menu';
+// Component Styles
+@import '../sass/components/breadcrumbs';
+@import '../sass/components/footer';
+@import '../sass/components/menu';
 
 // Flex
 @import '../sass/flex/call-to-action';
 @import '../sass/flex/product-category-list';
 @import '../sass/flex/featured-products';
 @import '../sass/flex/content-block';
+
+
+.contain-section {
+	margin-bottom: $spacing-bottom;
+}

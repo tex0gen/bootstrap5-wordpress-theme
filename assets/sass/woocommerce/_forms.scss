@@ -1,0 +1,9 @@
+.comment-form {
+	.comment-form-comment {
+		@extend .form-group;
+
+		textarea {
+			@extend .form-control;
+		}
+	}
+}

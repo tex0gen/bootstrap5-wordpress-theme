@@ -5,5 +5,6 @@ if( function_exists('acf_add_options_page') ) {
 		'menu_title' => 'Theme Options',
 		'position' => 2,
 	);
-	acf_add_options_page($args);
+	
+	acf_add_options_page( $args );
 }

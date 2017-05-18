@@ -1,0 +1,29 @@
+.woocommerce-message {
+	@extend .alert-success, .alert;
+	margin-bottom: $single-gutter;
+
+	.button {
+		@extend .btn-success, .float-right, .btn-sm;
+
+	}
+}
+
+.woocommerce-info {
+	@extend .alert-info, .alert;
+	margin-bottom: $single-gutter;
+
+	.button {
+		@extend .btn-info, .float-right;
+
+	}
+}
+
+.woocommerce-error {
+	@extend .alert-danger, .alert;
+	margin-bottom: $single-gutter;
+
+	.button {
+		@extend .btn-danger, .float-right, .btn-sm;
+
+	}
+}
