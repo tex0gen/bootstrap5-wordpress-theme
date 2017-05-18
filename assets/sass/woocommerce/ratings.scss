@@ -1,0 +1,35 @@
+.woocommerce .star-rating {
+	overflow: hidden;
+	position: relative;
+	height: 1em;
+	line-height: 1;
+	font-size: 1em;
+	width: 74px;
+	font-family: fontAwesome;
+	margin-bottom: $single-gutter;
+
+	&:before {
+		content: '\f006\f006\f006\f006\f006';
+		color: #d3ced2;
+		float: left;
+		top: 0;
+		left: 0;
+		position: absolute;
+	}
+
+	span {
+		overflow: hidden;
+		float: left;
+		top: 0;
+		left: 0;
+		position: absolute;
+		padding-top: 1.5em;
+
+		&:before {
+			content: '\f005\f005\f005\f005\f005';
+			top: 0;
+			position: absolute;
+			left: 0;
+		}
+	}
+}

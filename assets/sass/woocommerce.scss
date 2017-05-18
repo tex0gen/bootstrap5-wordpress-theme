@@ -1,0 +1,45 @@
+@import 'woocommerce/ratings.scss';
+@import 'woocommerce/image-gallery.scss';
+@import 'woocommerce/product-lists.scss';
+
+.woocommerce {
+	#container {
+		@extend .container;
+	}
+}
+
+// Archive Pages
+.woocommerce-result-count,
+.woocommerce-ordering {
+	@extend .col-sm-6;
+}
+
+.woocommerce-ordering {
+	text-align: right;
+}
+
+
+// Woocommerce Global Styles
+.summary.entry-summary {
+	@extend .col-sm-6;
+}
+
+
+
+
+
+
+
+// Woocommerce Pagination
+.woocommerce-pagination {
+	margin-bottom: $spacing-bottom;
+
+	.page-numbers {
+		padding: 0;
+		list-style-type: none;
+
+		li {
+			display: inline-block;
+		}
+	}
+}

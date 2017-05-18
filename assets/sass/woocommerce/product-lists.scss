@@ -1,0 +1,41 @@
+.woocommerce {
+	ul.products {
+		@extend .row;
+		padding: 0;
+		list-style-type: none;
+		li {
+			&.product {
+				@extend .col-sm-3;
+				margin-bottom: $single-gutter;
+				
+				.woocommerce-LoopProduct-link {
+					text-decoration: none;
+					position: relative;
+				
+					.onsale {
+						position: absolute;
+					}
+					
+					img {
+						@extend .img-fluid;
+						margin-bottom: 15px;
+					}
+
+					.price {
+						display: block;
+						margin-bottom: $single-gutter;
+
+						del, ins {
+							display: inline-block;
+						}
+					}
+
+				}
+				
+				.button {
+					@extend .btn, .btn-primary;
+				}
+			}
+		}
+	}
+}

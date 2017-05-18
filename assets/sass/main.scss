@@ -1,0 +1,20 @@
+@import '../sass/bootstrap/scss/bootstrap.scss'; // Import Bootstrap
+@import '../sass/font-awesome/font-awesome.scss'; // Import FontAwesome
+
+// Variables
+@import '../sass/base/_variables';
+@import '../sass/base/_base';
+
+// Plugin Styles
+@import '../sass/woocommerce';
+
+// Element Styles
+@import '../sass/elements/breadcrumbs';
+@import '../sass/elements/footer';
+@import '../sass/elements/menu';
+
+// Flex
+@import '../sass/flex/call-to-action';
+@import '../sass/flex/product-category-list';
+@import '../sass/flex/featured-products';
+@import '../sass/flex/content-block';

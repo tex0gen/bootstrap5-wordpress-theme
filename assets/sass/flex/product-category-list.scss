@@ -1,0 +1,32 @@
+.product-category-list {
+	margin-bottom: $spacing-bottom-half;
+	.grid-item {
+		.term-item {
+			height: 200px;
+			position: relative;
+			background-position: bottom;
+			background-size: cover;
+			margin-bottom: $double-gutter;
+			
+			.overlay {
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				z-index: 5;
+			}
+
+			h3 {
+				background-color: rgba(0, 0, 0, 0.4);
+				padding: 15px;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				margin-bottom: 0;
+				color: $white;
+			}
+		}
+	}
+}

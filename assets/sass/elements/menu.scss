@@ -1,0 +1,7 @@
+.menu-item {
+	@extend .nav-item;
+	
+	a {
+		@extend .nav-link;
+	}
+}
