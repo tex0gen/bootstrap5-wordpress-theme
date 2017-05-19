@@ -21,6 +21,7 @@
 .woocommerce-error {
 	@extend .alert-danger, .alert;
 	margin-bottom: $single-gutter;
+	list-style-type: none;
 
 	.button {
 		@extend .btn-danger, .float-right, .btn-sm;

@@ -1,20 +1,51 @@
-.col2-set {
+form.checkout {
 	@extend .row;
-	margin-bottom: $spacing-bottom;
-	.col-1,
-	.col-2 {
+
+	.col2-set {
 		@extend .col-12, .col-sm-6;
+		margin-bottom: $spacing-bottom;
 
-		.form-row {
-			@extend .form-group;
+		.col-1,
+		.col-2 {
+			width: 100%;
+			padding-left: 0;
+			padding-right: 0;
 
-			input,
-			textarea {
-				@extend .form-control;
+			.form-row {
+				@extend .form-group;
+
+				input,
+				textarea {
+					@extend .form-control;
+				}
+			}
+
+			.form-row-first,
+			.form-row-last {
+				width: 50%;
+				float: left;
+			}
+
+			.form-row-first {
+				padding-right: 15px;
+			}
+
+			.form-row-last {
+				padding-left: 15px;
 			}
 		}
 	}
+
+	.order_review_wrapper {
+		@extend .col-12, .col-sm-6;
+	}
+
+	.woocommerce-NoticeGroup-checkout {
+		@extend .col-12;
+	}
+	
 }
+
 
 .woocommerce-checkout-review-order {
 	table {
