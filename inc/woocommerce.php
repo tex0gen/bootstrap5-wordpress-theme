@@ -1,26 +1,10 @@
 <?php
 
-
-// ----------------------
-// Begin Removal Business
-// ----------------------
-
-// Remove woocommerce styles
-add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
-
-// Remove woocommerce breadcrumb
-remove_action( 'woocommerce_before_main_content','woocommerce_breadcrumb', 20, 0);
-
-// Remove woocommerce sidebar
-remove_action('woocommerce_sidebar', 'woocommerce_get_sidebar', 10);
-
-// Remove woocommerce sale message above image (single-product)
-remove_action('woocommerce_before_single_product_summary', 'woocommerce_show_product_sale_flash', 10);
-
-// ---- End Removal Business ---- //
+require_once 'woocommerce/_filters.php';
+require_once 'woocommerce/_removals.php';
 
 
-
+// TODO: Move the following into appropriate files
 
 // ----------------------
 // Inject Bootstrap
@@ -71,20 +55,3 @@ add_action('woocommerce_review_before', 'gravatar_wrap_start', 5);
 add_action('woocommerce_review_before', 'gravatar_wrap_end', 15);
 
 // ---- End Bootstrap Injection ---- //
-
-
-add_filter ( 'wc_add_to_cart_message', 'wc_add_to_cart_message_filter', 10, 2 );
-function wc_add_to_cart_message_filter($message, $product_id = null) {
-    $titles[] = get_the_title( $product_id );
-
-    $titles = array_filter( $titles );
-    $added_text = sprintf( _n( '%s has been added to your cart.', '%s have been added to your cart.', sizeof( $titles ), 'woocommerce' ), wc_format_list_of_items( $titles ) );
-
-    $message = sprintf( '%s <a href="%s" class="button">%s</a><div class="clearfix"></div>',
-                    esc_html( $added_text ),
-                    esc_url( wc_get_page_permalink( 'cart' ) ),
-                    esc_html__( 'View Cart', 'woocommerce' ),
-                    esc_url( wc_get_page_permalink( 'cart' )));
-
-    return $message;
-}
