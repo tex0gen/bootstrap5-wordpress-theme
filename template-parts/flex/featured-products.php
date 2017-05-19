@@ -25,7 +25,6 @@ if ( $posts ) {
 		<div class="row">
 			<div class="col-12 section-title">
 				<h2>Featured Products</h2>
-				<hr />
 			</div>
 		</div>
 		<div class="row">

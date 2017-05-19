@@ -1,11 +1,4 @@
 .featured-products {
 	@extend .text-center;
 	margin-bottom: $spacing-bottom;
-
-	.section-title {
-		hr {
-			max-width: 200px;
-			margin-bottom: $spacing-bottom-half;
-		}
-	}
 }

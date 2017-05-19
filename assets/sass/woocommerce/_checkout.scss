@@ -1,0 +1,48 @@
+.col2-set {
+	@extend .row;
+	margin-bottom: $spacing-bottom;
+	.col-1,
+	.col-2 {
+		@extend .col-12, .col-sm-6;
+
+		.form-row {
+			@extend .form-group;
+
+			input,
+			textarea {
+				@extend .form-control;
+			}
+		}
+	}
+}
+
+.woocommerce-checkout-review-order {
+	table {
+		@extend .table;
+
+		th {
+			&.product-total {
+				text-align: right;
+			}
+		}
+
+		td {
+			text-align: right;
+
+			&.product-name {
+				text-align: left;
+			}
+		}
+	}
+
+	.payment_methods {
+		list-style-type: none;
+		padding: 0;
+	}
+
+	.place-order {
+		.button {
+			@extend .btn-primary;
+		}
+	}
+}
