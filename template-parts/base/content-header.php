@@ -1,7 +1,7 @@
 <header>
 	<nav class="navbar navbar-expand-sm">
 		<div class="container">
-			<a class="navbar-brand" href="#">
+			<a class="navbar-brand" href="<?= get_bloginfo('url'); ?>">
 				<?php
 				$logo = get_field('logo', 'options');
 
