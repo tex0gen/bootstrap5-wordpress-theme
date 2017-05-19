@@ -4,10 +4,10 @@
 .button {
 	@extend .btn;
 
-	&.single_add_to_cart_button {
+	&.single_add_to_cart_button,
+	&.checkout-button {
 		@extend .btn-primary;
 	}
-
 }
 
 .submit {

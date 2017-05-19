@@ -52,9 +52,13 @@ add_action( 'woocommerce_before_shop_loop', 'row_end', 35 );
 add_action('woocommerce_before_single_product_summary', 'row_start', 10);
 add_action('woocommerce_single_product_summary', 'row_end', 80);
 
-// single-product - Wraps row around the product image and product summary
+// single-product - Wraps section around the product image and product summary
 add_action('woocommerce_before_single_product_summary', 'section_start', 8);
 add_action('woocommerce_single_product_summary', 'section_end', 82);
+
+// single-product - Wraps section around the related products
+add_action('woocommerce_after_single_product_summary', 'section_start', 18);
+add_action('woocommerce_after_single_product_summary', 'section_end', 22);
 
 
 function gravatar_wrap_start() {

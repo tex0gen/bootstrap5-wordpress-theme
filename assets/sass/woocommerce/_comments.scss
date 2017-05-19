@@ -4,6 +4,12 @@
 
 	.comment_container {
 		@extend .row;
+		border-bottom: 1px solid $light-gray;
+
+		&:last-child {
+			border-bottom: none;
+		}
+
 
 		.gravatar-wrap {
 			@extend .col-2, .col-sm-1;
