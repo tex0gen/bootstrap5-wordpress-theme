@@ -20,3 +20,24 @@
 .woocommerce-Tabs-panel.panel {
 	margin-bottom: $spacing-bottom;
 }
+
+.woocommerce-MyAccount-navigation {
+	ul {
+		@extend .nav-tabs, .nav;
+		margin-bottom: $single-gutter;
+
+		li {
+			@extend .nav-item;
+
+			&.is-active {
+				a {
+					@extend .active;
+				}
+			}
+
+			a {
+				@extend .nav-link;
+			}
+		}
+	}
+}

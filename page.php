@@ -1,7 +1,7 @@
 <?php
 get_header();
 
-if ( is_woocommerce() || is_cart() || is_checkout() ) {
+if ( is_woocommerce() || is_cart() || is_checkout() || is_account_page() ) {
 	if ( have_posts() ) :
 		while ( have_posts() ) :
 			the_post();

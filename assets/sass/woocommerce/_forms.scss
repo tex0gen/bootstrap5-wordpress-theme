@@ -7,3 +7,48 @@
 		}
 	}
 }
+
+.woocommerce-form-login {
+	margin-bottom: $spacing-bottom;
+	.form-row {
+		@extend .form-group;
+
+		input.input-text {
+			@extend .form-control;
+		}
+
+		.button {
+			@extend .btn-primary;
+		}
+	}
+}
+
+.woocommerce-address-fields,
+.edit-account {
+	.form-row {
+		@extend .form-group;
+
+		input,
+		textarea {
+			@extend .form-control;
+		}
+	}
+
+	.form-row-first,
+	.form-row-last {
+		width: 50%;
+		float: left;
+	}
+
+	.form-row-first {
+		padding-right: 15px;
+	}
+
+	.form-row-last {
+		padding-left: 15px;
+	}
+
+	.button {
+		@extend .btn-primary;
+	}
+}
