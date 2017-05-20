@@ -27,7 +27,7 @@ if ( $posts ) {
 				<h2>Featured Products</h2>
 			</div>
 		</div>
-		<div class="row">
+		<div class="products row">
 			<?php
 			foreach ($posts as $key => $post) {
 				setup_postdata( $post );
@@ -38,12 +38,13 @@ if ( $posts ) {
 				?>
 
 				<div class="<?= $columns ?> product">
-					<a href="<?php the_permalink(); ?>">
+					<a class="woocommerce-LoopProduct-link" href="<?php the_permalink(); ?>">
 					<?= get_the_post_thumbnail( $id, 'large', array('class' => 'img-fluid') ); ?>
-					<?php the_title('<h3>', '</h3>'); ?>
+					<?php the_title('<h3 class="woocommerce-loop-product__title">', '</h3>'); ?>
 					<div class="price">
 						<?= $product->get_price_html(); ?>
 					</div>
+					<?= wc_get_rating_html( $product->get_average_rating() ); ?>
 					</a>
 					<a class="btn btn-primary" href="<?php the_permalink(); ?>">
 						View Product

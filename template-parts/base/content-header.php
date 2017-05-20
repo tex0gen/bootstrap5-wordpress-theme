@@ -1,10 +1,10 @@
 <header>
-	<nav class="navbar navbar-expand-sm">
+	<nav class="navbar navbar-expand-sm navbar-light bg-faded">
 		<div class="container">
 			<a class="navbar-brand" href="<?= get_bloginfo('url'); ?>">
 				<?php
 				$logo = get_field('logo', 'options');
-
+				
 				if ( $logo ) {
 					echo $logo['sizes']['large'];
 				} else {

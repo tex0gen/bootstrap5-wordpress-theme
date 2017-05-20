@@ -1,5 +1,5 @@
 // Product Ratings
-.woocommerce .star-rating {
+.star-rating {
 	overflow: hidden;
 	position: relative;
 	height: 1em;
@@ -35,59 +35,59 @@
 	}
 }
 
-// // Comment Ratings
-	p.stars {
-		a {
-			position: relative;
-			height: 1em;
+// Comment Ratings
+p.stars {
+	a {
+		position: relative;
+		height: 1em;
+		width: 1em;
+		text-indent: -999em;
+		display: inline-block;
+		text-decoration: none;
+
+		&::before {
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
 			width: 1em;
-			text-indent: -999em;
-			display: inline-block;
-			text-decoration: none;
-
-			&::before {
-				display: block;
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 1em;
-				height: 1em;
-				line-height: 1;
-				font-family: fontAwesome;
-				content: '\f006';
-				text-indent: 0;
-			}
-
-			&:hover {
-				~ a::before {
-					content: '\f006';
-				}
-			}
+			height: 1em;
+			line-height: 1;
+			font-family: fontAwesome;
+			content: '\f006';
+			text-indent: 0;
 		}
 
 		&:hover {
-			a {
-				&::before {
-					content: '\f005';
-				}
-			}
-		}
-
-		&.selected {
-			a.active {
-				&::before {
-					content: '\f005';
-				}
-
-				~ a::before {
-					content: '\f006';
-				}
-			}
-
-			a:not( .active ) {
-				&::before {
-					content: '\f005';
-				}
+			~ a::before {
+				content: '\f006';
 			}
 		}
 	}
+
+	&:hover {
+		a {
+			&::before {
+				content: '\f005';
+			}
+		}
+	}
+
+	&.selected {
+		a.active {
+			&::before {
+				content: '\f005';
+			}
+
+			~ a::before {
+				content: '\f006';
+			}
+		}
+
+		a:not( .active ) {
+			&::before {
+				content: '\f005';
+			}
+		}
+	}
+}
