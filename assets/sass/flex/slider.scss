@@ -1,0 +1,11 @@
+.flex-carousel {
+	.carousel-inner,
+	.carousel-item {
+		min-height: 400px;
+	}
+
+	.carousel-item {
+		background-size: cover;
+		background-position: center;
+	}
+}

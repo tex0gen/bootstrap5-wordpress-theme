@@ -27,7 +27,7 @@ if ( $posts ) {
 				<h2>Featured Products</h2>
 			</div>
 		</div>
-		<div class="products row">
+		<ul class="products row">
 			<?php
 			foreach ($posts as $key => $post) {
 				setup_postdata( $post );
@@ -37,7 +37,7 @@ if ( $posts ) {
 				$columns = ($post_count > 6) ? 'col-3':'col';
 				?>
 
-				<div class="<?= $columns ?> product">
+				<li class="<?= $columns ?> product">
 					<a class="woocommerce-LoopProduct-link" href="<?php the_permalink(); ?>">
 					<?= get_the_post_thumbnail( $id, 'large', array('class' => 'img-fluid') ); ?>
 					<?php the_title('<h3 class="woocommerce-loop-product__title">', '</h3>'); ?>
@@ -49,13 +49,13 @@ if ( $posts ) {
 					<a class="btn btn-primary" href="<?php the_permalink(); ?>">
 						View Product
 					</a>
-				</div>
+				</li>
 
 				<?php
 				wp_reset_postdata();
 			}
 			?>
-		</div>
+		</ul>
 	</div>
 </section>
 <?php } ?>
