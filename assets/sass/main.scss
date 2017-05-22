@@ -3,6 +3,8 @@
 
 // Variables
 @import '../sass/base/_variables';
+
+// Base Styles
 @import '../sass/base/_base';
 
 // Plugin Styles
@@ -13,7 +15,7 @@
 @import '../sass/components/footer';
 @import '../sass/components/menu';
 
-// Flex
+// Flex components
 @import '../sass/flex/call-to-action';
 @import '../sass/flex/product-category-list';
 @import '../sass/flex/featured-products';
