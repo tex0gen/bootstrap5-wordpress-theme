@@ -2,7 +2,8 @@
 @import '../sass/font-awesome/font-awesome'; // Import FontAwesome
 
 // Variables
-@import '../sass/base/_variables';
+// REMOVE THE FOLLOWING LINE IF USING AS A STANDALONE THEME
+// @import '../sass/base/_variables';
 
 // Base Styles
 @import '../sass/base/_base';

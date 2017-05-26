@@ -23,8 +23,7 @@ if ($slides) {
 			<div class="carousel-item<?= ($key === 0) ? ' active':''; ?>" style="background-image:url('<?= $slide['image']['sizes']['large']; ?>');">
 				<!-- Do overlay content -->
 				<div class="carousel-caption d-none d-md-block">
-					<h3>...</h3>
-					<p>...</p>
+					<p><?= $slide['caption'] ?></p>
 				</div>
 			</div>
 			<?php

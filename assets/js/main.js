@@ -10,4 +10,5 @@ jQuery(document).ready(function($) {
 			scrollTop: (scrollToPoint - 60)
 		});
 	});
+	
 });
