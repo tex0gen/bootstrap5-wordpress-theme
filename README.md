@@ -11,3 +11,5 @@ Step 3. Install Advanced Custom Fields Pro plugin. https://www.advancedcustomfie
 Step 4. Activate Theme.
 
 Step 5. Start developing.
+
+NOTE: I'd recommend pulling the child theme here: https://github.com/tex0gen/themestrap-child-wordpress-theme and doing your development there.
