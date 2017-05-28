@@ -1,5 +1,5 @@
 <?php $bg_image = get_sub_field('background_image'); ?>
-<section class="flex-call-to-action" style="background-image:url('<?= $bg_image['sizes']['large']; ?>');">
+<section class="flex-call-to-action" style="background-image:url('<?= $bg_image['sizes']['full-width']; ?>');">
 	<div class="container">
 		<div class="row">
 

@@ -20,7 +20,7 @@ if ($slides) {
 		<?php
 		foreach ($slides as $key => $slide) {
 			?>
-			<div class="carousel-item<?= ($key === 0) ? ' active':''; ?>" style="background-image:url('<?= $slide['image']['sizes']['large']; ?>');">
+			<div class="carousel-item<?= ($key === 0) ? ' active':''; ?>" style="background-image:url('<?= $slide['image']['sizes']['full-width']; ?>');">
 				<!-- Do overlay content -->
 				<div class="carousel-caption d-none d-md-block">
 					<p><?= $slide['caption'] ?></p>

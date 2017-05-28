@@ -1,3 +1,4 @@
+<?php if ( class_exists( 'WooCommerce' ) ) { ?>
 <section class="product-category-list">
 	<div class="container">
 		<div class="row grid">
@@ -23,3 +24,4 @@
 		</div>
 	</div>
 </section>
+<?php } ?>

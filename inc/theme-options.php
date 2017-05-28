@@ -8,3 +8,6 @@ if( function_exists('acf_add_options_page') ) {
 	
 	acf_add_options_page( $args );
 }
+
+
+add_image_size( 'full-width', 1200, 800, true );

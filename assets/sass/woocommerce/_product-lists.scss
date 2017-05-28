@@ -4,7 +4,7 @@ ul.products {
 	list-style-type: none;
 	.product {
 		@extend .col-sm-3;
-		margin-bottom: $single-gutter;
+		margin-bottom: $double-gutter;
 		
 		.woocommerce-LoopProduct-link {
 			text-decoration: none;
