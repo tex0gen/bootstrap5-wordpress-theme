@@ -1,7 +1,9 @@
 .flex-carousel {
+	margin-bottom: $spacing-bottom;
+
 	.carousel-inner,
 	.carousel-item {
-		min-height: 400px;
+		min-height: $carousel-height;
 	}
 
 	.carousel-item {

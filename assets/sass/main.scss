@@ -3,7 +3,7 @@
 
 // Variables
 // REMOVE THE FOLLOWING LINE IF USING AS A STANDALONE THEME
-// @import '../sass/base/_variables';
+@import '../sass/base/_variables';
 
 // Base Styles
 @import '../sass/base/_base';
@@ -24,6 +24,7 @@
 @import '../sass/flex/featured-products';
 @import '../sass/flex/content-block';
 @import '../sass/flex/slider';
+@import '../sass/flex/card';
 
 
 .contain-section {

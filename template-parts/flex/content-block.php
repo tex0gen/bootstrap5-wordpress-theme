@@ -9,7 +9,7 @@ if ($content_blocks) {
 				<?php
 				foreach ($content_blocks as $key => $block) {
 					?>
-				 	<div class="content col">
+				 	<div class="content col" id="content-block-<?= $key + 1 ?>">
 				 		<?php if ( $block['title'] ) { ?>
 				 			<h2><?= $block['title'] ?></h2>
 				 		<?php } ?>
