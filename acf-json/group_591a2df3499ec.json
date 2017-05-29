@@ -147,6 +147,23 @@
                     "display": "block",
                     "sub_fields": [
                         {
+                            "message": "This field will not appear if woocommerce is not installed as a plugin.",
+                            "esc_html": 0,
+                            "new_lines": "wpautop",
+                            "key": "field_592c92407be2a",
+                            "label": "Note",
+                            "name": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
                             "taxonomy": "product_cat",
                             "field_type": "multi_select",
                             "multiple": 0,
@@ -246,6 +263,23 @@
                             "name": "number_of_products",
                             "type": "number",
                             "instructions": "Default: 5.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "message": "This field will not appear if woocommerce is not installed as a plugin.",
+                            "esc_html": 0,
+                            "new_lines": "wpautop",
+                            "key": "field_592c92727be2c",
+                            "label": "Note",
+                            "name": "",
+                            "type": "message",
+                            "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
@@ -360,6 +394,25 @@
                                     }
                                 },
                                 {
+                                    "default_value": 0,
+                                    "message": "",
+                                    "ui": 0,
+                                    "ui_on_text": "",
+                                    "ui_off_text": "",
+                                    "key": "field_592c929c7be2d",
+                                    "label": "Call to Action",
+                                    "name": "call_to_action",
+                                    "type": "true_false",
+                                    "instructions": "Enable this to change the slider to a sliding call of action.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
                                     "default_value": "",
                                     "maxlength": "",
                                     "placeholder": "",
@@ -369,6 +422,161 @@
                                     "label": "Caption",
                                     "name": "caption",
                                     "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_592c929c7be2d",
+                                                "operator": "!=",
+                                                "value": "1"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
+                                    "multiple": 0,
+                                    "allow_null": 0,
+                                    "choices": {
+                                        "left": "Left",
+                                        "right": "Right",
+                                        "center": "Center"
+                                    },
+                                    "default_value": [],
+                                    "ui": 0,
+                                    "ajax": 0,
+                                    "placeholder": "",
+                                    "return_format": "value",
+                                    "key": "field_592c92c57be2e",
+                                    "label": "Alignment",
+                                    "name": "alignment",
+                                    "type": "select",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_592c929c7be2d",
+                                                "operator": "==",
+                                                "value": "1"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "key": "field_592c92fc7be2f",
+                                    "label": "Title",
+                                    "name": "title",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_592c929c7be2d",
+                                                "operator": "==",
+                                                "value": "1"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 1,
+                                    "default_value": "",
+                                    "delay": 0,
+                                    "key": "field_592c931c7be30",
+                                    "label": "Text",
+                                    "name": "text",
+                                    "type": "wysiwyg",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_592c929c7be2d",
+                                                "operator": "==",
+                                                "value": "1"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
+                                    "sub_fields": [
+                                        {
+                                            "default_value": "",
+                                            "maxlength": "",
+                                            "placeholder": "",
+                                            "prepend": "",
+                                            "append": "",
+                                            "key": "field_592c934e7be33",
+                                            "label": "Button Text",
+                                            "name": "button_text",
+                                            "type": "text",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            }
+                                        },
+                                        {
+                                            "post_type": [],
+                                            "taxonomy": [],
+                                            "allow_null": 0,
+                                            "multiple": 0,
+                                            "allow_archives": 1,
+                                            "key": "field_592c93577be34",
+                                            "label": "Button Link",
+                                            "name": "button_link",
+                                            "type": "page_link",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            }
+                                        }
+                                    ],
+                                    "min": 0,
+                                    "max": 0,
+                                    "layout": "table",
+                                    "button_label": "",
+                                    "collapsed": "",
+                                    "key": "field_592c93437be32",
+                                    "label": "Buttons",
+                                    "name": "buttons",
+                                    "type": "repeater",
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -438,6 +646,156 @@
                     ],
                     "min": "",
                     "max": "1"
+                },
+                {
+                    "key": "592c945988c26",
+                    "name": "card",
+                    "label": "Card",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "sub_fields": [
+                                {
+                                    "return_format": "array",
+                                    "preview_size": "thumbnail",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": "",
+                                    "key": "field_592c948f88c2a",
+                                    "label": "Card Image",
+                                    "name": "card_image",
+                                    "type": "image",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "key": "field_592c948688c29",
+                                    "label": "Card Title",
+                                    "name": "card_title",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "key": "field_592c949c88c2b",
+                                    "label": "Card Subtitle",
+                                    "name": "card_subtitle",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
+                                    "tabs": "all",
+                                    "toolbar": "full",
+                                    "media_upload": 1,
+                                    "default_value": "",
+                                    "delay": 0,
+                                    "key": "field_592c94a488c2c",
+                                    "label": "Card Content",
+                                    "name": "card_content",
+                                    "type": "wysiwyg",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "key": "field_592c94cd88c2e",
+                                    "label": "Card Action Text",
+                                    "name": "card_action_text",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                },
+                                {
+                                    "post_type": [],
+                                    "taxonomy": [],
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "allow_archives": 1,
+                                    "key": "field_592c94b788c2d",
+                                    "label": "Card Action Link",
+                                    "name": "card_action_link",
+                                    "type": "page_link",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    }
+                                }
+                            ],
+                            "min": 0,
+                            "max": 6,
+                            "layout": "table",
+                            "button_label": "Add Card",
+                            "collapsed": "",
+                            "key": "field_592c947d88c28",
+                            "label": "Cards",
+                            "name": "cards",
+                            "type": "repeater",
+                            "instructions": "All cards added here will be aligned in a single row. The cards will have equal widths to fit.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             ],
             "min": "",
@@ -476,5 +834,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1495293481
+    "modified": 1496097062
 }
