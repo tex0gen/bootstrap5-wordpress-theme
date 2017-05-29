@@ -1,6 +1,5 @@
 <?php
 $content_blocks = get_sub_field('content');
-$content_block_count = count($content_blocks);
 
 if ($content_blocks) {
 	?>

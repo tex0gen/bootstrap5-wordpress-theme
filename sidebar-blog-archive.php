@@ -1,0 +1,1 @@
+<?php dynamic_sidebar( 'blog_archive_sidebar' ); ?>
