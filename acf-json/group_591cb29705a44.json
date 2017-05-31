@@ -6,7 +6,7 @@
             "placement": "top",
             "endpoint": 0,
             "key": "field_591cb3ecba31b",
-            "label": "Basic Options",
+            "label": "Site Options",
             "name": "",
             "type": "tab",
             "instructions": "",
@@ -142,6 +142,63 @@
                 "class": "",
                 "id": ""
             }
+        },
+        {
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "key": "field_592c91ac2ff95",
+            "label": "Linkedin",
+            "name": "linkedin",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "key": "field_592c91b72ff96",
+            "label": "Google+",
+            "name": "google+",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "key": "field_592c91c42ff97",
+            "label": "Instagram",
+            "name": "instagram",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
         }
     ],
     "location": [
@@ -161,5 +218,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1495053417
+    "modified": 1496097442
 }

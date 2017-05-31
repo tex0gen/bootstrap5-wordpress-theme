@@ -368,6 +368,25 @@
                     "display": "block",
                     "sub_fields": [
                         {
+                            "default_value": 0,
+                            "message": "",
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": "",
+                            "key": "field_592c929c7be2d",
+                            "label": "Call to Action",
+                            "name": "call_to_action",
+                            "type": "true_false",
+                            "instructions": "Enable this to change the slider to a sliding call of action.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
                             "sub_fields": [
                                 {
                                     "return_format": "array",
@@ -385,25 +404,6 @@
                                     "name": "image",
                                     "type": "image",
                                     "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    }
-                                },
-                                {
-                                    "default_value": 0,
-                                    "message": "",
-                                    "ui": 0,
-                                    "ui_on_text": "",
-                                    "ui_off_text": "",
-                                    "key": "field_592c929c7be2d",
-                                    "label": "Call to Action",
-                                    "name": "call_to_action",
-                                    "type": "true_false",
-                                    "instructions": "Enable this to change the slider to a sliding call of action.",
                                     "required": 0,
                                     "conditional_logic": 0,
                                     "wrapper": {
@@ -571,7 +571,7 @@
                                     "min": 0,
                                     "max": 0,
                                     "layout": "table",
-                                    "button_label": "",
+                                    "button_label": "Add Button",
                                     "collapsed": "",
                                     "key": "field_592c93437be32",
                                     "label": "Buttons",
@@ -589,8 +589,8 @@
                             ],
                             "min": 0,
                             "max": 0,
-                            "layout": "table",
-                            "button_label": "",
+                            "layout": "row",
+                            "button_label": "Add Slide",
                             "collapsed": "",
                             "key": "field_59205bd7f86b4",
                             "label": "Carousel",
@@ -834,5 +834,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1496097062
+    "modified": 1496257582
 }

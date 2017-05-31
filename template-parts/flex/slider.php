@@ -21,10 +21,46 @@ if ($slides) {
 		foreach ($slides as $key => $slide) {
 			?>
 			<div class="carousel-item<?= ($key === 0) ? ' active':''; ?>" style="background-image:url('<?= $slide['image']['sizes']['full-width']; ?>');">
-				<!-- Do overlay content -->
-				<div class="carousel-caption d-none d-md-block">
-					<p><?= $slide['caption'] ?></p>
-				</div>
+				<?php if ( get_sub_field('call_to_action') === true ) { ?>
+					<div class="container">
+						<div class="row">
+							<?php
+							$alignment = $slide['alignment'];
+
+							switch ($alignment) {
+								case 'center':
+									$align = 'offset-sm-2 text-center';
+									break;
+
+								case 'right':
+									$align = 'offset-sm-4 text-right';
+									break;
+								
+								default:
+									$align = '';
+									break;
+							}
+
+
+							?>
+							<div class="col-12 col-sm-8 <?= $align ?>">
+								<?= ( $slide['title'] ) ? '<h2>' . $slide['title'] . '</h1>':''; ?>
+								<?= ( $slide['text'] ) ? $slide['text']:''; ?>
+								<?php
+								if ( $slide['buttons'] ) {
+									foreach ( $slide['buttons'] as $btnkey => $button ) {
+										echo '<a href="' . $button['button_link'] . '" class="btn btn-primary button' . ($btnkey + 1) . '">'.$button['button_text'].'</a>';
+									}
+								}
+								?>
+							</div>
+						</div>
+					</div>
+				<?php } else { ?>
+					<div class="carousel-caption d-none d-md-block">
+						<p><?= $slide['caption'] ?></p>
+					</div>
+				<?php } ?>
 			</div>
 			<?php
 		}

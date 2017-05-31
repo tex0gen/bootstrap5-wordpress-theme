@@ -10,4 +10,10 @@
 		background-size: cover;
 		background-position: center;
 	}
+
+	.btn {
+		&:last-child {
+			margin-left: $single-gutter;
+		}
+	}
 }
