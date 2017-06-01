@@ -1,0 +1,1 @@
+<?php dynamic_sidebar( 'woocommerce_archive_sidebar' ); ?>

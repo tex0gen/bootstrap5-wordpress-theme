@@ -805,7 +805,7 @@
             "label": "Main Content Flex",
             "name": "main_content_flex",
             "type": "flexible_content",
-            "instructions": "Use this to add\/edit\/remove elements from your pages.",
+            "instructions": "Use this to add\/edit elements from your pages.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -834,5 +834,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1496257582
+    "modified": 1496258478
 }

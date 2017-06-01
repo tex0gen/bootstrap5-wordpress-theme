@@ -2,6 +2,7 @@
 
 require_once 'woocommerce/_filters.php';
 require_once 'woocommerce/_removals.php';
+require_once 'woocommerce/_config.php';
 
 
 // TODO: Move the following into appropriate files
@@ -16,7 +17,7 @@ function row_start() {
 }
 
 function row_end() {
-	echo '</div><!-- End Row -->';
+	echo '</div>';
 }
 
 // Gives spacing between sections of content
@@ -30,7 +31,6 @@ function section_end() {
 
 add_action( 'woocommerce_before_shop_loop', 'row_start', 1 );
 add_action( 'woocommerce_before_shop_loop', 'row_end', 35 );
-
 
 // single-product - Wraps row around the product image and product summary
 add_action('woocommerce_before_single_product_summary', 'row_start', 10);

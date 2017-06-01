@@ -39,6 +39,15 @@ function enabled_widget_areas() {
 		'after_title'   => '</h3>',
 	) );
 
+	register_sidebar( array(
+		'name'          => 'Woocommerce Archive Sidebar',
+		'id'            => 'woocommerce_archive_sidebar',
+		'before_widget' => '<div class="widget">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h3>',
+		'after_title'   => '</h3>',
+	) );
+
 }
 add_action( 'widgets_init', 'enabled_widget_areas' );
 
