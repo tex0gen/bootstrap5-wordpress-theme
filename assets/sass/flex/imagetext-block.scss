@@ -1,0 +1,14 @@
+.imagetext-block {
+	.imagetext-block-row {
+		margin-bottom: $double-gutter;
+		&:nth-child(even) {
+			.image-block {
+				@extend .order-last;
+			}
+		}
+
+		&:last-child {
+			margin-bottom: $spacing-bottom;
+		}
+	}
+}
