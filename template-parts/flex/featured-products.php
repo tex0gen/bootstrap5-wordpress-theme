@@ -40,7 +40,7 @@ if ( $posts ) {
 				<li class="<?= $columns ?> product">
 					<a class="woocommerce-LoopProduct-link" href="<?php the_permalink(); ?>">
 					<?= get_the_post_thumbnail( $id, 'large', array('class' => 'img-fluid') ); ?>
-					<?php the_title('<h3 class="woocommerce-loop-product__title">', '</h3>'); ?>
+					<?php the_title('<h2 class="woocommerce-loop-product__title">', '</h2>'); ?>
 					<div class="price">
 						<?= $product->get_price_html(); ?>
 					</div>
