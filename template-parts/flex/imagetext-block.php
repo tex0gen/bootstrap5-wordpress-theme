@@ -6,10 +6,10 @@
 			foreach ($imgtext_blocks as $key => $block) {
 			?>
 				<div class="row imagetext-block-row">
-					<div class="col-12 col-sm-6 image-block">
+					<div class="col-12 col-md-6 image-block">
 						<img src="<?= $block['image']['sizes']['large'] ?>" class="img-fluid" />
 					</div>
-					<div class="col-12 col-sm-6 text-block">
+					<div class="col-12 col-md-6 text-block">
 						<h2><?= $block['title'] ?></h2>
 						<?= $block['text'] ?>
 						<?php if ( $block['button_text'] ) { ?>

@@ -1,14 +1,23 @@
 .imagetext-block {
 	.imagetext-block-row {
 		margin-bottom: $double-gutter;
-		&:nth-child(even) {
-			.image-block {
-				@extend .order-last;
+
+		@include media-breakpoint-up(md) {
+			&:nth-child(even) {
+				.image-block {
+					order: 1;
+				}
 			}
 		}
 
 		&:last-child {
 			margin-bottom: $spacing-bottom;
+		}
+
+		.image-block {
+			@include media-breakpoint-down(md) {
+				margin-bottom: $single-gutter;
+			}
 		}
 	}
 }

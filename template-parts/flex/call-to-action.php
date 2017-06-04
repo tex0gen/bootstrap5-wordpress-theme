@@ -7,10 +7,10 @@
 			$align = get_sub_field('alignment');
 			switch ($align) {
 				case 'center':
-					$alignment = ' text-center offset-2';
+					$alignment = ' text-center offset-sm-2';
 					break;
 				case 'right':
-					$alignment = ' text-right offset-4';
+					$alignment = ' text-right offset-sm-4';
 					break;
 				
 				default:
@@ -19,7 +19,7 @@
 			}
 			?>
 
-			<div class="col-8<?= $alignment ?>">
+			<div class="col-12 col-sm-8<?= $alignment ?>">
 				<h1><?php the_sub_field('title'); ?></h1>
 				<div class="">
 					<?php the_sub_field('content'); ?>
