@@ -1,18 +1,18 @@
 /* Fonts */
-$font-body: Arial !optional;
-$font-heading: Arial !optional;
+$font-body: Arial !default;
+$font-heading: Arial !default;
 
 /* Colour Variables */
-$white: #FFF !optional;
-$light-gray: #eceeef !optional;
-$dark-gray: #353535 !optional;
+$white: #FFF !default;
+$light-gray: #eceeef !default;
+$dark-gray: #353535 !default;
 
 /* Spacing */
-$single-gutter: 15px !optional;
-$double-gutter: $single-gutter * 2 !optional;
+$single-gutter: 15px !default;
+$double-gutter: $single-gutter * 2 !default;
 
-$spacing-bottom: 60px !optional;
-$spacing-bottom-half: $spacing-bottom / 2 !optional;
+$spacing-bottom: 60px !default;
+$spacing-bottom-half: $spacing-bottom / 2 !default;
 
 // Carousel
-$carousel-height: 400px !optional;
+$carousel-height: 400px !default;
