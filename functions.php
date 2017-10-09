@@ -12,7 +12,7 @@ add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles', 5 );
 function theme_enqueue_styles() {
 
 	// CSS
-	wp_enqueue_style( 'main', get_template_directory_uri() . '/assets/css/main.css' );
+	wp_enqueue_style( 'main', get_template_directory_uri() . '/assets/css/main.min.css' );
 
 	// Javascript
 	wp_enqueue_script( 'tether', get_template_directory_uri() . '/assets/js/tether.min.js', array(), null, true );
