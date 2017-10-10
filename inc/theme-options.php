@@ -1,4 +1,17 @@
 <?php
+
+// Allows robot indexing after dev database has been pushed
+$live_url = ''; // Must match WordPress live URL
+if ($live_url != '') {
+	if ( function_exists(get_field) ) {
+		if ( get_option('blog_public') === 0 ) {
+			update_option('blog_public', 1);
+		}
+	}
+} else {
+	echo '<pre>Please add the live site URL to themestrap/inc/theme-options (Line 4)</pre>';
+}
+
 /*
 *	Image Sizes
 */
