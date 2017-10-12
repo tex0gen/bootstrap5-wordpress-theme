@@ -12,6 +12,13 @@ gulp.task('sass', function() {
     .pipe(sourcemaps.write())
     .pipe(autoprefixer())
     .pipe(gulp.dest('./assets/css/'));
+
+  gulp.src('./assets/sass/woocommerce/woocommerce.scss')
+    .pipe(sourcemaps.init())
+    .pipe(sass().on('error', sass.logError))
+    .pipe(sourcemaps.write())
+    .pipe(autoprefixer())
+    .pipe(gulp.dest('./assets/css/'));
 });
 
 gulp.task('minify', function() {
