@@ -12,57 +12,8 @@ if ($live_url != '') {
 	echo '<pre>Please add the live site URL to themestrap/inc/theme-options (Line 4)</pre>';
 }
 
-/*
-*	Image Sizes
-*/
-add_image_size( 'full-width', 1200, 800, true );
-add_image_size( 'post-thumbnail', 800, 650, true );
-add_image_size( 'card', 600, 350, true );
-
-
-/*
-*	Sidebar Widget Areas
-*/
-function enabled_widget_areas() {
-
-	register_sidebar( array(
-		'name'          => 'Blog Archive Sidebar',
-		'id'            => 'blog_archive_sidebar',
-		'before_widget' => '<div class="widget">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h3>',
-		'after_title'   => '</h3>',
-	) );
-
-	register_sidebar( array(
-		'name'          => 'Blog Single Sidebar',
-		'id'            => 'blog_single_sidebar',
-		'before_widget' => '<div class="widget">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h3>',
-		'after_title'   => '</h3>',
-	) );
-
-	register_sidebar( array(
-		'name'          => 'Archive Sidebar',
-		'id'            => 'archive_sidebar',
-		'before_widget' => '<div class="widget">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h3>',
-		'after_title'   => '</h3>',
-	) );
-
-	register_sidebar( array(
-		'name'          => 'Woocommerce Archive Sidebar',
-		'id'            => 'woocommerce_archive_sidebar',
-		'before_widget' => '<div class="widget">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h3>',
-		'after_title'   => '</h3>',
-	) );
-
-}
-add_action( 'widgets_init', 'enabled_widget_areas' );
+require_once('settings/image-sizes.php');
+require_once('settings/widgets.php');
 
 /*
 *	Options Pages for ACF
