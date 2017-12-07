@@ -1,6 +1,6 @@
 // Bootstrap
 // TODO: Only include bootstrap sass that's used.
-@import '../sass/bootstrap/scss/bootstrap'; // Import Bootstrap
+// @import '../sass/bootstrap/scss/bootstrap'; // Import Bootstrap
 
 // Font Awesome
 @import '../sass/font-awesome/font-awesome'; // Import FontAwesome
@@ -11,9 +11,6 @@
 
 // Base Styles
 @import '../sass/base/_base';
-
-// Plugin Styles
-@import '../sass/woocommerce/woocommerce';
 
 // Component Styles
 @import '../sass/components/breadcrumbs';
