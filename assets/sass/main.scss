@@ -1,32 +1,85 @@
-// Bootstrap
-// TODO: Only include bootstrap sass that's used.
-// @import '../sass/bootstrap/scss/bootstrap'; // Import Bootstrap
+// Variables
+
+// Bootstrap (Select only what you need to keep final css file minimal)
+@import "./bootstrap/scss/functions";
+@import "./bootstrap/scss/variables";
+
+// Main Theme Variable Overrides
+@import './base/_variables'; 
+
+@import "./bootstrap/scss/mixins";
+@import "./bootstrap/scss/root";
+@import "./bootstrap/scss/print";
+@import "./bootstrap/scss/reboot";
+@import "./bootstrap/scss/type";
+@import "./bootstrap/scss/images";
+// @import "./bootstrap/scss/code";
+@import "./bootstrap/scss/grid";
+// @import "./bootstrap/scss/tables";
+// @import "./bootstrap/scss/forms";
+@import "./bootstrap/scss/buttons";
+@import "./bootstrap/scss/transitions";
+// @import "./bootstrap/scss/dropdown";
+// @import "./bootstrap/scss/button-group";
+// @import "./bootstrap/scss/input-group";
+// @import "./bootstrap/scss/custom-forms";
+@import "./bootstrap/scss/nav";
+@import "./bootstrap/scss/navbar";
+// @import "./bootstrap/scss/card";
+// @import "./bootstrap/scss/breadcrumb";
+// @import "./bootstrap/scss/pagination";
+// @import "./bootstrap/scss/badge";
+// @import "./bootstrap/scss/jumbotron";
+// @import "./bootstrap/scss/alert";
+// @import "./bootstrap/scss/progress";
+// @import "./bootstrap/scss/media";
+// @import "./bootstrap/scss/list-group";
+// @import "./bootstrap/scss/close";
+// @import "./bootstrap/scss/modal";
+// @import "./bootstrap/scss/tooltip";
+// @import "./bootstrap/scss/popover";
+@import "./bootstrap/scss/carousel";
+@import "./bootstrap/scss/utilities";
+
 
 // Font Awesome
-@import '../sass/font-awesome/font-awesome'; // Import FontAwesome
-
-// Variables
-// REMOVE THE FOLLOWING LINE IF USING AS A STANDALONE THEME
-@import '../sass/base/_variables';
+@import "./font-awesome/scss/variables";
+@import "./font-awesome/scss/mixins";
+@import "./font-awesome/scss/core";
+@import "./font-awesome/scss/larger";
+@import "./font-awesome/scss/fixed-width";
+@import "./font-awesome/scss/list";
+@import "./font-awesome/scss/bordered-pulled";
+@import "./font-awesome/scss/animated";
+@import "./font-awesome/scss/rotated-flipped";
+@import "./font-awesome/scss/stacked";
+@import "./font-awesome/scss/icons";
+@import "./font-awesome/scss/screen-reader";
+@import "./font-awesome/scss/fa-brands";
+@import "./font-awesome/scss/fa-light";
+@import "./font-awesome/scss/fa-regular";
+@import "./font-awesome/scss/fa-solid";
+// Plugin Styles
+// @import './woocommerce/woocommerce';
 
 // Base Styles
-@import '../sass/base/_base';
+@import './base/_base';
 
 // Component Styles
-@import '../sass/components/breadcrumbs';
-@import '../sass/components/footer';
-@import '../sass/components/menu';
-@import '../sass/components/sidebar';
-@import '../sass/components/post-item';
+@import './components/breadcrumbs';
+@import './components/footer';
+@import './components/menu';
+@import './components/sidebar';
+@import './components/post-item';
 
 // Flex components
-@import '../sass/flex/call-to-action';
-@import '../sass/flex/product-category-list';
-@import '../sass/flex/featured-products';
-@import '../sass/flex/content-block';
-@import '../sass/flex/slider';
-@import '../sass/flex/card';
-@import '../sass/flex/imagetext-block';
+@import './flex/call-to-action';
+@import './flex/product-category-list';
+@import './flex/featured-products';
+@import './flex/content-block';
+@import './flex/slider';
+@import './flex/card';
+@import './flex/imagetext-block';
 
 .contain-section {
 	margin-bottom: $spacing-bottom;

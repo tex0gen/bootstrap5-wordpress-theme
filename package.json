@@ -1,18 +1,22 @@
 {
   "name": "Tex0gen",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "Tex0gen Theme",
   "main": "Gruntfile.js",
-  "dependencies": {},
   "devDependencies": {
+    "babel-core": "^6.26.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-babel": "^7.0.0",
     "gulp-clean-css": "^3.9.0",
     "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^7.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
-    "gulp-sourcemaps": "^2.6.1"
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-purifycss": "^0.2.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-uncss": "^1.0.6"
   },
   "scripts": {
     "test": "tex0gen"

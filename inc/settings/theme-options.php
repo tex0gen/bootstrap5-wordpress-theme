@@ -1,7 +1,4 @@
 <?php
-require_once('settings/image-sizes.php');
-require_once('settings/widgets.php');
-
 /*
 *	Options Pages for ACF
 */
