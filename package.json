@@ -22,5 +22,8 @@
     "test": "tex0gen"
   },
   "author": "Steve North",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "gulp-clean": "^0.3.2"
+  }
 }

@@ -8,6 +8,8 @@ const babel = require('gulp-babel');
 const uncss = require('gulp-uncss');
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
+const clean = require('gulp-clean');
+
 
 // Comile SASS
 gulp.task('sass', function() {
@@ -20,21 +22,26 @@ gulp.task('sass', function() {
 
 // Removes unused CSS
 gulp.task('purify', function() {
-  return gulp.src('./assets/build/css/main.css')
+  return gulp.src('./assets/build/css/main.min.css')
     .pipe(uncss({
       html: ['./**/*.php']
     }))
     .pipe(gulp.dest('./assets/build/css/'));
 });
 
+// RM old minified CSS
+gulp.task('del-min-css', function(){
+  return gulp.src('./assets/build/css/main.min.css',{force: true})
+  .pipe(clean())
+});
+
 // Minify CSS
-gulp.task('minify', function() {
+gulp.task('minify', ['del-min-css'], function() {
   gulp.src('./assets/build/css/main.css')
     .pipe(cleanCSS())
     .pipe(rename('main.min.css'))
     .pipe(gulp.dest('./assets/build/css/'));
 });
-
 
 // Concat & Minify JS
 gulp.task('scripts', function() {
@@ -47,7 +54,6 @@ gulp.task('scripts', function() {
     .pipe(concat('scripts.js'))
     .pipe(gulp.dest('./assets/build/js/'));
 });
-
 
 // Prep for ES6
 // gulp.task('js', () =>
