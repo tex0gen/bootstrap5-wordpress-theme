@@ -11,7 +11,7 @@ add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles', 5 );
 function theme_enqueue_styles() {
 
   // CSS
-  wp_enqueue_style( 'main', get_template_directory_uri() . '/assets/build/css/main.min.css' );
+  wp_enqueue_style( 'main', get_template_directory_uri() . '/assets/build/css/main.css' );
 
   // Javascript
   // ADD ANY LOCAL SCRIPTS TO THE GULP FILE SO THAT THEY CAN BE CONCATENATED AND MINIFIED

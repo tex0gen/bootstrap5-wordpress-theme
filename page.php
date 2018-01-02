@@ -1,7 +1,12 @@
 <?php
 get_header();
 
-if ( is_woocommerce() || is_cart() || is_checkout() || is_account_page() ) {
+if (
+	class_exists( 'WooCommerce' ) && is_woocommerce() ||
+	class_exists( 'WooCommerce' ) && is_cart() || 
+	class_exists( 'WooCommerce' ) && is_checkout() || 
+	class_exists( 'WooCommerce' ) && is_account_page()
+) {
 	if ( have_posts() ) :
 		while ( have_posts() ) :
 			the_post();
@@ -27,7 +32,6 @@ if ( is_woocommerce() || is_cart() || is_checkout() || is_account_page() ) {
 		endwhile;
 	endif;
 } else {
-
 	if ( have_posts() ) :
 		while ( have_posts() ) :
 			the_post();
@@ -46,5 +50,6 @@ if ( is_woocommerce() || is_cart() || is_checkout() || is_account_page() ) {
 		endwhile;
 	endif;
 }
+
 
 get_footer();
