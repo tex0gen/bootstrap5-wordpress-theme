@@ -1,0 +1,72 @@
+.cp {
+	display: none;
+	
+	&.cp-popover {
+		background-color: $light-gray;
+		max-width: 300px;
+		padding: 20px 20px 20px 20px;
+		position: fixed;
+		bottom: 15px;
+		left: 15px;
+	}
+
+	&.cp-bottom {
+		background-color: $light-gray;
+		position: fixed;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		padding: 20px;
+		text-align: center;
+	}
+
+	&.cp-top {
+		background-color: $light-gray;
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		padding: 20px;
+		text-align: center;
+	}
+
+	p {
+		margin-bottom: 0;
+		font-size: 12px;
+	}
+
+	h4 {
+		font-size: 18px;
+	}
+
+	.cp-actions {
+		display: block;
+		margin-top: 25px;
+		text-align: center;
+	}
+
+	.btn {
+		border: 0;
+		border-radius: 0;
+
+		&-primary {
+			background-color: $brand-primary;
+			color: $white;
+			padding: 10px 20px;
+			text-transform: none;
+		}
+
+		&-secondary {
+			background-color: $dark-gray;
+			color: $white;
+			padding: 10px 20px;
+			text-transform: none;
+
+		}
+
+		&:hover {
+			border: 0;
+			border-radius: 0;
+		}
+	}
+}
