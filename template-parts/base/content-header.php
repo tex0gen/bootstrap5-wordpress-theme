@@ -6,7 +6,7 @@
 				$logo = get_field('logo', 'options');
 				
 				if ( $logo ) {
-					echo $logo['sizes']['large'];
+					echo '<img src="'.$logo['sizes']['large'].'" alt="'.get_bloginfo('name').'" class="img-fluid"/>';
 				} else {
 					echo get_bloginfo('name');
 				}
