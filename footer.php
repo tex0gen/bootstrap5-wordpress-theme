@@ -7,6 +7,7 @@
 				</div>
 			</div>
 		</footer>
+		<?php get_template_part( 'template-parts/components/content', 'cookie-policy' ); ?>
 		<?php wp_footer(); ?>
 	</body>
 </html>
