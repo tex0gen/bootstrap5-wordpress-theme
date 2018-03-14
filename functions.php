@@ -24,7 +24,7 @@ require_once 'inc/settings/theme-options.php';
 require_once 'inc/settings/nav-menus.php';
 require_once 'inc/settings/widgets.php';
 require_once 'inc/settings/image-sizes.php';
-require_once 'inc/settings/other/site_opts.php';
+// require_once 'inc/settings/other/site_opts.php';
 
 // Include Woocommerce Customisations
 if ( class_exists( 'WooCommerce' ) ) {

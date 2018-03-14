@@ -1,7 +1,7 @@
 .woocommerce-cart-form {
 
 	.shop_table {
-		@extend .table, .table-responsive;
+		@extend .table;
 		margin-bottom: $spacing-bottom;
 		width: 100%;
 

@@ -11,7 +11,7 @@
 @import '_ratings';
 
 .woocommerce {
-	#container {
+	.content-area {
 		@extend .container;
 	}
 }

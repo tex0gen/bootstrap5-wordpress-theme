@@ -1,8 +1,8 @@
 <?php
 
-require_once 'woocommerce/_filters.php';
-require_once 'woocommerce/_removals.php';
-require_once 'woocommerce/_config.php';
+require_once '_filters.php';
+require_once '_removals.php';
+require_once '_config.php';
 
 
 // TODO: Move the following into appropriate files
