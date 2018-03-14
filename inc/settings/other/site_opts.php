@@ -7,6 +7,11 @@ if ($live_url != '') {
 		if ( get_option('blog_public') === 0 ) {
 			update_option('blog_public', 1);
 		}
+	} else {
+		if ( get_option('blog_public') === 1 ) {
+			update_option('blog_public', 0);
+		}
+	}
 } else {
 	if ( get_option('blog_public') === 1 ) {
 		update_option('blog_public', 0);
