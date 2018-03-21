@@ -7,11 +7,13 @@ if ($cards) {
 		<div class="container">
 			<div class="row">
 			<?php
+			$count = count($cards);
 			foreach ($cards as $key => $card) {
+				$divide = 12 / $count;
 				?>
-				<div class="col">
+				<div class="col-12 col-md-<?= $divide ?>">
 					<div class="card" id="card-<?= $key + 1 ?>">
-						<img class="card-img-top" src="<?= $card['card_image']['sizes']['card']; ?>" alt="<?= $card['card_title']; ?>">
+						<?= wp_get_attachment_image( $card['card_image']['ID'], 'card', false, array('class' => 'img-fluid card-img-top') ); ?>
 						<div class="card-block">
 							<h4 class="card-title"><?= $card['card_title']; ?></h4>
 							<div class="card-text"><?= $card['card_content']; ?></div>

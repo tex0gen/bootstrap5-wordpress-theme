@@ -1,3 +1,7 @@
 .card-wrapper {
 	margin-bottom: $spacing-bottom;
+
+	img {
+		margin-bottom: $single-gutter;
+	}
 }

@@ -1,0 +1,16 @@
+.alternating {
+  margin-bottom: $spacing-bottom;
+  
+  h1 {
+    margin-bottom: $spacing-bottom-half;
+  }
+
+  img {
+    margin-bottom: $single-gutter;
+  }
+
+  .row {
+    padding-top: $single-gutter;
+    padding-bottom: $single-gutter;
+  }
+}
