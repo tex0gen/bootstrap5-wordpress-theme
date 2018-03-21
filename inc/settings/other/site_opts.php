@@ -16,5 +16,10 @@ if ($live_url != '') {
 	if ( get_option('blog_public') === 1 ) {
 		update_option('blog_public', 0);
 	}
-	echo '<pre>Please add the live site URL to /inc/other/site_opts.php (Line 3)</pre>';
+	add_action( 'admin_notices', 'sample_admin_notice__error' );
+}
+
+
+function sample_admin_notice__error() {
+	echo '<div class="notice notice-error"><p>Please insert the <strong>LIVE</strong> url into the <strong>$live_url</strong> variable into: <strong>inc/settings/other/site_opts.php</strong></p></div>'; 
 }

@@ -8,10 +8,3 @@ h3,
 h4 {
 	font-family: $font-heading;
 }
-
-section, div {
-	background-color: rgba(0, 0, 0, .2);
-	&:hover {
-		border: 1px solid #ff0033;
-	}
-}
