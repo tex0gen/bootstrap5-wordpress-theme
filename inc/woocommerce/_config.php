@@ -7,7 +7,7 @@ if ( get_field( 'woocommerce_sidebar', 'options' ) === true ) {
 		?>
 		<div class="row">
 		<aside class="col-sm-4 sidebar-wrap">
-			<?php get_sidebar('sidebar-woocommerce-archive'); ?>
+			<?php get_sidebar('woocommerce-archive'); ?>
 		</aside>
 		<div class="col-sm-8 product-wrap">
 		<?php
