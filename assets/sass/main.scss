@@ -1,10 +1,9 @@
-// Bootstrap (Select only what you need to keep final css file minimal)
-@import "./bootstrap/scss/functions";
-@import "./bootstrap/scss/variables";
-
 // Main Theme Variable Overrides
 @import './base/_variables'; 
 
+// Bootstrap (Select only what you need to keep final css file minimal)
+@import "./bootstrap/scss/functions";
+@import "./bootstrap/scss/variables";
 @import "./bootstrap/scss/mixins";
 @import "./bootstrap/scss/root";
 @import "./bootstrap/scss/print";
