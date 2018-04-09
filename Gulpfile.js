@@ -5,11 +5,11 @@ const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
 const rename = require("gulp-rename");
 const babel = require('gulp-babel');
-const uncss = require('gulp-uncss');
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
 const clean = require('gulp-clean');
-
+const postcss = require('gulp-postcss');
+const uncss = require('postcss-uncss');
 
 // Comile SASS
 gulp.task('sass', function() {
@@ -22,10 +22,14 @@ gulp.task('sass', function() {
 
 // Removes unused CSS
 gulp.task('purify', function() {
-  return gulp.src('./assets/build/css/main.min.css')
-    .pipe(uncss({
+  var plugins = [
+    uncss({
       html: ['./**/*.php']
-    }))
+    }),
+  ];
+
+  return gulp.src('./assets/build/css/main.min.css')
+    .pipe(postcss(plugins))
     .pipe(gulp.dest('./assets/build/css/'));
 });
 
@@ -70,5 +74,9 @@ gulp.task('scripts', function() {
 
 // Watch task
 gulp.task('default',function() {
+  gulp.watch(['assets/sass/**/*.scss', 'assets/js/**/*.js'], ['sass', 'minify', 'scripts']);
+});
+
+gulp.task('build',function() {
   gulp.watch(['assets/sass/**/*.scss', 'assets/js/**/*.js'], ['sass', 'minify', 'purify', 'scripts']);
 });
