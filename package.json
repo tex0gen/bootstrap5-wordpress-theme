@@ -10,11 +10,11 @@
     "gulp-babel": "^7.0.0",
     "gulp-clean-css": "^3.9.0",
     "gulp-concat": "^2.6.1",
-    "gulp-postcss": "^7.0.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-purifycss": "^0.2.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.1",
-    "gulp-purifycss": "^0.2.0",
     "gulp-uglify": "^3.0.0",
     "gulp-uncss": "^1.0.6"
   },
@@ -24,6 +24,8 @@
   "author": "Steve North",
   "license": "ISC",
   "dependencies": {
-    "gulp-clean": "^0.3.2"
+    "gulp-clean": "^0.3.2",
+    "postcss-uncss": "^0.16.1",
+    "uncss": "^0.16.2"
   }
 }
