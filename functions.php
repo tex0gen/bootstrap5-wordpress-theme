@@ -77,10 +77,3 @@ function vc_remove_wp_ver_css_js( $src ) {
 }
 add_filter( 'style_loader_src', 'vc_remove_wp_ver_css_js', 9999 );
 add_filter( 'script_loader_src', 'vc_remove_wp_ver_css_js', 9999 );
-
-
-function atg_menu_classes($classes, $item, $args) {
-  $classes[] = 'nav-item';
-  return $classes;
-}
-add_filter('nav_menu_css_class','atg_menu_classes',1,3);

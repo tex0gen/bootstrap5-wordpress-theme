@@ -1,11 +1,5 @@
 body {
 	font-family: $font-body;
-	background: #f8eade; /* Old browsers */
-	background: -moz-linear-gradient(top, #f8eade 0%, #e2ac7a 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, #f8eade 0%,#e2ac7a 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, #f8eade 0%,#e2ac7a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8eade', endColorstr='#e2ac7a',GradientType=0 ); /* IE6-9 */
-	min-height: 100vh;
 }
 
 h1,
@@ -13,24 +7,4 @@ h2,
 h3,
 h4 {
 	font-family: $font-heading;
-}
-
-a {
-	color: $orange;
-
-	&:hover {
-		color: darken($orange, 10%);
-	}
-}
-
-.main-content {
-	background-color: $white;
-	padding: $single-gutter;
-	margin-bottom: $single-gutter;
-}
-
-.home {
-	.carousel {
-		margin-bottom: 0;
-	}
 }

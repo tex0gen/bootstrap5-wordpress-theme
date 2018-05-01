@@ -15,7 +15,7 @@
 
 		<?php
 		// Include breadcrumb
-		// get_template_part( 'template-parts/components/content', 'breadcrumbs' );
+		get_template_part( 'template-parts/components/content', 'breadcrumbs' );
 		?>
 
 
