@@ -24,11 +24,13 @@
 				<div class="">
 					<?php the_sub_field('content'); ?>
 				</div>
+				<?php if (get_sub_field('button_link')) { ?>
 				<div class="button-wrapper">
 					<a class="btn btn-primary" href="<?php the_sub_field('button_link'); ?>">
 						<?php the_sub_field('button_text'); ?>
 					</a>
 				</div>
+				<?php } ?>
 			</div>
 		</div>
 	</div>

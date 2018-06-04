@@ -2903,18 +2903,6 @@ input[type="button"].btn-block {
             flex: 1 1 auto;
     width: 1%;
     margin-bottom: 0; }
-    .input-group > .form-control:focus, .woocommerce-cart-form .shop_table td.product-quantity .quantity .input-group > input:focus, .woocommerce-cart-form .shop_table .coupon .input-group > .input-text:focus, form.checkout .col2-set .col-1 .form-row .input-group > input:focus,
-    form.checkout .col2-set .col-1 .form-row .input-group > textarea:focus,
-    form.checkout .col2-set .col-2 .form-row .input-group > input:focus,
-    form.checkout .col2-set .commentlist .comment_container .gravatar-wrap .form-row .input-group > input:focus, .commentlist .comment_container form.checkout .col2-set .gravatar-wrap .form-row .input-group > input:focus,
-    form.checkout .col2-set .col-2 .form-row .input-group > textarea:focus,
-    form.checkout .col2-set .commentlist .comment_container .gravatar-wrap .form-row .input-group > textarea:focus, .commentlist .comment_container form.checkout .col2-set .gravatar-wrap .form-row .input-group > textarea:focus, .comment-form .comment-form-comment .input-group > textarea:focus, .woocommerce-form-login .form-row .input-group > input.input-text:focus, .woocommerce-address-fields .form-row .input-group > input:focus,
-    .woocommerce-address-fields .form-row .input-group > textarea:focus,
-    .edit-account .form-row .input-group > input:focus,
-    .edit-account .form-row .input-group > textarea:focus,
-    .input-group > .custom-select:focus,
-    .input-group > .custom-file:focus {
-      z-index: 3; }
     .input-group > .form-control + .form-control, .woocommerce-cart-form .shop_table td.product-quantity .quantity .input-group > input + .form-control, .woocommerce-cart-form .shop_table .coupon .input-group > .input-text + .form-control, form.checkout .col2-set .col-1 .form-row .input-group > input + .form-control, form.checkout .col2-set .col-1 .form-row .input-group > textarea + .form-control, form.checkout .col2-set .col-2 .form-row .input-group > input + .form-control, form.checkout .col2-set .commentlist .comment_container .gravatar-wrap .form-row .input-group > input + .form-control, .commentlist .comment_container form.checkout .col2-set .gravatar-wrap .form-row .input-group > input + .form-control, form.checkout .col2-set .col-2 .form-row .input-group > textarea + .form-control, form.checkout .col2-set .commentlist .comment_container .gravatar-wrap .form-row .input-group > textarea + .form-control, .commentlist .comment_container form.checkout .col2-set .gravatar-wrap .form-row .input-group > textarea + .form-control, .comment-form .comment-form-comment .input-group > textarea + .form-control, .woocommerce-form-login .form-row .input-group > input.input-text + .form-control, .woocommerce-address-fields .form-row .input-group > input + .form-control, .woocommerce-address-fields .form-row .input-group > textarea + .form-control, .edit-account .form-row .input-group > input + .form-control, .edit-account .form-row .input-group > textarea + .form-control, .woocommerce-cart-form .shop_table td.product-quantity .quantity .input-group > .form-control + input, .woocommerce-cart-form .shop_table td.product-quantity .quantity .input-group > input + input, .woocommerce-cart-form .shop_table .coupon td.product-quantity .quantity .input-group > .input-text + input, .woocommerce-cart-form .shop_table td.product-quantity .quantity .coupon .input-group > .input-text + input, form.checkout .col2-set .col-1 .form-row .woocommerce-cart-form .shop_table td.product-quantity .quantity .input-group > input + input, .woocommerce-cart-form .shop_table td.product-quantity .quantity form.checkout .col2-set .col-1 .form-row .input-group > input + input, form.checkout .col2-set .col-1 .form-row .woocommerce-cart-form .shop_table td.product-quantity .quantity .input-group > textarea + input, .woocommerce-cart-form .shop_table td.product-quantity .quantity form.checkout .col2-set .col-1 .form-row .input-group > textarea + input, form.checkout .col2-set .col-2 .form-row .woocommerce-cart-form .shop_table td.product-quantity .quantity .input-group > input + input, .woocommerce-cart-form .shop_table td.product-quantity .quantity form.checkout .col2-set .col-2 .form-row .input-group > input + input, form.checkout .col2-set .commentlist .comment_container .gravatar-wrap .form-row .woocommerce-cart-form .shop_table td.product-quantity .quantity .input-group > input + input, .woocommerce-cart-form .shop_table td.product-quantity .quantity form.checkout .col2-set .commentlist .comment_container .gravatar-wrap .form-row .input-group > input + input, .commentlist .comment_container form.checkout .col2-set .gravatar-wrap .form-row .woocommerce-cart-form .shop_table td.product-quantity .quantity .input-group > input + input, .woocommerce-cart-form .shop_table td.product-quantity .quantity .commentlist .comment_container form.checkout .col2-set .gravatar-wrap .form-row .input-group > input + input, form.checkout .col2-set .col-2 .form-row .woocommerce-cart-form .shop_table td.product-quantity .quantity .input-group > textarea + input, .woocommerce-cart-form .shop_table td.product-quantity .quantity form.checkout .col2-set .col-2 .form-row .input-group > textarea + input, form.checkout .col2-set .commentlist .comment_container .gravatar-wrap .form-row .woocommerce-cart-form .shop_table td.product-quantity .quantity .input-group > textarea + input, .woocommerce-cart-form .shop_table td.product-quantity .quantity form.checkout .col2-set .commentlist .comment_container .gravatar-wrap .form-row .input-group > textarea + input, .commentlist .comment_container form.checkout .col2-set .gravatar-wrap .form-row .woocommerce-cart-form .shop_table td.product-quantity .quantity .input-group > textarea + input, .woocommerce-cart-form .shop_table td.product-quantity .quantity .commentlist .comment_container form.checkout .col2-set .gravatar-wrap .form-row .input-group > textarea + input, .comment-form .comment-form-comment .woocommerce-cart-form .shop_table td.product-quantity .quantity .input-group > textarea + input, .woocommerce-cart-form .shop_table td.product-quantity .quantity .comment-form .comment-form-comment .input-group > textarea + input, .woocommerce-form-login .form-row .woocommerce-cart-form .shop_table td.product-quantity .quantity .input-group > input.input-text + input, .woocommerce-cart-form .shop_table td.product-quantity .quantity .woocommerce-form-login .form-row .input-group > input.input-text + input, .woocommerce-address-fields .form-row .woocommerce-cart-form .shop_table td.product-quantity .quantity .input-group > input + input, .woocommerce-cart-form .shop_table td.product-quantity .quantity .woocommerce-address-fields .form-row .input-group > input + input, .woocommerce-address-fields .form-row .woocommerce-cart-form .shop_table td.product-quantity .quantity .input-group > textarea + input, .woocommerce-cart-form .shop_table td.product-quantity .quantity .woocommerce-address-fields .form-row .input-group > textarea + input, .edit-account .form-row .woocommerce-cart-form .shop_table td.product-quantity .quantity .input-group > input + input, .woocommerce-cart-form .shop_table td.product-quantity .quantity .edit-account .form-row .input-group > input + input, .edit-account .form-row .woocommerce-cart-form .shop_table td.product-quantity .quantity .input-group > textarea + input, .woocommerce-cart-form .shop_table td.product-quantity .quantity .edit-account .form-row .input-group > textarea + input, .woocommerce-cart-form .shop_table .coupon .input-group > .form-control + .input-text, .woocommerce-cart-form .shop_table td.product-quantity .quantity .coupon .input-group > input + .input-text, .woocommerce-cart-form .shop_table .coupon td.product-quantity .quantity .input-group > input + .input-text, .woocommerce-cart-form .shop_table .coupon .input-group > .input-text + .input-text, form.checkout .col2-set .col-1 .form-row .woocommerce-cart-form .shop_table .coupon .input-group > input + .input-text, .woocommerce-cart-form .shop_table .coupon form.checkout .col2-set .col-1 .form-row .input-group > input + .input-text, form.checkout .col2-set .col-1 .form-row .woocommerce-cart-form .shop_table .coupon .input-group > textarea + .input-text, .woocommerce-cart-form .shop_table .coupon form.checkout .col2-set .col-1 .form-row .input-group > textarea + .input-text, form.checkout .col2-set .col-2 .form-row .woocommerce-cart-form .shop_table .coupon .input-group > input + .input-text, .woocommerce-cart-form .shop_table .coupon form.checkout .col2-set .col-2 .form-row .input-group > input + .input-text, form.checkout .col2-set .commentlist .comment_container .gravatar-wrap .form-row .woocommerce-cart-form .shop_table .coupon .input-group > input + .input-text, .woocommerce-cart-form .shop_table .coupon form.checkout .col2-set .commentlist .comment_container .gravatar-wrap .form-row .input-group > input + .input-text, .commentlist .comment_container form.checkout .col2-set .gravatar-wrap .form-row .woocommerce-cart-form .shop_table .coupon .input-group > input + .input-text, .woocommerce-cart-form .shop_table .coupon .commentlist .comment_container form.checkout .col2-set .gravatar-wrap .form-row .input-group > input + .input-text, form.checkout .col2-set .col-2 .form-row .woocommerce-cart-form .shop_table .coupon .input-group > textarea + .input-text, .woocommerce-cart-form .shop_table .coupon form.checkout .col2-set .col-2 .form-row .input-group > textarea + .input-text, form.checkout .col2-set .commentlist .comment_container .gravatar-wrap .form-row .woocommerce-cart-form .shop_table .coupon .input-group > textarea + .input-text, .woocommerce-cart-form .shop_table .coupon form.checkout .col2-set .commentlist .comment_container .gravatar-wrap .form-row .input-group > textarea + .input-text, .commentlist .comment_container form.checkout .col2-set .gravatar-wrap .form-row .woocommerce-cart-form .shop_table .coupon .input-group > textarea + .input-text, .woocommerce-cart-form .shop_table .coupon .commentlist .comment_container form.checkout .col2-set .gravatar-wrap .form-row .input-group > textarea + .input-text, .comment-form .comment-form-comment .woocommerce-cart-form .shop_table .coupon .input-group > textarea + .input-text, .woocommerce-cart-form .shop_table .coupon .comment-form .comment-form-comment .input-group > textarea + .input-text, .woocommerce-form-login .form-row .woocommerce-cart-form .shop_table .coupon .input-group > input.input-text + .input-text, .woocommerce-cart-form .shop_table .coupon .woocommerce-form-login .form-row .input-group > input.input-text + .input-text, .woocommerce-address-fields .form-row .woocommerce-cart-form .shop_table .coupon .input-group > input + .input-text, .woocommerce-cart-form .shop_table .coupon .woocommerce-address-fields .form-row .input-group > input + .input-text, .woocommerce-address-fields .form-row .woocommerce-cart-form .shop_table .coupon .input-group > textarea + .input-text, .woocommerce-cart-form .shop_table .coupon .woocommerce-address-fields .form-row .input-group > textarea + .input-text, .edit-account .form-row .woocommerce-cart-form .shop_table .coupon .input-group > input + .input-text, .woocommerce-cart-form .shop_table .coupon .edit-account .form-row .input-group > input + .input-text, .edit-account .form-row .woocommerce-cart-form .shop_table .coupon .input-group > textarea + .input-text, .woocommerce-cart-form .shop_table .coupon .edit-account .form-row .input-group > textarea + .input-text, form.checkout .col2-set .col-1 .form-row .input-group > .form-control + input, .woocommerce-cart-form .shop_table td.product-quantity .quantity form.checkout .col2-set .col-1 .form-row .input-group > input + input, form.checkout .col2-set .col-1 .form-row .woocommerce-cart-form .shop_table td.product-quantity .quantity .input-group > input + input, .woocommerce-cart-form .shop_table .coupon form.checkout .col2-set .col-1 .form-row .input-group > .input-text + input, form.checkout .col2-set .col-1 .form-row .woocommerce-cart-form .shop_table .coupon .input-group > .input-text + input, form.checkout .col2-set .col-1 .form-row .input-group > input + input, form.checkout .col2-set .col-1 .form-row .input-group > textarea + input, form.checkout .col2-set .col-2 .col-1 .form-row .input-group > input + input, form.checkout .col2-set .col-1 .col-2 .form-row .input-group > input + input, form.checkout .col2-set .commentlist .comment_container .gravatar-wrap .col-1 .form-row .input-group > input + input, form.checkout .col2-set .col-1 .commentlist .comment_container .gravatar-wrap .form-row .input-group > input + input, .commentlist .comment_container form.checkout .col2-set .gravatar-wrap .col-1 .form-row .input-group > input + input, .commentlist .comment_container form.checkout .col2-set .col-1 .gravatar-wrap .form-row .input-group > input + input, form.checkout .col2-set .col-2 .col-1 .form-row .input-group > textarea + input, form.checkout .col2-set .col-1 .col-2 .form-row .input-group > textarea + input, form.checkout .col2-set .commentlist .comment_container .gravatar-wrap .col-1 .form-row .input-group > textarea + input, form.checkout .col2-set .col-1 .commentlist .comment_container .gravatar-wrap .form-row .input-group > textarea + input, .commentlist .comment_container form.checkout .col2-set .gravatar-wrap .col-1 .form-row .input-group > textarea + input, .commentlist .comment_container form.checkout .col2-set .col-1 .gravatar-wrap .form-row .input-group > textarea + input, .comment-form .comment-form-comment form.checkout .col2-set .col-1 .form-row .input-group > textarea + input, form.checkout .col2-set .col-1 .form-row .comment-form .comment-form-comment .input-group > textarea + input, .woocommerce-form-login form.checkout .col2-set .col-1 .form-row .input-group > input.input-text + input, form.checkout .col2-set .col-1 .woocommerce-form-login .form-row .input-group > input.input-text + input, .woocommerce-address-fields form.checkout .col2-set .col-1 .form-row .input-group > input + input, form.checkout .col2-set .col-1 .woocommerce-address-fields .form-row .input-group > input + input, .woocommerce-address-fields form.checkout .col2-set .col-1 .form-row .input-group > textarea + input, form.checkout .col2-set .col-1 .woocommerce-address-fields .form-row .input-group > textarea + input, .edit-account form.checkout .col2-set .col-1 .form-row .input-group > input + input, form.checkout .col2-set .col-1 .edit-account .form-row .input-group > input + input, .edit-account form.checkout .col2-set .col-1 .form-row .input-group > textarea + input, form.checkout .col2-set .col-1 .edit-account .form-row .input-group > textarea + input,
     form.checkout .col2-set .col-1 .form-row .input-group > .form-control + textarea,
     .woocommerce-cart-form .shop_table td.product-quantity .quantity form.checkout .col2-set .col-1 .form-row .input-group > input + textarea, form.checkout .col2-set .col-1 .form-row .woocommerce-cart-form .shop_table td.product-quantity .quantity .input-group > input + textarea,
@@ -3125,6 +3113,18 @@ input[type="button"].btn-block {
     .input-group > .custom-file + .custom-select,
     .input-group > .custom-file + .custom-file {
       margin-left: -1px; }
+  .input-group > .form-control:focus, .woocommerce-cart-form .shop_table td.product-quantity .quantity .input-group > input:focus, .woocommerce-cart-form .shop_table .coupon .input-group > .input-text:focus, form.checkout .col2-set .col-1 .form-row .input-group > input:focus,
+  form.checkout .col2-set .col-1 .form-row .input-group > textarea:focus,
+  form.checkout .col2-set .col-2 .form-row .input-group > input:focus,
+  form.checkout .col2-set .commentlist .comment_container .gravatar-wrap .form-row .input-group > input:focus, .commentlist .comment_container form.checkout .col2-set .gravatar-wrap .form-row .input-group > input:focus,
+  form.checkout .col2-set .col-2 .form-row .input-group > textarea:focus,
+  form.checkout .col2-set .commentlist .comment_container .gravatar-wrap .form-row .input-group > textarea:focus, .commentlist .comment_container form.checkout .col2-set .gravatar-wrap .form-row .input-group > textarea:focus, .comment-form .comment-form-comment .input-group > textarea:focus, .woocommerce-form-login .form-row .input-group > input.input-text:focus, .woocommerce-address-fields .form-row .input-group > input:focus,
+  .woocommerce-address-fields .form-row .input-group > textarea:focus,
+  .edit-account .form-row .input-group > input:focus,
+  .edit-account .form-row .input-group > textarea:focus,
+  .input-group > .custom-select:focus,
+  .input-group > .custom-file .custom-file-input:focus ~ .custom-file-label {
+    z-index: 3; }
   .input-group > .form-control:not(:last-child), .woocommerce-cart-form .shop_table td.product-quantity .quantity .input-group > input:not(:last-child), .woocommerce-cart-form .shop_table .coupon .input-group > .input-text:not(:last-child), form.checkout .col2-set .col-1 .form-row .input-group > input:not(:last-child),
   form.checkout .col2-set .col-1 .form-row .input-group > textarea:not(:last-child),
   form.checkout .col2-set .col-2 .form-row .input-group > input:not(:last-child),
@@ -4024,23 +4024,25 @@ ul.products .product .input-group > .input-group-prepend:first-child > .button:n
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  -webkit-transition: -webkit-transform 0.6s ease;
-  transition: -webkit-transform 0.6s ease;
-  transition: transform 0.6s ease;
-  transition: transform 0.6s ease, -webkit-transform 0.6s ease;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   -webkit-perspective: 1000px;
           perspective: 1000px; }
-  @media screen and (prefers-reduced-motion: reduce) {
-    .carousel-item {
-      -webkit-transition: none;
-      transition: none; } }
 
 .carousel-item.active, .tabs.wc-tabs li.active a.carousel-item, .woocommerce-MyAccount-navigation ul li.is-active a.carousel-item,
 .carousel-item-next,
 .carousel-item-prev {
-  display: block; }
+  display: block;
+  -webkit-transition: -webkit-transform 0.6s ease;
+  transition: -webkit-transform 0.6s ease;
+  transition: transform 0.6s ease;
+  transition: transform 0.6s ease, -webkit-transform 0.6s ease; }
+  @media screen and (prefers-reduced-motion: reduce) {
+    .carousel-item.active, .tabs.wc-tabs li.active a.carousel-item, .woocommerce-MyAccount-navigation ul li.is-active a.carousel-item,
+    .carousel-item-next,
+    .carousel-item-prev {
+      -webkit-transition: none;
+      transition: none; } }
 
 .carousel-item-next,
 .carousel-item-prev {
@@ -9941,6 +9943,9 @@ footer {
 
 .card-wrapper {
   margin-bottom: 60px; }
+  @media (max-width: 767.98px) {
+    .card-wrapper .card {
+      margin-bottom: 30px; } }
   .card-wrapper img {
     margin-bottom: 15px; }
 
@@ -9966,3 +9971,385 @@ footer {
   .alternating .row, .alternating .cart-collaterals, .alternating form.checkout, .alternating .commentlist .comment_container, .commentlist .alternating .comment_container, .alternating ul.products, .alternating .woocommerce-Addresses {
     padding-top: 15px;
     padding-bottom: 15px; }
+
+.flex-content-image-split {
+  padding: 60px 0; }
+  @media (max-width: 991.98px) {
+    .flex-content-image-split {
+      padding: 30px 0 60px;
+      text-align: center; } }
+  .flex-content-image-split .section-content {
+    margin-bottom: 30px; }
+  .flex-content-image-split .section-image {
+    text-align: center; }
+    @media (max-width: 991.98px) {
+      .flex-content-image-split .section-image {
+        margin-top: 60px;
+        text-align: center; } }
+
+.flex-content-switcher .switching-plate {
+  padding: 60px 0; }
+  .flex-content-switcher .switching-plate .nav-tabs, .flex-content-switcher .switching-plate .tabs.wc-tabs, .flex-content-switcher .switching-plate .woocommerce-MyAccount-navigation ul, .woocommerce-MyAccount-navigation .flex-content-switcher .switching-plate ul {
+    border-bottom: 0; }
+    .flex-content-switcher .switching-plate .nav-tabs .nav-link, .flex-content-switcher .switching-plate .tabs.wc-tabs .nav-link, .flex-content-switcher .switching-plate .woocommerce-MyAccount-navigation ul .nav-link, .woocommerce-MyAccount-navigation .flex-content-switcher .switching-plate ul .nav-link, .tabs.wc-tabs li .flex-content-switcher .switching-plate .nav-tabs a, .flex-content-switcher .switching-plate .tabs.wc-tabs li a, .tabs.wc-tabs li .flex-content-switcher .switching-plate .woocommerce-MyAccount-navigation ul a, .tabs.wc-tabs li .woocommerce-MyAccount-navigation .flex-content-switcher .switching-plate ul a, .flex-content-switcher .switching-plate .nav-tabs .woocommerce-MyAccount-navigation ul li a, .woocommerce-MyAccount-navigation ul li .flex-content-switcher .switching-plate .nav-tabs a, .woocommerce-MyAccount-navigation ul li .flex-content-switcher .switching-plate .tabs.wc-tabs a, .flex-content-switcher .switching-plate .woocommerce-MyAccount-navigation ul li a, .woocommerce-MyAccount-navigation .flex-content-switcher .switching-plate ul li a, .flex-content-switcher .switching-plate .nav-tabs .menu-item a, .menu-item .flex-content-switcher .switching-plate .nav-tabs a, .flex-content-switcher .switching-plate .tabs.wc-tabs .menu-item a, .menu-item .flex-content-switcher .switching-plate .tabs.wc-tabs a, .flex-content-switcher .switching-plate .woocommerce-MyAccount-navigation ul .menu-item a, .menu-item .flex-content-switcher .switching-plate .woocommerce-MyAccount-navigation ul a, .woocommerce-MyAccount-navigation .flex-content-switcher .switching-plate ul .menu-item a, .menu-item .woocommerce-MyAccount-navigation .flex-content-switcher .switching-plate ul a {
+      background-color: transparent;
+      border-radius: 0; }
+      .flex-content-switcher .switching-plate .nav-tabs .nav-link.active, .flex-content-switcher .switching-plate .tabs.wc-tabs .nav-link.active, .flex-content-switcher .switching-plate .woocommerce-MyAccount-navigation ul .nav-link.active, .woocommerce-MyAccount-navigation .flex-content-switcher .switching-plate ul .nav-link.active, .tabs.wc-tabs li.active .flex-content-switcher .switching-plate .nav-tabs a, .flex-content-switcher .switching-plate .tabs.wc-tabs li.active a, .tabs.wc-tabs li.active .flex-content-switcher .switching-plate .woocommerce-MyAccount-navigation ul a, .tabs.wc-tabs li.active .woocommerce-MyAccount-navigation .flex-content-switcher .switching-plate ul a, .tabs.wc-tabs li .flex-content-switcher .switching-plate .nav-tabs a.active, .flex-content-switcher .switching-plate .tabs.wc-tabs li a.active, .tabs.wc-tabs li .flex-content-switcher .switching-plate .woocommerce-MyAccount-navigation ul a.active, .tabs.wc-tabs li .woocommerce-MyAccount-navigation .flex-content-switcher .switching-plate ul a.active, .tabs.wc-tabs .flex-content-switcher .switching-plate .woocommerce-MyAccount-navigation ul li.is-active a, .tabs.wc-tabs .woocommerce-MyAccount-navigation .flex-content-switcher .switching-plate ul li.is-active a, .woocommerce-MyAccount-navigation ul .flex-content-switcher .switching-plate .tabs.wc-tabs li.is-active a, .flex-content-switcher .switching-plate .woocommerce-MyAccount-navigation ul .tabs.wc-tabs li.is-active a, .woocommerce-MyAccount-navigation .flex-content-switcher .switching-plate ul .tabs.wc-tabs li.is-active a, .flex-content-switcher .switching-plate .nav-tabs .woocommerce-MyAccount-navigation ul li.is-active a, .woocommerce-MyAccount-navigation ul li.is-active .flex-content-switcher .switching-plate .nav-tabs a, .flex-content-switcher .switching-plate .tabs.wc-tabs .woocommerce-MyAccount-navigation ul li.is-active a, .woocommerce-MyAccount-navigation ul li.is-active .flex-content-switcher .switching-plate .tabs.wc-tabs a, .flex-content-switcher .switching-plate .woocommerce-MyAccount-navigation ul li.is-active a, .woocommerce-MyAccount-navigation .flex-content-switcher .switching-plate ul li.is-active a, .flex-content-switcher .switching-plate .nav-tabs .woocommerce-MyAccount-navigation ul li a.active, .woocommerce-MyAccount-navigation ul li .flex-content-switcher .switching-plate .nav-tabs a.active, .woocommerce-MyAccount-navigation ul li .flex-content-switcher .switching-plate .tabs.wc-tabs a.active, .flex-content-switcher .switching-plate .woocommerce-MyAccount-navigation ul li a.active, .woocommerce-MyAccount-navigation .flex-content-switcher .switching-plate ul li a.active, .tabs.wc-tabs .flex-content-switcher .switching-plate .woocommerce-MyAccount-navigation ul li.active a, .tabs.wc-tabs .woocommerce-MyAccount-navigation .flex-content-switcher .switching-plate ul li.active a, .flex-content-switcher .switching-plate .nav-tabs .menu-item a.active, .menu-item .flex-content-switcher .switching-plate .nav-tabs a.active, .flex-content-switcher .switching-plate .tabs.wc-tabs .menu-item a.active, .menu-item .flex-content-switcher .switching-plate .tabs.wc-tabs a.active, .flex-content-switcher .switching-plate .woocommerce-MyAccount-navigation ul .menu-item a.active, .menu-item .flex-content-switcher .switching-plate .woocommerce-MyAccount-navigation ul a.active, .woocommerce-MyAccount-navigation .flex-content-switcher .switching-plate ul .menu-item a.active, .menu-item .woocommerce-MyAccount-navigation .flex-content-switcher .switching-plate ul a.active, .flex-content-switcher .switching-plate .menu-item .woocommerce-MyAccount-navigation ul li.is-active a, .menu-item .flex-content-switcher .switching-plate .woocommerce-MyAccount-navigation ul li.is-active a, .menu-item .woocommerce-MyAccount-navigation .flex-content-switcher .switching-plate ul li.is-active a, .flex-content-switcher .switching-plate .woocommerce-MyAccount-navigation ul li.is-active .menu-item a, .woocommerce-MyAccount-navigation .flex-content-switcher .switching-plate ul li.is-active .menu-item a, .flex-content-switcher .switching-plate .nav-tabs .nav-link:hover, .flex-content-switcher .switching-plate .tabs.wc-tabs .nav-link:hover, .flex-content-switcher .switching-plate .woocommerce-MyAccount-navigation ul .nav-link:hover, .woocommerce-MyAccount-navigation .flex-content-switcher .switching-plate ul .nav-link:hover, .tabs.wc-tabs li .flex-content-switcher .switching-plate .nav-tabs a:hover, .flex-content-switcher .switching-plate .tabs.wc-tabs li a:hover, .tabs.wc-tabs li .flex-content-switcher .switching-plate .woocommerce-MyAccount-navigation ul a:hover, .tabs.wc-tabs li .woocommerce-MyAccount-navigation .flex-content-switcher .switching-plate ul a:hover, .flex-content-switcher .switching-plate .nav-tabs .woocommerce-MyAccount-navigation ul li a:hover, .woocommerce-MyAccount-navigation ul li .flex-content-switcher .switching-plate .nav-tabs a:hover, .woocommerce-MyAccount-navigation ul li .flex-content-switcher .switching-plate .tabs.wc-tabs a:hover, .flex-content-switcher .switching-plate .woocommerce-MyAccount-navigation ul li a:hover, .woocommerce-MyAccount-navigation .flex-content-switcher .switching-plate ul li a:hover, .flex-content-switcher .switching-plate .nav-tabs .menu-item a:hover, .menu-item .flex-content-switcher .switching-plate .nav-tabs a:hover, .flex-content-switcher .switching-plate .tabs.wc-tabs .menu-item a:hover, .menu-item .flex-content-switcher .switching-plate .tabs.wc-tabs a:hover, .flex-content-switcher .switching-plate .woocommerce-MyAccount-navigation ul .menu-item a:hover, .menu-item .flex-content-switcher .switching-plate .woocommerce-MyAccount-navigation ul a:hover, .woocommerce-MyAccount-navigation .flex-content-switcher .switching-plate ul .menu-item a:hover, .menu-item .woocommerce-MyAccount-navigation .flex-content-switcher .switching-plate ul a:hover {
+        border-color: #FFF !important; }
+
+.flex-content-switcher .switching-content {
+  padding: 60px 0; }
+
+.flex-content-switcher .switcher {
+  position: relative;
+  border: 4px solid #FFF;
+  border-left: 0;
+  padding: 0 15px 15px 15px;
+  text-align: center; }
+  .flex-content-switcher .switcher:first-child {
+    border-left: 4px solid #FFF; }
+  .flex-content-switcher .switcher.active, .flex-content-switcher .tabs.wc-tabs li.active a.switcher, .tabs.wc-tabs li.active .flex-content-switcher a.switcher, .flex-content-switcher .woocommerce-MyAccount-navigation ul li.is-active a.switcher, .woocommerce-MyAccount-navigation ul li.is-active .flex-content-switcher a.switcher, .flex-content-switcher .switcher:hover {
+    background-color: rgba(255, 255, 255, 0.6) !important; }
+  @media (max-width: 991.98px) {
+    .flex-content-switcher .switcher {
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+      width: 50%;
+      -webkit-box-flex: 0;
+          -ms-flex-positive: 0;
+              flex-grow: 0;
+      border-top: 0; }
+      .flex-content-switcher .switcher:nth-child(odd) {
+        border-left: 4px solid #FFF; }
+      .flex-content-switcher .switcher:first-child, .flex-content-switcher .switcher:nth-child(2) {
+        border-top: 4px solid #FFF; } }
+
+.flex-content-switcher .s-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80%;
+  padding-top: 10px; }
+
+.flex-content-switcher a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2; }
+
+.flex-content-switcher .switcher-icon,
+.flex-content-switcher .switcher-title {
+  text-align: center; }
+
+.flex-content-switcher .switcher-icon {
+  margin: 0 auto; }
+  .flex-content-switcher .switcher-icon.svg-fm {
+    width: 35%; }
+
+.flex-content-switcher .switcher-title {
+  position: absolute;
+  left: 17px;
+  right: 17px;
+  bottom: 10px;
+  display: block;
+  color: #FFF; }
+
+.nav-item, .tabs.wc-tabs li, .woocommerce-MyAccount-navigation ul li, .menu-item {
+  display: inline-block; }
+  .nav-item a, .tabs.wc-tabs li a, .woocommerce-MyAccount-navigation ul li a, .menu-item a {
+    color: #FFF; }
+
+.flex-testimonial {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  padding: 180px 0;
+  color: #FFF;
+  line-height: normal; }
+  @media (max-width: 991.98px) {
+    .flex-testimonial {
+      padding: 80px 0; } }
+  .flex-testimonial.nopadding {
+    padding: 0; }
+    @media (max-width: 991.98px) {
+      .flex-testimonial.nopadding {
+        padding: 0; } }
+    .flex-testimonial.nopadding .carousel {
+      padding: 120px 0; }
+  .flex-testimonial.quotes:before {
+    content: "";
+    background-image: url("../../img/qm-top.png");
+    width: 56px;
+    height: 37px;
+    position: absolute;
+    top: -18px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 2; }
+  .flex-testimonial.quotes:after {
+    content: "";
+    background-image: url("../../img/qm-bottom.png");
+    width: 56px;
+    height: 37px;
+    position: absolute;
+    bottom: -18px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 2; }
+  .flex-testimonial .testimonial-text {
+    text-transform: uppercase;
+    font-size: 48px;
+    line-height: 68px;
+    font-weight: 500;
+    text-decoration: underline;
+    margin-bottom: 30px; }
+    @media (max-width: 991.98px) {
+      .flex-testimonial .testimonial-text {
+        font-size: 38px; } }
+  .flex-testimonial .testimonial-person {
+    text-transform: uppercase;
+    font-size: 23px;
+    font-style: italic; }
+    @media (max-width: 991.98px) {
+      .flex-testimonial .testimonial-person {
+        font-size: 18px; } }
+  .flex-testimonial p:last-child {
+    margin-bottom: 0; }
+  .flex-testimonial.small .testimonial-text {
+    font-size: 21px;
+    font-weight: lighter;
+    text-decoration: none;
+    text-transform: none;
+    line-height: normal; }
+  .flex-testimonial.small .testimonial-person {
+    font-size: 21px;
+    font-weight: normal;
+    text-transform: none; }
+  .flex-testimonial .carousel-indicators {
+    bottom: 60px;
+    margin: 0; }
+    .flex-testimonial .carousel-indicators li {
+      background-color: #FFF; }
+      .flex-testimonial .carousel-indicators li.active {
+        background-color: #ffc107; }
+
+.full-width-image {
+  height: 50vw;
+  background-size: cover;
+  background-position: center; }
+
+.flex-full-width-panels .item-panel {
+  padding: 60px 0; }
+  .flex-full-width-panels .item-panel img {
+    margin-bottom: 30px; }
+
+.flex-latest-news {
+  padding: 60px 0 120px; }
+  @media (max-width: 991.98px) {
+    .flex-latest-news {
+      padding: 30px 0 60px; } }
+  .flex-latest-news .news-item {
+    padding: 50px 45px;
+    height: 100%; }
+    .flex-latest-news .news-item a {
+      padding-bottom: 0;
+      display: inline-block; }
+      .flex-latest-news .news-item a:hover {
+        text-decoration: none; }
+  .flex-latest-news .post-type {
+    display: block; }
+  .flex-latest-news .post-type a {
+    display: inline-block;
+    border-bottom: 0; }
+  .flex-latest-news .post-excerpt {
+    margin-bottom: 40px; }
+    .flex-latest-news .post-excerpt p:last-child {
+      margin-bottom: 0; }
+  .flex-latest-news .featured-image {
+    margin-left: -45px;
+    margin-right: -45px;
+    margin-bottom: 25px; }
+
+.flex-map-locator {
+  padding: 60px 0; }
+  @media (max-width: 767.98px) {
+    .flex-map-locator {
+      padding: 20px 0; } }
+  .flex-map-locator .acf-map {
+    height: 500px;
+    margin-top: 30px; }
+  @media (max-width: 767.98px) {
+    .flex-map-locator img {
+      margin-bottom: 30px; } }
+  .flex-map-locator .spacer-panel {
+    padding: 60px; }
+    @media (max-width: 767.98px) {
+      .flex-map-locator .spacer-panel {
+        padding: 0 15px 60px;
+        margin-left: -15px;
+        margin-right: -15px; } }
+
+.flex-panels {
+  padding: 60px 0; }
+  .flex-panels .nav-tabs, .flex-panels .tabs.wc-tabs, .flex-panels .woocommerce-MyAccount-navigation ul, .woocommerce-MyAccount-navigation .flex-panels ul {
+    margin: 30px 0 60px;
+    border-bottom: 0; }
+    .flex-panels .nav-tabs .nav-item, .flex-panels .tabs.wc-tabs .nav-item, .flex-panels .woocommerce-MyAccount-navigation ul .nav-item, .woocommerce-MyAccount-navigation .flex-panels ul .nav-item, .tabs.wc-tabs .flex-panels .nav-tabs li, .flex-panels .tabs.wc-tabs li, .tabs.wc-tabs .flex-panels .woocommerce-MyAccount-navigation ul li, .tabs.wc-tabs .woocommerce-MyAccount-navigation .flex-panels ul li, .flex-panels .nav-tabs .woocommerce-MyAccount-navigation ul li, .woocommerce-MyAccount-navigation ul .flex-panels .nav-tabs li, .flex-panels .woocommerce-MyAccount-navigation ul li, .woocommerce-MyAccount-navigation .flex-panels ul li, .flex-panels .nav-tabs .menu-item, .flex-panels .tabs.wc-tabs .menu-item, .flex-panels .woocommerce-MyAccount-navigation ul .menu-item, .woocommerce-MyAccount-navigation .flex-panels ul .menu-item {
+      border: 4px solid #6f42c1;
+      border-right: 0; }
+      .flex-panels .nav-tabs .nav-item:last-child, .flex-panels .tabs.wc-tabs .nav-item:last-child, .flex-panels .woocommerce-MyAccount-navigation ul .nav-item:last-child, .woocommerce-MyAccount-navigation .flex-panels ul .nav-item:last-child, .tabs.wc-tabs .flex-panels .nav-tabs li:last-child, .flex-panels .tabs.wc-tabs li:last-child, .tabs.wc-tabs .flex-panels .woocommerce-MyAccount-navigation ul li:last-child, .tabs.wc-tabs .woocommerce-MyAccount-navigation .flex-panels ul li:last-child, .flex-panels .nav-tabs .woocommerce-MyAccount-navigation ul li:last-child, .woocommerce-MyAccount-navigation ul .flex-panels .nav-tabs li:last-child, .flex-panels .woocommerce-MyAccount-navigation ul li:last-child, .woocommerce-MyAccount-navigation .flex-panels ul li:last-child, .flex-panels .nav-tabs .menu-item:last-child, .flex-panels .tabs.wc-tabs .menu-item:last-child, .flex-panels .woocommerce-MyAccount-navigation ul .menu-item:last-child, .woocommerce-MyAccount-navigation .flex-panels ul .menu-item:last-child {
+        border-right: 4px solid #6f42c1; }
+      .flex-panels .nav-tabs .nav-item a, .flex-panels .tabs.wc-tabs .nav-item a, .flex-panels .woocommerce-MyAccount-navigation ul .nav-item a, .woocommerce-MyAccount-navigation .flex-panels ul .nav-item a, .tabs.wc-tabs .flex-panels .nav-tabs li a, .flex-panels .tabs.wc-tabs li a, .tabs.wc-tabs .flex-panels .woocommerce-MyAccount-navigation ul li a, .tabs.wc-tabs .woocommerce-MyAccount-navigation .flex-panels ul li a, .flex-panels .nav-tabs .woocommerce-MyAccount-navigation ul li a, .woocommerce-MyAccount-navigation ul .flex-panels .nav-tabs li a, .flex-panels .woocommerce-MyAccount-navigation ul li a, .woocommerce-MyAccount-navigation .flex-panels ul li a, .flex-panels .nav-tabs .menu-item a, .flex-panels .tabs.wc-tabs .menu-item a, .flex-panels .woocommerce-MyAccount-navigation ul .menu-item a, .woocommerce-MyAccount-navigation .flex-panels ul .menu-item a {
+        color: #6f42c1;
+        padding: 5px 15px;
+        border: 0;
+        border-radius: 0; }
+        .flex-panels .nav-tabs .nav-item a:hover, .flex-panels .tabs.wc-tabs .nav-item a:hover, .flex-panels .woocommerce-MyAccount-navigation ul .nav-item a:hover, .woocommerce-MyAccount-navigation .flex-panels ul .nav-item a:hover, .tabs.wc-tabs .flex-panels .nav-tabs li a:hover, .flex-panels .tabs.wc-tabs li a:hover, .tabs.wc-tabs .flex-panels .woocommerce-MyAccount-navigation ul li a:hover, .tabs.wc-tabs .woocommerce-MyAccount-navigation .flex-panels ul li a:hover, .flex-panels .nav-tabs .woocommerce-MyAccount-navigation ul li a:hover, .woocommerce-MyAccount-navigation ul .flex-panels .nav-tabs li a:hover, .flex-panels .woocommerce-MyAccount-navigation ul li a:hover, .woocommerce-MyAccount-navigation .flex-panels ul li a:hover, .flex-panels .nav-tabs .menu-item a:hover, .flex-panels .tabs.wc-tabs .menu-item a:hover, .flex-panels .woocommerce-MyAccount-navigation ul .menu-item a:hover, .woocommerce-MyAccount-navigation .flex-panels ul .menu-item a:hover, .flex-panels .nav-tabs .nav-item a.active, .flex-panels .tabs.wc-tabs .nav-item a.active, .flex-panels .woocommerce-MyAccount-navigation ul .nav-item a.active, .woocommerce-MyAccount-navigation .flex-panels ul .nav-item a.active, .tabs.wc-tabs .flex-panels .nav-tabs li a.active, .flex-panels .tabs.wc-tabs li a.active, .tabs.wc-tabs .flex-panels .woocommerce-MyAccount-navigation ul li a.active, .tabs.wc-tabs .woocommerce-MyAccount-navigation .flex-panels ul li a.active, .flex-panels .nav-tabs .woocommerce-MyAccount-navigation ul li a.active, .woocommerce-MyAccount-navigation ul .flex-panels .nav-tabs li a.active, .flex-panels .woocommerce-MyAccount-navigation ul li a.active, .woocommerce-MyAccount-navigation .flex-panels ul li a.active, .flex-panels .nav-tabs .menu-item a.active, .flex-panels .tabs.wc-tabs .menu-item a.active, .flex-panels .woocommerce-MyAccount-navigation ul .menu-item a.active, .woocommerce-MyAccount-navigation .flex-panels ul .menu-item a.active, .tabs.wc-tabs li.active .flex-panels .nav-tabs .nav-item a, .tabs.wc-tabs li.active .flex-panels .woocommerce-MyAccount-navigation ul .nav-item a, .tabs.wc-tabs li.active .woocommerce-MyAccount-navigation .flex-panels ul .nav-item a, .tabs.wc-tabs .flex-panels .nav-tabs li.active a, .flex-panels .tabs.wc-tabs li.active a, .tabs.wc-tabs .flex-panels .woocommerce-MyAccount-navigation ul li.active a, .tabs.wc-tabs .woocommerce-MyAccount-navigation .flex-panels ul li.active a, .tabs.wc-tabs li.active .flex-panels .nav-tabs .menu-item a, .tabs.wc-tabs li.active .flex-panels .woocommerce-MyAccount-navigation ul .menu-item a, .tabs.wc-tabs li.active .woocommerce-MyAccount-navigation .flex-panels ul .menu-item a, .woocommerce-MyAccount-navigation ul li.is-active .flex-panels .nav-tabs .nav-item a, .woocommerce-MyAccount-navigation ul li.is-active .flex-panels .tabs.wc-tabs .nav-item a, .flex-panels .woocommerce-MyAccount-navigation ul .nav-item li.is-active a, .flex-panels .woocommerce-MyAccount-navigation ul li.is-active .nav-item a, .woocommerce-MyAccount-navigation .flex-panels ul .nav-item li.is-active a, .woocommerce-MyAccount-navigation .flex-panels ul li.is-active .nav-item a, .flex-panels .woocommerce-MyAccount-navigation ul .tabs.wc-tabs li.is-active a, .tabs.wc-tabs .flex-panels .woocommerce-MyAccount-navigation ul li.is-active a, .woocommerce-MyAccount-navigation .flex-panels ul .tabs.wc-tabs li.is-active a, .tabs.wc-tabs .woocommerce-MyAccount-navigation .flex-panels ul li.is-active a, .flex-panels .nav-tabs .woocommerce-MyAccount-navigation ul li.is-active a, .woocommerce-MyAccount-navigation ul .flex-panels .nav-tabs li.is-active a, .flex-panels .tabs.wc-tabs .woocommerce-MyAccount-navigation ul li.is-active a, .woocommerce-MyAccount-navigation ul .flex-panels .tabs.wc-tabs li.is-active a, .flex-panels .woocommerce-MyAccount-navigation ul li.is-active a, .woocommerce-MyAccount-navigation .flex-panels ul li.is-active a, .woocommerce-MyAccount-navigation ul li.is-active .flex-panels .nav-tabs .menu-item a, .woocommerce-MyAccount-navigation ul li.is-active .flex-panels .tabs.wc-tabs .menu-item a, .flex-panels .woocommerce-MyAccount-navigation ul .menu-item li.is-active a, .flex-panels .woocommerce-MyAccount-navigation ul li.is-active .menu-item a, .woocommerce-MyAccount-navigation .flex-panels ul .menu-item li.is-active a, .woocommerce-MyAccount-navigation .flex-panels ul li.is-active .menu-item a {
+          color: #FFF;
+          background-color: #007bff; }
+  .flex-panels .tab-content {
+    margin-bottom: 60px; }
+    .flex-panels .tab-content img[src$="svg"] {
+      max-width: 110px;
+      min-width: 105px;
+      max-height: 75px;
+      min-height: 70px;
+      margin-bottom: 30px; }
+  .flex-panels .img-panel {
+    margin-bottom: 15px; }
+
+.flex-people {
+  padding: 60px 0 120px; }
+  @media (max-width: 991.98px) {
+    .flex-people {
+      padding: 30px 0 60px; } }
+  .flex-people .person {
+    padding: 0 20px 100px;
+    height: 100%; }
+    .flex-people .person a {
+      padding-bottom: 0;
+      display: inline-block;
+      margin-bottom: 30px; }
+      .flex-people .person a:hover {
+        text-decoration: none; }
+  .flex-people .person-wrap {
+    margin-bottom: 30px; }
+    @media (max-width: 991.98px) {
+      .flex-people .person-wrap {
+        padding-left: 10px !important;
+        padding-right: 10px !important; } }
+    @media (max-width: 767.98px) {
+      .flex-people .person-wrap {
+        padding-left: 0 !important;
+        padding-right: 0 !important; } }
+    @media (max-width: 991.98px) {
+      .flex-people .person-wrap:last-child {
+        margin-bottom: 0; } }
+  .flex-people .bottom {
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+    right: 50px; }
+    @media (max-width: 991.98px) {
+      .flex-people .bottom {
+        left: 20px;
+        right: 20px; } }
+  .flex-people .position {
+    display: block; }
+  .flex-people .description {
+    margin-bottom: 30px; }
+    .flex-people .description p:last-child {
+      margin-bottom: 0; }
+  .flex-people .featured-image {
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: 60px; }
+  .flex-people a.social-icon {
+    display: inline-block;
+    margin-left: 20px;
+    border-bottom: 0; }
+
+.flex-sliding-content-image {
+  position: relative; }
+  @media (max-width: 767.98px) {
+    .flex-sliding-content-image {
+      margin-bottom: 60px; } }
+  .flex-sliding-content-image .carousel,
+  .flex-sliding-content-image .carousel-inner,
+  .flex-sliding-content-image .carousel-item {
+    min-height: 500px; }
+    .flex-sliding-content-image .carousel img[src$="svg"],
+    .flex-sliding-content-image .carousel-inner img[src$="svg"],
+    .flex-sliding-content-image .carousel-item img[src$="svg"] {
+      max-width: 255px;
+      min-width: 250px;
+      max-height: 230px;
+      min-height: 220px;
+      margin-bottom: 30px; }
+  .flex-sliding-content-image .container, .flex-sliding-content-image .woocommerce .content-area, .woocommerce .flex-sliding-content-image .content-area,
+  .flex-sliding-content-image .row,
+  .flex-sliding-content-image .cart-collaterals,
+  .flex-sliding-content-image form.checkout,
+  .flex-sliding-content-image .commentlist .comment_container,
+  .commentlist .flex-sliding-content-image .comment_container,
+  .flex-sliding-content-image ul.products,
+  .flex-sliding-content-image .woocommerce-Addresses {
+    height: calc(500px - 70px); }
+  .flex-sliding-content-image .carousel-indicators {
+    position: absolute;
+    bottom: 0;
+    padding: 30px;
+    margin: 0; }
+
+.flex-four-colour-panels {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto; }
+  .flex-four-colour-panels .panel {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%; }
+    @media (max-width: 991.98px) {
+      .flex-four-colour-panels .panel {
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%; } }
+    .flex-four-colour-panels .panel .panel-content {
+      width: 100%;
+      padding: 60px 100px; }
+      @media (max-width: 767.98px) {
+        .flex-four-colour-panels .panel .panel-content {
+          padding: 20px 15px; } }
+      .flex-four-colour-panels .panel .panel-content .dropdown {
+        display: none;
+        margin-top: -6px;
+        margin-left: 10px; }
+        @media (max-width: 767.98px) {
+          .flex-four-colour-panels .panel .panel-content .dropdown {
+            display: inline-block; } }
+      @media (min-width: 768px) {
+        .flex-four-colour-panels .panel .panel-content {
+          width: 360px; } }
+      @media (min-width: 992px) {
+        .flex-four-colour-panels .panel .panel-content {
+          width: 480px; } }
+      @media (min-width: 1200px) {
+        .flex-four-colour-panels .panel .panel-content {
+          width: 570px; } }
+      @media (max-width: 767.98px) {
+        .flex-four-colour-panels .panel .panel-content .panel-text {
+          display: none; } }
+      .flex-four-colour-panels .panel .panel-content p:last-child {
+        margin-bottom: 0; }
+    .flex-four-colour-panels .panel:nth-child(odd) .panel-content {
+      float: right; }

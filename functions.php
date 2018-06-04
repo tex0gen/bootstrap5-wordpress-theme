@@ -12,6 +12,7 @@ function theme_enqueue_styles() {
 
   // CSS
   wp_enqueue_style( 'main', get_template_directory_uri() . '/assets/build/css/main.css' );
+  wp_enqueue_style( 'owl-carousel', get_template_directory_uri() . '/assets/build/css/owl.carousel.css' );
 
   // Javascript
   // ADD ANY LOCAL SCRIPTS TO THE GULP FILE SO THAT THEY CAN BE CONCATENATED AND MINIFIED
@@ -21,6 +22,9 @@ function theme_enqueue_styles() {
 
 // Include Setup
 require_once 'inc/settings/theme-options.php';
+require_once 'inc/settings/social.php';
+require_once 'inc/settings/taxonomies.php';
+require_once 'inc/settings/post-types.php';
 require_once 'inc/settings/nav-menus.php';
 require_once 'inc/settings/widgets.php';
 require_once 'inc/settings/image-sizes.php';
@@ -30,50 +34,3 @@ require_once 'inc/settings/other/site_opts.php';
 if ( class_exists( 'WooCommerce' ) ) {
   require_once 'inc/woocommerce/woocommerce.php';
 }
-
-// Clean style tags
-function clean_style_tag( $input ) {
-  preg_match_all( "!<link rel='stylesheet'\s?(id='[^']+')?\s+href='(.*)' type='text/css' media='(.*)' />!", $input, $matches );
-  if ( empty( $matches[2] ) ) {
-    return $input;
-  }
-  // Only display media if it is meaningful
-  $media = $matches[3][0] !== '' && $matches[3][0] !== 'all' ? ' media="' . $matches[3][0] . '"' : '';
-  return '<link rel="stylesheet" href="' . $matches[2][0] . '"' . $media . '>' . "\n";
-}
-add_filter( 'style_loader_tag',  'clean_style_tag'  );
-
-// Clean script tags
-function clean_script_tag( $input ) {
-  $input = str_replace( "type='text/javascript' ", '', $input );
-  return str_replace( "'", '"', $input );
-}
-add_filter( 'script_loader_tag', 'clean_script_tag'  );
-
-// Move scripts to footer
-function remove_head_scripts() { 
-	remove_action('wp_head', 'wp_print_scripts'); 
-	remove_action('wp_head', 'wp_print_head_scripts', 9); 
-	remove_action('wp_head', 'wp_enqueue_scripts', 1);
-
-	add_action('wp_footer', 'wp_print_scripts', 5);
-	add_action('wp_footer', 'wp_enqueue_scripts', 5);
-	add_action('wp_footer', 'wp_print_head_scripts', 5); 
-} 
-add_action( 'wp_enqueue_scripts', 'remove_head_scripts' );
-
-// Remove WP version
-function wpbeginner_remove_version() {
-	return '';
-}
-add_filter('the_generator', 'wpbeginner_remove_version');
-
-// remove wp version param from any enqueued scripts
-function vc_remove_wp_ver_css_js( $src ) {
-  if ( strpos( $src, 'ver=' ) ) {
-    $src = remove_query_arg( 'ver', $src );
-  }
-  return $src;
-}
-add_filter( 'style_loader_src', 'vc_remove_wp_ver_css_js', 9999 );
-add_filter( 'script_loader_src', 'vc_remove_wp_ver_css_js', 9999 );

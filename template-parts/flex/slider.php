@@ -3,7 +3,7 @@ $slides = get_sub_field('carousel');
 
 if ($slides) {
 ?>
-<div id="slider" class="flex-carousel carousel slide" data-ride="carousel">
+<section id="slider" class="flex-carousel carousel slide" data-ride="carousel">
 	<?php if ( $slides['indicators'] ) { ?>
 		<ol class="carousel-indicators">
 			<?php
@@ -78,5 +78,5 @@ if ($slides) {
 		</a>
 	<?php } ?>
 
-</div>
+</section>
 <?php } ?>

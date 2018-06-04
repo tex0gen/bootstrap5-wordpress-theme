@@ -3,8 +3,6 @@
     "title": "General Options",
     "fields": [
         {
-            "placement": "top",
-            "endpoint": 0,
             "key": "field_591cb3ecba31b",
             "label": "Site Options",
             "name": "",
@@ -16,9 +14,24 @@
                 "width": "",
                 "class": "",
                 "id": ""
-            }
+            },
+            "placement": "top",
+            "endpoint": 0
         },
         {
+            "key": "field_591cb2a8fd572",
+            "label": "Logo",
+            "name": "logo",
+            "type": "image",
+            "value": null,
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
             "return_format": "array",
             "preview_size": "thumbnail",
             "library": "all",
@@ -28,23 +41,9 @@
             "max_width": "",
             "max_height": "",
             "max_size": "",
-            "mime_types": "",
-            "key": "field_591cb2a8fd572",
-            "label": "Logo",
-            "name": "logo",
-            "type": "image",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            }
+            "mime_types": ""
         },
         {
-            "placement": "top",
-            "endpoint": 0,
             "key": "field_591cb411ba31c",
             "label": "Contact Details",
             "name": "",
@@ -56,18 +55,16 @@
                 "width": "",
                 "class": "",
                 "id": ""
-            }
+            },
+            "placement": "top",
+            "endpoint": 0
         },
         {
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
             "key": "field_591cb41fba31d",
             "label": "Telephone Number",
             "name": "telephone_number",
             "type": "text",
+            "value": null,
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -75,17 +72,19 @@
                 "width": "",
                 "class": "",
                 "id": ""
-            }
-        },
-        {
+            },
             "default_value": "",
+            "maxlength": "",
             "placeholder": "",
             "prepend": "",
-            "append": "",
+            "append": ""
+        },
+        {
             "key": "field_591cb428ba31e",
             "label": "Email Address",
             "name": "email_address",
             "type": "email",
+            "value": null,
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -93,11 +92,13 @@
                 "width": "",
                 "class": "",
                 "id": ""
-            }
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         },
         {
-            "placement": "top",
-            "endpoint": 0,
             "key": "field_591cb438ba31f",
             "label": "Social",
             "name": "",
@@ -109,104 +110,16 @@
                 "width": "",
                 "class": "",
                 "id": ""
-            }
-        },
-        {
-            "default_value": "",
-            "placeholder": "",
-            "key": "field_591cb446ba320",
-            "label": "Facebook",
-            "name": "facebook",
-            "type": "url",
-            "instructions": "Insert Facebook URL.",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            }
-        },
-        {
-            "default_value": "",
-            "placeholder": "",
-            "key": "field_591cb459ba321",
-            "label": "Twitter",
-            "name": "twitter",
-            "type": "url",
-            "instructions": "Insert Twitter URL.",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            }
-        },
-        {
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "key": "field_592c91ac2ff95",
-            "label": "Linkedin",
-            "name": "linkedin",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            }
-        },
-        {
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "key": "field_592c91b72ff96",
-            "label": "Google+",
-            "name": "google+",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            }
-        },
-        {
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "key": "field_592c91c42ff97",
-            "label": "Instagram",
-            "name": "instagram",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            }
-        },
-        {
+            },
             "placement": "top",
-            "endpoint": 0,
-            "key": "field_59307b42cc203",
-            "label": "Woocommerce Settings",
-            "name": "",
-            "type": "tab",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5b1530f33bca7",
+            "label": "Social",
+            "name": "social",
+            "type": "repeater",
+            "value": null,
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -214,26 +127,51 @@
                 "width": "",
                 "class": "",
                 "id": ""
-            }
-        },
-        {
-            "default_value": 0,
-            "message": "",
-            "ui": 0,
-            "ui_on_text": "",
-            "ui_off_text": "",
-            "key": "field_59307b56cc204",
-            "label": "Woocommerce Sidebar",
-            "name": "woocommerce_sidebar",
-            "type": "true_false",
-            "instructions": "Enable Sidebar on Product Archive Pages.",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            }
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_5b1530fb3bca8",
+                    "label": "Social Icon",
+                    "name": "social_icon",
+                    "type": "text",
+                    "value": null,
+                    "instructions": "Font Awesome Class Name",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5b15310f3bca9",
+                    "label": "Social URL",
+                    "name": "social_url",
+                    "type": "url",
+                    "value": null,
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
+                }
+            ]
         },
         {
             "key": "field_5a69eb24709c1",
@@ -256,6 +194,7 @@
             "label": "Cookie Policy Position",
             "name": "cookie_policy_position",
             "type": "select",
+            "value": null,
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -282,6 +221,7 @@
             "label": "Cookie Policy Title",
             "name": "cookie_policy_title",
             "type": "text",
+            "value": null,
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -301,6 +241,79 @@
             "label": "Cookie Policy Text",
             "name": "cookie_policy_text",
             "type": "wysiwyg",
+            "value": null,
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_59307b42cc203",
+            "label": "Woocommerce Settings",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_59307b56cc204",
+            "label": "Woocommerce Sidebar",
+            "name": "woocommerce_sidebar",
+            "type": "true_false",
+            "value": null,
+            "instructions": "Enable Sidebar on Product Archive Pages.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 0,
+            "message": "",
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5b15326e5eef0",
+            "label": "Footer",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5b1532775eef1",
+            "label": "Copyright Text",
+            "name": "copyright_text",
+            "type": "wysiwyg",
+            "value": null,
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -333,5 +346,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1496349561
+    "modified": 1528115843
 }

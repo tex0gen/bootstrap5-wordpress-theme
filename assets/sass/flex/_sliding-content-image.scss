@@ -1,0 +1,38 @@
+.flex-sliding-content-image {
+  position: relative;
+
+  @include media-breakpoint-down(sm) {
+    margin-bottom: $spacing-bottom;
+  }
+
+  .carousel,
+  .carousel-inner,
+  .carousel-item {
+    min-height: 500px;
+
+    img[src$="svg"] {
+      max-width: 255px;
+      min-width: 250px;
+      max-height: 230px;
+      min-height: 220px;
+      margin-bottom: $spacing-bottom-half;
+    }
+  }
+
+  .container,
+  .row {
+    height: calc(500px - 70px);
+  }
+
+  .carousel-indicators {
+    position: absolute;
+    bottom: 0;
+    padding: $spacing-bottom-half;
+    margin: 0;
+
+    li {
+      &.active {
+      }
+    }
+  }
+}

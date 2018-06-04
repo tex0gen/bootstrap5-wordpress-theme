@@ -53,6 +53,7 @@ gulp.task('scripts', function() {
       './assets/js/tether.min.js',
       './assets/js/popper.js',
       './assets/sass/bootstrap/dist/js/bootstrap.min.js',
+      './assets/js/owl.carousel.min.js',
       './assets/js/main.js',
       './assets/js/cookie-policy.js'
     ])

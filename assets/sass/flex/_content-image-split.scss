@@ -1,0 +1,21 @@
+.flex-content-image-split {
+  padding: $spacing-bottom 0;
+
+  @include media-breakpoint-down(md) {
+    padding: $spacing-bottom-half 0 $spacing-bottom;
+    text-align: center;
+  }
+
+  .section-content {
+    margin-bottom: $spacing-bottom-half;
+  }
+
+  .section-image {
+    text-align: center;
+
+    @include media-breakpoint-down(md) {
+      margin-top: $spacing-bottom;
+      text-align: center;
+    }
+  }
+}
