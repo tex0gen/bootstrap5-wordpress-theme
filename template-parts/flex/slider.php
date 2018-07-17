@@ -4,7 +4,7 @@ $slides = get_sub_field('carousel');
 if ($slides) {
 ?>
 <section id="slider" class="flex-carousel carousel slide" data-ride="carousel">
-	<?php if ( $slides['indicators'] ) { ?>
+	<?php if ( get_sub_field('indicators') ) { ?>
 		<ol class="carousel-indicators">
 			<?php
 			foreach ($slides as $key => $slide) {
@@ -67,7 +67,7 @@ if ($slides) {
 		?>
 	</div>
 
-	<?php if ( $slides['navigation'] === true ) { ?>
+	<?php if ( get_sub_field('navigation') === true ) { ?>
 		<a class="carousel-control-prev" href="#slider" role="button" data-slide="prev">
 			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 			<span class="sr-only">Previous</span>
