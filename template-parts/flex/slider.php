@@ -44,7 +44,7 @@ if ($slides) {
 
 							?>
 							<div class="col-12 col-sm-8 <?= $align ?>">
-								<?= ( $slide['title'] ) ? '<h2>' . $slide['title'] . '</h1>':''; ?>
+								<?= ( $slide['title'] ) ? '<h2>' . $slide['title'] . '</h2>':''; ?>
 								<?= ( $slide['text'] ) ? $slide['text']:''; ?>
 								<?php
 								if ( $slide['buttons'] ) {
