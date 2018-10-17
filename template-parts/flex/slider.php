@@ -44,7 +44,7 @@ if ($slides) {
 
 							?>
 							<div class="col-12 col-sm-8 <?= $align ?>">
-								<?= ( $slide['title'] ) ? '<h2>' . $slide['title'] . '</h1>':''; ?>
+								<?= ( $slide['title'] ) ? '<h2>' . $slide['title'] . '</h2>':''; ?>
 								<?= ( $slide['text'] ) ? $slide['text']:''; ?>
 								<?php
 								if ( $slide['buttons'] ) {
@@ -67,7 +67,7 @@ if ($slides) {
 		?>
 	</div>
 
-	<?php if ( $slides['navigation'] === true ) { ?>
+	<?php if ( $slides['navigation'] ) { ?>
 		<a class="carousel-control-prev" href="#slider" role="button" data-slide="prev">
 			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 			<span class="sr-only">Previous</span>
