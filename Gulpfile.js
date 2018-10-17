@@ -40,12 +40,12 @@ gulp.task('del-min-css', function(){
 });
 
 // Minify CSS
-gulp.task('minify', ['del-min-css'], function() {
-  gulp.src('./assets/build/css/main.css')
-    .pipe(cleanCSS())
-    .pipe(rename('main.min.css'))
-    .pipe(gulp.dest('./assets/build/css/'));
-});
+// gulp.task('minify', ['del-min-css'], function() {
+//   gulp.src('./assets/build/css/main.css')
+//     .pipe(cleanCSS())
+//     .pipe(rename('main.min.css'))
+//     .pipe(gulp.dest('./assets/build/css/'));
+// });
 
 // Concat & Minify JS
 gulp.task('scripts', function() {
@@ -75,9 +75,9 @@ gulp.task('scripts', function() {
 
 // Watch task
 gulp.task('default',function() {
-  gulp.watch(['assets/sass/**/*.scss', 'assets/js/**/*.js'], ['sass', 'minify', 'scripts']);
+  gulp.watch(['assets/sass/**/*.scss', 'assets/js/**/*.js'], gulp.series('sass', 'scripts'));
 });
 
-gulp.task('build',function() {
-  gulp.watch(['assets/sass/**/*.scss', 'assets/js/**/*.js'], ['sass', 'minify', 'purify', 'scripts']);
-});
+// gulp.task('build',function() {
+//   gulp.watch(['assets/sass/**/*.scss', 'assets/js/**/*.js'], ['sass', 'purify', 'scripts']);
+// });

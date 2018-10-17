@@ -4,7 +4,6 @@ function woocommerce_support() {
   add_theme_support( 'woocommerce' );
 }
 
-
 // SCRIPTS AND STYLES
 // ------------------
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles', 5 );
