@@ -13,11 +13,12 @@ const uncss = require('postcss-uncss');
 
 // Comile SASS
 gulp.task('sass', function() {
-  gulp.src('./assets/sass/main.scss')
+  return gulp.src('./assets/sass/main.scss')
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
-    .pipe(autoprefixer())
+    // .pipe(autoprefixer())
     .pipe(gulp.dest('./assets/build/css/'));
+
 });
 
 // Removes unused CSS
@@ -75,7 +76,7 @@ gulp.task('scripts', function() {
 
 // Watch task
 gulp.task('default',function() {
-  gulp.watch(['assets/sass/**/*.scss', 'assets/js/**/*.js'], gulp.series('sass', 'scripts'));
+  gulp.watch(['assets/sass/**/*.scss', 'assets/js/**/*.js'], gulp.parallel('sass', 'scripts'));
 });
 
 // gulp.task('build',function() {
