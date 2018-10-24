@@ -25,6 +25,7 @@
   "dependencies": {
     "gulp-clean": "^0.3.2",
     "gulp-cli": "^2.0.1",
+    "gulp-imageoptim": "^1.0.9",
     "postcss-uncss": "^0.16.1",
     "uncss": "^0.16.2"
   }
