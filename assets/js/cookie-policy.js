@@ -31,7 +31,7 @@ jQuery(document).ready(function($) {
 
 		$('.cp .cp-accept').on('click', function(e) {
 			e.preventDefault();
-			document.cookie = "cookie_policy=1";
+			document.cookie = "cookie_policy=1;path=/";
 			$('.cp').hide(400);
 		});
 
