@@ -23,3 +23,6 @@ if ($live_url != '') {
 function sample_admin_notice__error() {
 	echo '<div class="notice notice-error"><p>Please insert the <strong>LIVE</strong> url into the <strong>$live_url</strong> variable into: <strong>inc/settings/other/site_opts.php</strong></p></div>'; 
 }
+
+// Disable XML-RPC - Comment this line out if you want this functionality
+add_filter('xmlrpc_enabled', '__return_false');
