@@ -3,13 +3,12 @@ $cards = get_sub_field('cards');
 
 if ($cards) {
 	?>
-	<section class="card-wrapper">
+	<section class="flex-cards">
 		<div class="container">
 			<div class="row">
 			<?php
 			$count = count($cards);
 			foreach ($cards as $key => $card) {
-				
 				?>
 				<div class="col-12 col-md">
 					<div class="card" id="card-<?= $key + 1 ?>">
@@ -17,7 +16,9 @@ if ($cards) {
 						<div class="card-block">
 							<h4 class="card-title"><?= $card['card_title']; ?></h4>
 							<div class="card-text"><?= $card['card_content']; ?></div>
-							<a href="<?= $card['card_action_link']; ?>" class="btn btn-primary"><?= $card['card_action_text']; ?></a>
+							<?php if ($card['card_action_link']) { ?>
+								<a href="<?= $card['card_action_link']; ?>" class="btn btn-primary"><?= $card['card_action_text']; ?></a>
+							<?php } ?>
 						</div>
 					</div>
 				</div>
@@ -29,4 +30,4 @@ if ($cards) {
 	</section>
 	<?php
 }
-	?>
+?>

@@ -1,8 +1,21 @@
 {
     "key": "group_591a490491df1",
-    "title": "Product Category",
+    "title": "Category",
     "fields": [
         {
+            "key": "field_591a490f105c4",
+            "label": "Category Image",
+            "name": "category_image",
+            "type": "image",
+            "value": null,
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
             "return_format": "array",
             "preview_size": "thumbnail",
             "library": "all",
@@ -12,19 +25,7 @@
             "max_width": 0,
             "max_height": 0,
             "max_size": 0,
-            "mime_types": "",
-            "key": "field_591a490f105c4",
-            "label": "Category Image",
-            "name": "category_image",
-            "type": "image",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            }
+            "mime_types": ""
         }
     ],
     "location": [
@@ -32,7 +33,7 @@
             {
                 "param": "taxonomy",
                 "operator": "==",
-                "value": "product_cat"
+                "value": "all"
             }
         ]
     ],
@@ -44,5 +45,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1496097450
+    "modified": 1553598577
 }

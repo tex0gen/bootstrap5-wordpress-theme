@@ -2175,8 +2175,10 @@ if ( ! function_exists( 'tgmpa' ) ) {
 	function tgmpa( $plugins, $config = array() ) {
 		$instance = call_user_func( array( get_class( $GLOBALS['tgmpa'] ), 'get_instance' ) );
 
-		foreach ( $plugins as $plugin ) {
-			call_user_func( array( $instance, 'register' ), $plugin );
+		if ($plugins) {
+			foreach ( $plugins as $plugin ) {
+				call_user_func( array( $instance, 'register' ), $plugin );
+			}
 		}
 
 		if ( ! empty( $config ) && is_array( $config ) ) {
