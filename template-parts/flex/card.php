@@ -9,9 +9,9 @@ if ($cards) {
 			<?php
 			$count = count($cards);
 			foreach ($cards as $key => $card) {
-				$divide = 12 / $count;
+				
 				?>
-				<div class="col-12 col-md-<?= $divide ?>">
+				<div class="col-12 col-md">
 					<div class="card" id="card-<?= $key + 1 ?>">
 						<?= wp_get_attachment_image( $card['card_image']['ID'], 'card', false, array('class' => 'img-fluid card-img-top') ); ?>
 						<div class="card-block">
