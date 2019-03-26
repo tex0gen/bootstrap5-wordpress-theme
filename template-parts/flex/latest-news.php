@@ -1,4 +1,4 @@
-<section class="flex-latest-news <?= $bg_color ?>">
+<section class="flex-latest-posts">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
