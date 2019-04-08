@@ -1,24 +1,26 @@
-const gulp = require('gulp');
-const sass = require('gulp-sass');
-const sourcemaps = require('gulp-sourcemaps');
-const autoprefixer = require('gulp-autoprefixer');
-const cleanCSS = require('gulp-clean-css');
-const rename = require("gulp-rename");
-const babel = require('gulp-babel');
-const concat = require('gulp-concat');
-const uglify = require('gulp-uglify');
-const clean = require('gulp-clean');
-const postcss = require('gulp-postcss');
-const uncss = require('postcss-uncss');
-const imageOptim = require('gulp-imageoptim');
-
+const gulp = require('gulp'),
+      sass = require('gulp-sass'),
+      sourcemaps = require('gulp-sourcemaps'),
+      autoprefixer = require('gulp-autoprefixer'),
+      cleanCSS = require('gulp-clean-css'),
+      rename = require("gulp-rename"),
+      babel = require('gulp-babel'),
+      concat = require('gulp-concat'),
+      uglify = require('gulp-uglify'),
+      clean = require('gulp-clean'),
+      postcss = require('gulp-postcss'),
+      uncss = require('postcss-uncss'),
+      imageOptim = require('gulp-imageoptim'),
+      notify = require('gulp-notify');
+      
 // Comile SASS
 gulp.task('sass', function() {
   return gulp.src('./assets/sass/main.scss')
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer())
-    .pipe(gulp.dest('./assets/build/css/'));
+    .pipe(gulp.dest('./assets/build/css/'))
+    .pipe( notify( { message: 'CSS task complete.' } ) );
 });
 
 // Removes unused CSS
