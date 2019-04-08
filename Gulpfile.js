@@ -1,46 +1,25 @@
 const gulp = require('gulp'),
       sass = require('gulp-sass'),
-      sourcemaps = require('gulp-sourcemaps'),
       autoprefixer = require('gulp-autoprefixer'),
       cleanCSS = require('gulp-clean-css'),
       rename = require("gulp-rename"),
-      babel = require('gulp-babel'),
+      // babel = require('gulp-babel'),
       concat = require('gulp-concat'),
       uglify = require('gulp-uglify'),
-      clean = require('gulp-clean'),
-      postcss = require('gulp-postcss'),
-      uncss = require('postcss-uncss'),
       imageOptim = require('gulp-imageoptim'),
       notify = require('gulp-notify');
-      
+
 // Comile SASS
 gulp.task('sass', function() {
   return gulp.src('./assets/sass/main.scss')
-    .pipe(sourcemaps.init())
-    .pipe(sass().on('error', sass.logError))
+    .pipe(sass().on('error', function(err) {
+      sass.logError;
+      return notify().write(err);
+    }))
     .pipe(autoprefixer())
     .pipe(gulp.dest('./assets/build/css/'))
     .pipe( notify( { message: 'CSS task complete.' } ) );
 });
-
-// Removes unused CSS
-// gulp.task('purify', function() {
-//   var plugins = [
-//     uncss({
-//       html: ['./**/*.php']
-//     }),
-//   ];
-
-//   return gulp.src('./assets/build/css/main.min.css')
-//     .pipe(postcss(plugins))
-//     .pipe(gulp.dest('./assets/build/css/'));
-// });
-
-// RM old minified CSS
-// gulp.task('del-min-css', function(done){
-//   return gulp.src('./assets/build/css/main.min.css',{force: true})
-//   .pipe(clean())
-// });
 
 // Minify CSS
 gulp.task('minify', function() {
@@ -62,19 +41,17 @@ gulp.task('scripts', function() {
   ])
   .pipe(concat('scripts.js'))
   .pipe(gulp.dest('./assets/build/js/'));
-});
 
+});
 
 gulp.task('uglify', function() {
   return gulp.src('./assets/build/js/scripts.js')
     .pipe(uglify())
-    .pipe(gulp.dest('./assets/build/js/'));
+    .pipe(gulp.dest('./assets/build/js/'))
+    .pipe( notify( { message: 'JS task complete.' } ) );
 });
 
 gulp.task('optimise', function(done) {
-  // gulp.src('../../uploads/**/**/*')
-  //   .pipe(imageOptim.optimize())
-  //   .pipe(gulp.dest('../../uploads'));
   gulp.src('./')
     .pipe(imageOptim.optimize().on('error', console.log('lol')))
     .pipe(gulp.dest('./'));
@@ -95,7 +72,8 @@ gulp.task('optimise', function(done) {
 
 // Watch task
 gulp.task('default',function() {
-  gulp.watch(['assets/sass/**/*.scss', 'assets/js/**/*.js'], gulp.series('sass', 'scripts', 'minify', 'uglify'));
+  gulp.watch(['assets/sass/**/*.scss'], gulp.series('sass', 'minify'));
+  gulp.watch(['assets/js/**/*.js'], gulp.series('scripts', 'uglify'));
 });
 
 gulp.task('images', function(done) {
