@@ -26,13 +26,6 @@ function clean_style_tag( $input ) {
 }
 add_filter( 'style_loader_tag',  'clean_style_tag'  );
 
-// Clean script tags
-function clean_script_tag( $input ) {
-  $input = str_replace( "type='text/javascript' ", '', $input );
-  return str_replace( "'", '"', $input );
-}
-add_filter( 'script_loader_tag', 'clean_script_tag'  );
-
 /*
 * Move scripts to footer
 */
