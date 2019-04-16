@@ -49,6 +49,23 @@
                             "mime_types": ""
                         },
                         {
+                            "key": "field_591b91cb2931d",
+                            "label": "Featured Products",
+                            "name": "",
+                            "type": "message",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "To add featured products, go to \"Products\" and click the star to make it featured.\r\n\r\nNote: This field will not appear if woocommerce is not installed as a plugin.",
+                            "new_lines": "wpautop",
+                            "esc_html": 0
+                        },
+                        {
                             "key": "field_591a2e44a0853",
                             "label": "Title",
                             "name": "title",
@@ -373,23 +390,6 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_591b91cb2931d",
-                            "label": "Featured Products",
-                            "name": "",
-                            "type": "message",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "message": "To add featured products, go to \"Products\" and click the star to make it featured.",
-                            "esc_html": 0,
-                            "new_lines": "wpautop"
-                        },
-                        {
                             "key": "field_591b8f5691b93",
                             "label": "Button Text",
                             "name": "button_text",
@@ -450,23 +450,6 @@
                             "placeholder": "",
                             "prepend": "",
                             "append": ""
-                        },
-                        {
-                            "key": "field_592c92727be2c",
-                            "label": "Note",
-                            "name": "",
-                            "type": "message",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "message": "This field will not appear if woocommerce is not installed as a plugin.",
-                            "esc_html": 0,
-                            "new_lines": "wpautop"
                         }
                     ],
                     "min": "",
@@ -579,82 +562,12 @@
                     "min": "",
                     "max": ""
                 },
-                "5ad883db7e30b": {
-                    "key": "5ad883db7e30b",
-                    "name": "latest_posts",
-                    "label": "Latest Posts",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_5ad883e27e30c",
-                            "label": "Background Colour",
-                            "name": "background_colour",
-                            "type": "select",
-                            "value": null,
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "choices": {
-                                "white": "White",
-                                "lightyellow": "Light Yellow",
-                                "brown": "Brown",
-                                "lightbrown": "Light Brown",
-                                "blue": "Blue",
-                                "purple": "Purple"
-                            },
-                            "default_value": [],
-                            "allow_null": 0,
-                            "multiple": 0,
-                            "ui": 0,
-                            "ajax": 0,
-                            "return_format": "value",
-                            "placeholder": ""
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
                 "5ad9e03ab8712": {
                     "key": "5ad9e03ab8712",
                     "name": "content_image_split",
                     "label": "Content\/Image Split",
                     "display": "block",
                     "sub_fields": [
-                        {
-                            "key": "field_5ad9e19db483d",
-                            "label": "Background Colour",
-                            "name": "background_colour",
-                            "type": "select",
-                            "value": null,
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "choices": {
-                                "white": "White",
-                                "lightyellow": "Light Yellow",
-                                "brown": "Brown",
-                                "lightbrown": "Light Brown",
-                                "blue": "Blue",
-                                "purple": "Purple"
-                            },
-                            "default_value": [],
-                            "allow_null": 0,
-                            "multiple": 0,
-                            "ui": 0,
-                            "ajax": 0,
-                            "return_format": "value",
-                            "placeholder": ""
-                        },
                         {
                             "key": "field_5ad9e190b483c",
                             "label": "Title",
@@ -1397,8 +1310,8 @@
                 },
                 "5c99fa4be9f38": {
                     "key": "5c99fa4be9f38",
-                    "name": "latest_news",
-                    "label": "Latest News",
+                    "name": "latest_posts",
+                    "label": "Latest Posts",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -1472,5 +1385,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1553598437
+    "modified": 1555416309
 }
