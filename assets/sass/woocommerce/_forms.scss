@@ -8,7 +8,8 @@
 	}
 }
 
-.woocommerce-form-login {
+.woocommerce-form-login,
+.woocommerce-form-register {
 	margin-bottom: $spacing-bottom;
 	.form-row {
 		@extend .form-group;
