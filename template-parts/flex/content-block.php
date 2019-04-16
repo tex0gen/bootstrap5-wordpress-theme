@@ -3,7 +3,7 @@ $content_blocks = get_sub_field('content');
 
 if ($content_blocks) {
 	?>
-	<section class="content-block">
+	<section class="flex-content-block">
 		<div class="container">
 			<div class="row">
 				<?php

@@ -863,79 +863,6 @@
                     "min": "",
                     "max": ""
                 },
-                "5ae325c501cb4": {
-                    "key": "5ae325c501cb4",
-                    "name": "people",
-                    "label": "People",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_5ae3263501cb7",
-                            "label": "Title",
-                            "name": "title",
-                            "type": "text",
-                            "value": null,
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_5ae325ca01cb5",
-                            "label": "People",
-                            "name": "people",
-                            "type": "repeater",
-                            "value": null,
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "collapsed": "",
-                            "min": 0,
-                            "max": 0,
-                            "layout": "table",
-                            "button_label": "",
-                            "sub_fields": [
-                                {
-                                    "key": "field_5ae3261501cb6",
-                                    "label": "Person",
-                                    "name": "person",
-                                    "type": "post_object",
-                                    "value": null,
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "post_type": [],
-                                    "taxonomy": [],
-                                    "allow_null": 0,
-                                    "multiple": 0,
-                                    "return_format": "id",
-                                    "ui": 1
-                                }
-                            ]
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
                 "5ae9754b91c1f": {
                     "key": "5ae9754b91c1f",
                     "name": "accreditations",
@@ -1617,5 +1544,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1553598437
+    "modified": 1555414137
 }

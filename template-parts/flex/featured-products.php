@@ -20,7 +20,7 @@ $post_count = count($posts);
 
 if ( $posts ) {
 ?>
-<section class="featured-products">
+<section class="flex-featured-products">
 	<div class="container">
 		<div class="row">
 			<div class="col-12 section-title">

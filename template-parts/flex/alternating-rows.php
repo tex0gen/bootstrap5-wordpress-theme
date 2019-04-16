@@ -2,7 +2,7 @@
 $alt_rows = get_sub_field('rows');
 if ($alt_rows) {
 	?>
-	<section class="alternating">
+	<section class="flex-alternating-rows">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">

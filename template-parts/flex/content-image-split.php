@@ -1,19 +1,18 @@
 <?php
-$bg_colour = get_sub_field('background_colour');
 $section_title = get_sub_field('title');
 $section_img = get_sub_field('image');
 $button_text = get_sub_field('button_text');
 $button_link = get_sub_field('button_link');
 ?>
-<section class="flex-content-image-split <?= $bg_colour ?>">
+<section class="flex-content-image-split">
   <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <?php if ( $section_title ) { ?>
-          <h2 class="section-title"><?= $section_title ?></h2>
-        <?php } ?>
+    <?php if ( $section_title ) { ?>
+      <div class="row">
+        <div class="col-12 text-center">
+            <h2 class="section-title"><?= $section_title ?></h2>
+        </div>
       </div>
-    </div>
+    <?php } ?>
     <div class="row">
       <div class="col-12 col-md-5">
         <div class="section-content">

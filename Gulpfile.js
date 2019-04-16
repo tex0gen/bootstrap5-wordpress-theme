@@ -80,7 +80,3 @@ gulp.task('images', function(done) {
   gulp.parallel('optimise');
   done();
 });
-
-// gulp.task('build',function() {
-//   gulp.watch(['assets/sass/**/*.scss', 'assets/js/**/*.js'], ['sass', 'purify', 'scripts']);
-// });
