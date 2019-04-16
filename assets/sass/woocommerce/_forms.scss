@@ -53,3 +53,26 @@
 		@extend .btn-primary;
 	}
 }
+
+.woocommerce-billing-fields__field-wrapper,
+.woocommerce-shipping-fields__field-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+
+	.form-row-first,
+	.form-row-last {
+		flex-basis: 50%;
+	}
+
+	.form-row-first {
+		padding-right: $single-gutter;
+	}
+
+	.form-row-last {
+		padding-left: $single-gutter;
+	}
+
+	.form-row-wide {
+		flex-basis: 100%;
+	}
+}
