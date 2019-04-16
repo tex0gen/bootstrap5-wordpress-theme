@@ -581,8 +581,8 @@
                 },
                 "5ad883db7e30b": {
                     "key": "5ad883db7e30b",
-                    "name": "latest_news",
-                    "label": "Latest News",
+                    "name": "latest_posts",
+                    "label": "Latest Posts",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -865,14 +865,14 @@
                 },
                 "5ae9754b91c1f": {
                     "key": "5ae9754b91c1f",
-                    "name": "accreditations",
-                    "label": "Accreditations",
+                    "name": "logos",
+                    "label": "Logos",
                     "display": "block",
                     "sub_fields": [
                         {
                             "key": "field_5ae9755291c20",
-                            "label": "Accreditations",
-                            "name": "accreditations",
+                            "label": "Logos",
+                            "name": "logos",
                             "type": "repeater",
                             "value": null,
                             "instructions": "",
@@ -933,78 +933,6 @@
                                     "allow_null": 0,
                                     "allow_archives": 1,
                                     "multiple": 0
-                                }
-                            ]
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
-                "5af4086e28bbf": {
-                    "key": "5af4086e28bbf",
-                    "name": "content_switcher",
-                    "label": "Content Switcher",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_5af4087828bc0",
-                            "label": "Content Switcher",
-                            "name": "content_switcher",
-                            "type": "repeater",
-                            "value": null,
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "collapsed": "",
-                            "min": 0,
-                            "max": 0,
-                            "layout": "row",
-                            "button_label": "Add Item",
-                            "sub_fields": [
-                                {
-                                    "key": "field_5af40a0728bc1",
-                                    "label": "Title",
-                                    "name": "title",
-                                    "type": "text",
-                                    "value": null,
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "default_value": "",
-                                    "placeholder": "",
-                                    "prepend": "",
-                                    "append": "",
-                                    "maxlength": ""
-                                },
-                                {
-                                    "key": "field_5af40a1b28bc3",
-                                    "label": "Text",
-                                    "name": "text",
-                                    "type": "wysiwyg",
-                                    "value": null,
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "default_value": "",
-                                    "tabs": "all",
-                                    "toolbar": "full",
-                                    "media_upload": 1,
-                                    "delay": 0
                                 }
                             ]
                         }
@@ -1544,5 +1472,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1555414137
+    "modified": 1553598437
 }
