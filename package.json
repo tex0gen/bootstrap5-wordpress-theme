@@ -1,7 +1,7 @@
 {
   "name": "Tex0gen",
   "version": "2.0.0",
-  "description": "Tex0gen Theme",
+  "description": "Themestrap Theme",
   "main": "Gruntfile.js",
   "devDependencies": {
     "babel-core": "^6.26.3",
@@ -15,7 +15,6 @@
     "gulp-purifycss": "^0.2.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.2.1",
-    "gulp-sourcemaps": "^2.6.4",
     "gulp-uglify": "^3.0.0"
   },
   "scripts": {
@@ -27,7 +26,5 @@
     "gulp-clean": "^0.3.2",
     "gulp-cli": "^2.0.1",
     "gulp-imageoptim": "^1.0.9",
-    "postcss-uncss": "^0.16.1",
-    "uncss": "^0.16.2"
   }
 }
