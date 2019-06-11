@@ -25,6 +25,6 @@
   "dependencies": {
     "gulp-clean": "^0.3.2",
     "gulp-cli": "^2.0.1",
-    "gulp-imageoptim": "^1.0.9",
+    "gulp-imageoptim": "^1.0.9"
   }
 }
