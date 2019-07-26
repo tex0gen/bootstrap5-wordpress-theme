@@ -1,22 +1,26 @@
 const gulp = require('gulp'),
       sass = require('gulp-sass'),
+      sourcemaps = require('gulp-sourcemaps'),
       autoprefixer = require('gulp-autoprefixer'),
       cleanCSS = require('gulp-clean-css'),
       rename = require("gulp-rename"),
-      // babel = require('gulp-babel'),
+      babel = require('gulp-babel'),
       concat = require('gulp-concat'),
       uglify = require('gulp-uglify'),
       imageOptim = require('gulp-imageoptim'),
-      notify = require('gulp-notify');
+      notify = require('gulp-notify')
+      bootstrap = "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 
 // Comile SASS
 gulp.task('sass', function() {
   return gulp.src('./assets/sass/main.scss')
+    .pipe(sourcemaps.init())
     .pipe(sass().on('error', function(err) {
       sass.logError;
       return notify().write(err);
     }))
     .pipe(autoprefixer())
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest('./assets/build/css/'))
     .pipe( notify( { message: 'CSS task complete.' } ) );
 });
@@ -32,16 +36,16 @@ gulp.task('minify', function() {
 // Concat & Minify JS
 gulp.task('scripts', function() {
   return gulp.src([
-    './assets/js/tether.min.js',
-    './assets/js/popper.js',
-    './assets/sass/bootstrap/dist/js/bootstrap.min.js',
+    bootstrap,
     './assets/js/owl.carousel.min.js',
     './assets/js/main.js',
     './assets/js/cookie-policy.js'
   ])
+  .pipe(babel({
+    presets: ['@babel/env'],
+  }))
   .pipe(concat('scripts.js'))
   .pipe(gulp.dest('./assets/build/js/'));
-
 });
 
 gulp.task('uglify', function() {
@@ -53,22 +57,10 @@ gulp.task('uglify', function() {
 
 gulp.task('optimise', function(done) {
   gulp.src('./')
-    .pipe(imageOptim.optimize().on('error', console.log('lol')))
+    .pipe(imageOptim.optimize().on('error', console.log('ERROR')))
     .pipe(gulp.dest('./'));
   done();
 });
-
-// Prep for ES6
-// gulp.task('js', () =>
-//   gulp.src('./assets/js/app.js')
-//     .pipe(sourcemaps.init())
-//     .pipe(babel({
-//         presets: ['env']
-//     }))
-//     .pipe(rename('app.min.js'))
-//     .pipe(sourcemaps.write('.'))
-//     .pipe(gulp.dest('./assets/js/'))
-// );
 
 // Watch task
 gulp.task('default',function() {
@@ -80,3 +72,7 @@ gulp.task('images', function(done) {
   gulp.parallel('optimise');
   done();
 });
+
+// gulp.task('build',function() {
+//   gulp.watch(['assets/sass/**/*.scss', 'assets/js/**/*.js'], ['sass', 'purify', 'scripts']);
+// });
