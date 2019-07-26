@@ -11,7 +11,7 @@
       $show_posts = ($num_posts) ? $num_posts:3;
 
       $args = array(
-        'post_type' => 'posts',
+        'post_type' => 'post',
         'numberposts' => $show_posts
       );
 
