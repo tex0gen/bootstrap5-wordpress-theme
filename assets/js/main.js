@@ -2,6 +2,7 @@ jQuery(document).ready(function($) {
   /*
   * Utilities
   */
+  
   // Heightmatcher
   function heightmatcher(elem, breakpoint) {
     breakpoint = typeof a !== 'undefined' ? a : 0;
