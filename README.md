@@ -1,3 +1,5 @@
+Note: This theme is not a complete theme. It is made as a boilerplate for rapid bespoke theme development.
+
 This theme includes support for Woocommerce.
 
 To install:
