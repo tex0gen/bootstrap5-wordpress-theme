@@ -17,7 +17,7 @@ Step 4. Activate Theme.
 Step 5. Start developing.
 
 ## Features
-- Uses Bootstrap 4
+- Uses Bootstrap 4.5
 - Gulp for building, minifying and tidying SASS. Also minifies and concatenates JS.
 - Add in your live URL to `/inc/settings/other/site_opts.php` to prevent database pushes from dev to live turning off indexing.
 - Woocommerce support built in.
