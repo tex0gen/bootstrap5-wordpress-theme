@@ -9,7 +9,8 @@ const gulp = require('gulp'),
       uglify = require('gulp-uglify'),
       imageOptim = require('gulp-imageoptim'),
       notify = require('gulp-notify')
-      bootstrap = "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
+      bootstrap = "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+      owlcarousel = "node_modules/owl.carousel/dist/owl.carousel.min.js";
 
 // Comile SASS
 gulp.task('sass', function() {
@@ -37,9 +38,8 @@ gulp.task('minify', function() {
 gulp.task('scripts', function() {
   return gulp.src([
     bootstrap,
-    './assets/js/owl.carousel.min.js',
-    './assets/js/main.js',
-    './assets/js/cookie-policy.js'
+    owlcarousel,
+    './assets/js/main.js'
   ])
   .pipe(babel({
     presets: ['@babel/env'],

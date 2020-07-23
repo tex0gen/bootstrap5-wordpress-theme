@@ -1,9 +1,12 @@
 <?php
+add_action( 'after_setup_theme', 'woocommerce_support' );
+function woocommerce_support() {
+  add_theme_support( 'woocommerce' );
+}
 
 require_once '_filters.php';
 require_once '_removals.php';
 require_once '_config.php';
-
 
 // TODO: Move the following into appropriate files
 

@@ -4,31 +4,33 @@
   "description": "Tex0gen Theme",
   "main": "Gulpfile.js",
   "devDependencies": {
-    "@babel/core": "^7.5.5",
-    "@babel/plugin-transform-runtime": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
-    "@babel/runtime": "^7.5.5",
-    "bootstrap": "^4.3.1",
-    "gulp": "^4.0.0",
+    "@babel/core": "^7.10.5",
+    "@babel/plugin-transform-runtime": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/runtime": "^7.10.5",
+    "bootstrap": "^4.5.0",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^4.1.0",
     "gulp-babel": "^8.0.0-beta.2",
+    "gulp-clean": "^0.4.0",
     "gulp-clean-css": "^3.9.3",
+    "gulp-cli": "^2.3.0",
     "gulp-concat": "^2.6.1",
+    "gulp-imageoptim": "^1.0.9",
     "gulp-notify": "^3.2.0",
     "gulp-postcss": "^7.0.1",
     "gulp-purifycss": "^0.2.0",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.2.1",
+    "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^2.6.5",
-    "gulp-uglify": "^3.0.0",
-    "gulp-clean": "^0.3.2",
-    "gulp-cli": "^2.0.1",
-    "gulp-imageoptim": "^1.0.9"
+    "gulp-uglify": "^3.0.2"
   },
   "scripts": {
     "test": "tex0gen"
   },
   "author": "Steve North",
   "license": "ISC",
-  "dependencies": {}
+  "dependencies": {
+    "owl.carousel": "^2.3.4"
+  }
 }

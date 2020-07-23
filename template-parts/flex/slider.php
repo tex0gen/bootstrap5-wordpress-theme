@@ -3,80 +3,47 @@ $slides = get_sub_field('carousel');
 
 if ($slides) {
 ?>
-<section id="flex-slider" class="flex-carousel carousel slide" data-ride="carousel">
-	<?php if ( $slides['indicators'] ) { ?>
-		<ol class="carousel-indicators">
-			<?php
-			foreach ($slides as $key => $slide) {
-				?>
-				<li data-target="#slider" data-slide-to="<?= $key ?>" class="<?= ($key === 1) ? 'active':''; ?>"></li>
-				<?php
-			}
-			?>
-		</ol>
-	<?php } ?>
-
-	<div class="carousel-inner" role="listbox">
+<section id="slider" class="flex-carousel">
+	<div class="owl-carousel">
 		<?php
 		foreach ($slides as $key => $slide) {
 			?>
-			<div class="carousel-item<?= ($key === 0) ? ' active':''; ?>" style="background-image:url('<?= $slide['image']['sizes']['full-width']; ?>');">
-				<?php if ( get_sub_field('call_to_action') === true ) { ?>
+			<div class="has-desktop <?= ($slide['mobile_image']['ID']) ? 'has-mobile':'no-mobile'; ?>">
+				<a href="<?= $slide['buttons'][0]['button_link'] ?>" class="fill-link overlay-color"></a>
+				<?= wp_get_attachment_image( $slide['image']['ID'], 'full-width', false, array('class' => 'img-fluid desktop-img') ); ?>
+				<?= wp_get_attachment_image( $slide['mobile_image']['ID'], 'large', false, array('class' => 'img-fluid mobile-img') ); ?>
+				<div class="carousel-text">
 					<div class="container">
-						<div class="row">
-							<?php
-							$alignment = $slide['alignment'];
-
-							switch ($alignment) {
-								case 'center':
-									$align = 'offset-sm-2 text-center';
-									break;
-
-								case 'right':
-									$align = 'offset-sm-4 text-right';
-									break;
-								
-								default:
-									$align = '';
-									break;
-							}
-
-
-							?>
-							<div class="col-12 col-sm-8 <?= $align ?>">
-								<?= ( $slide['title'] ) ? '<h2>' . $slide['title'] . '</h2>':''; ?>
-								<?= ( $slide['text'] ) ? $slide['text']:''; ?>
+						<div class="row align-items-center">
+							<div class="col-12 col-md-6">
 								<?php
-								if ( $slide['buttons'] ) {
-									foreach ( $slide['buttons'] as $btnkey => $button ) {
-										echo '<a href="' . $button['button_link'] . '" class="btn btn-primary button' . ($btnkey + 1) . '">'.$button['button_text'].'</a>';
-									}
+								if ($slide['title']) {
+									echo '<h1>'.$slide['title'].'</h1>';
+								}
+
+								if ($slide['title']) {
+									echo $slide['text'];
 								}
 								?>
+								
+								<div class="carousel-buttons">
+									<?php
+									if ( $slide['buttons'] ) {
+										foreach ( $slide['buttons'] as $btnkey => $button ) {
+											echo '<a href="' . $button['button_link'] . '" class="btn btn-primary btn-lg button' . ($btnkey + 1) . '">'.$button['button_text'].'</a>';
+										}
+									}
+									?>
+								</div>
 							</div>
 						</div>
 					</div>
-				<?php } else { ?>
-					<div class="carousel-caption d-none d-md-block">
-						<p><?= $slide['caption'] ?></p>
-					</div>
-				<?php } ?>
+				</div>
 			</div>
 			<?php
 		}
 		?>
 	</div>
-
-	<?php if ( $slides['navigation'] ) { ?>
-		<a class="carousel-control-prev" href="#slider" role="button" data-slide="prev">
-			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			<span class="sr-only">Previous</span>
-		</a>
-		<a class="carousel-control-next" href="#slider" role="button" data-slide="next">
-			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			<span class="sr-only">Next</span>
-		</a>
-	<?php } ?>
-
 </section>
-<?php } ?>
+<?php
+}
