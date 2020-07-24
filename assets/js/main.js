@@ -40,11 +40,15 @@ jQuery(document).ready(function($) {
   /*
   * Carousel
   */
-  $(".owl-carousel").owlCarousel({
+  var oc = $('.owl-carousel');
+  var ocOptions = oc.data('carousel-options');
+  var defaults = {
     items: 1,
     loop: true,
     autoplay: true,
-    autoplayTimeout: 12000,
-    autoplayHoverPause: true
-  });
+    autoplayHoverPause: true,
+    checkVisible: false
+  }
+
+  oc.owlCarousel( $.extend( defaults, ocOptions) );
 });

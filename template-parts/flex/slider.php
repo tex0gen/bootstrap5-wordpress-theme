@@ -2,23 +2,33 @@
 $slides = get_sub_field('carousel');
 
 if ($slides) {
+	$opts = array(
+		'slideTransition' => get_sub_field('transition'),
+		'autoplayTimeout' => get_sub_field('speed'),
+		'loop' => get_sub_field('loop'),
+		'items' => get_sub_field('number_to_show'),
+		'nav' => get_sub_field('indicators'),
+		'dots' => get_sub_field('navigation'),
+		'indicators' => get_sub_field('indicators')
+	);
 ?>
-<section id="slider" class="flex-carousel">
-	<div class="owl-carousel">
+<section class="flex-carousel">
+	<div class="owl-carousel" data-carousel-options='<?= json_encode($opts) ?>'>
 		<?php
 		foreach ($slides as $key => $slide) {
 			?>
 			<div class="has-desktop <?= ($slide['mobile_image']['ID']) ? 'has-mobile':'no-mobile'; ?>">
-				<a href="<?= $slide['buttons'][0]['button_link'] ?>" class="fill-link overlay-color"></a>
 				<?= wp_get_attachment_image( $slide['image']['ID'], 'full-width', false, array('class' => 'img-fluid desktop-img') ); ?>
 				<?= wp_get_attachment_image( $slide['mobile_image']['ID'], 'large', false, array('class' => 'img-fluid mobile-img') ); ?>
+				
+				<?php if (get_sub_field('call_to_action')) { ?>
 				<div class="carousel-text">
 					<div class="container">
 						<div class="row align-items-center">
 							<div class="col-12 col-md-6">
 								<?php
 								if ($slide['title']) {
-									echo '<h1>'.$slide['title'].'</h1>';
+									echo '<h2>'.$slide['title'].'</h2>';
 								}
 
 								if ($slide['title']) {
@@ -39,6 +49,7 @@ if ($slides) {
 						</div>
 					</div>
 				</div>
+				<?php } ?>
 			</div>
 			<?php
 		}

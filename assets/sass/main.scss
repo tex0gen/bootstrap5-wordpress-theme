@@ -64,7 +64,7 @@
 @import './woocommerce/woocommerce';
 
 // Base Styles
-@import './base/_base';
+@import './base/base';
 @import './base/wordpress-defaults';
 
 // Component Styles
@@ -75,14 +75,13 @@
 @import './components/post-item';
 
 // Flex components
-@import './flex/call-to-action';
 @import './flex/product-category-list';
 @import './flex/featured-products';
 @import './flex/content-block';
 @import './flex/card';
-@import './flex/imagetext-block';
+@import './flex/imagetext-block'; // Exists?
 @import './flex/alternating-rows';
-@import './flex/content-image-split';
+@import './flex/content-image-split'; // Need to explore options for this
 @import './flex/full-width-image';
 @import './flex/latest-posts';
-@import './flex/sliding-content-image';
+@import './flex/slider';

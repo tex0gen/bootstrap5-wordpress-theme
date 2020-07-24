@@ -1,7 +1,7 @@
-.flex-alternating-rows {
+.alternating {
   margin-bottom: $spacing-bottom;
   
-  h1 {
+  h2 {
     margin-bottom: $spacing-bottom-half;
   }
 
@@ -9,8 +9,8 @@
     margin-bottom: $single-gutter;
   }
 
-  .row {
-    padding-top: $single-gutter;
-    padding-bottom: $single-gutter;
+  &-item {
+    padding-top: $spacing-bottom-half;
+    padding-bottom: $spacing-bottom-half;
   }
 }

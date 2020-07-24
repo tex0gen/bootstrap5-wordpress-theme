@@ -1,0 +1,105 @@
+.flex-carousel {
+  margin-bottom: $spacing-bottom;
+  position: relative;
+
+  .carousel-text {
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    font-size: 22px;
+    color: $white;
+
+    h2 {
+      font-size: 42px;
+    }
+
+    .container,
+    .row {
+      height: 100%;
+    }
+  }
+
+  .has-mobile {
+    .mobile-img {
+      @include media-breakpoint-up(md) {
+        display: none !important;
+      }
+    }
+
+    .desktop-img {
+      @include media-breakpoint-down(sm) {
+        display: none !important;
+      }
+    }
+  }
+
+  .owl-carousel .owl-stage-outer {
+    overflow: hidden;
+  }
+
+  .owl-dots {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+
+    .owl-dot {
+      background-color: rgba(255, 255, 255, .5);
+      width: $single-gutter;
+      height: $single-gutter;
+      display: inline-block;
+      border-radius: $single-gutter;
+      margin: 0 3px;
+      transition: background-color .25s ease-in-out;
+      outline: 0;
+
+      &.active {
+        background-color: rgba(255, 255, 255, 1);
+      }
+    }
+  }
+
+  .owl-nav {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+
+    .owl-prev,
+    .owl-next {
+      position: absolute;
+      outline: 0;
+      font-size: 60px !important;
+      top: 0;
+      bottom: 0;
+      z-index: 5;
+      color: rgba(255, 255, 255, .5);
+
+      &:hover {
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+
+    .owl-prev {
+      left: $single-gutter;
+    }
+
+    .owl-next {
+      right: $single-gutter;
+    }
+  }
+}
+
+nav + .flex-carousel,
+header + .flex-carousel {
+  margin-top: -$spacing-bottom;
+
+  @include media-breakpoint-down(md) {
+    margin-top: -$spacing-bottom-half;
+  }
+}
