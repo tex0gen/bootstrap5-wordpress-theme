@@ -93,13 +93,30 @@
       right: $single-gutter;
     }
   }
+
+  .carousel-buttons {
+    a {
+      margin-right: 6px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .text-right {
+    .carousel-buttons {
+      a:last-child {
+        margin-right: 0;
+      }
+    }
+  }
 }
 
-nav + .flex-carousel,
 header + .flex-carousel {
   margin-top: -$spacing-bottom;
+}
 
-  @include media-breakpoint-down(md) {
-    margin-top: -$spacing-bottom-half;
-  }
+.flex-carousel + .bg-color {
+  margin-top: -$spacing-bottom;
 }

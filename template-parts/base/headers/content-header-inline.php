@@ -1,5 +1,5 @@
 <header>
-	<nav class="navbar navbar-expand-sm navbar-light bg-faded">
+	<nav class="navbar navbar-expand-sm">
 		<div class="container">
 			<a class="navbar-brand" href="<?= get_bloginfo('url'); ?>">
 				<?php

@@ -51,4 +51,5 @@ jQuery(document).ready(function($) {
   }
 
   oc.owlCarousel( $.extend( defaults, ocOptions) );
+  console.log($.extend( defaults, ocOptions));
 });
