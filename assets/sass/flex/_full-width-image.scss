@@ -1,4 +1,4 @@
-.full-width-image {
+.flex-full-width-image {
   margin-bottom: $spacing-bottom;
 
   img {
@@ -6,6 +6,6 @@
   }
 }
 
-.full-width-image + .flex-content-block {
+.flex-full-width-image + .flex-content-block {
   margin-top: -$spacing-bottom;
 }

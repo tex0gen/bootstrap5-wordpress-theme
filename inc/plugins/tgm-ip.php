@@ -51,7 +51,7 @@ function update_plugin_json($option_name, $old_value, $value) {
 	}
 }
 
-add_action('updated_option', 'update_plugin_json', 10, 3);
+// add_action('updated_option', 'update_plugin_json', 10, 3);
 
 /**
  * Include the TGM_Plugin_Activation class.

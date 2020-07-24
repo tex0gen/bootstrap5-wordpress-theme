@@ -288,3 +288,10 @@ function for_numeric_posts_nav() {
 
   echo '</ul></div>' . "\n";
 }
+
+// Remove empty p tags
+add_filter('the_content', 'remove_empty_p', 20, 1);
+function remove_empty_p($content){
+  $content = force_balance_tags($content);
+  return preg_replace('#<p>\s*+(<br\s*/*>)?\s*</p>#i', '', $content);
+}

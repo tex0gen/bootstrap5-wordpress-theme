@@ -1,0 +1,13 @@
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea,
+select {
+  @extend .form-control;
+}
+
+input[type="checkbox"] {
+  @extend .form-check-input;
+}

@@ -76,3 +76,13 @@
 		flex-basis: 100%;
 	}
 }
+
+.form-row {
+	@extend .form-group;
+	padding: 5px;
+}
+
+.woocommerce-input-wrapper {
+	display: block;
+	width: 100%;
+}

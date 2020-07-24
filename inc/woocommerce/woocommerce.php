@@ -57,7 +57,16 @@ function gravatar_wrap_start() {
 function gravatar_wrap_end() {
     echo '</div>';
 }
+
 add_action('woocommerce_review_before', 'gravatar_wrap_start', 5);
 add_action('woocommerce_review_before', 'gravatar_wrap_end', 15);
+
+function order_review_start() {
+  // <div class="order_review_wrapper">
+  echo '<div class="order_review_wrapper">';
+}
+
+add_action('woocommerce_checkout_before_order_review_heading', 'order_review_start', 1);
+add_action('woocommerce_checkout_after_order_review', 'section_end', 60);
 
 // ---- End Bootstrap Injection ---- //
