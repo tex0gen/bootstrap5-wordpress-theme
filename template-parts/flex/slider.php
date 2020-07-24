@@ -7,7 +7,7 @@ if ($slides) {
 		'autoplayTimeout' => get_sub_field('speed'),
 		'loop' => get_sub_field('loop'),
 		'items' => (int)get_sub_field('number_to_show'),
-		'indicators' => get_sub_field('indicators'),
+		'nav' => get_sub_field('indicators'),
 		'dots' => get_sub_field('navigation')
 	);
 ?>

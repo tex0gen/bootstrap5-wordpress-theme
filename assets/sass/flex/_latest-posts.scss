@@ -5,40 +5,11 @@
     padding: $spacing-bottom-half 0 $spacing-bottom;
   }
 
-  .news-item {
-    padding: 50px 45px;
-    height: 100%;
-
-    a {
-      padding-bottom: 0;
-      display: inline-block;
-
-      &:hover {
-        text-decoration: none;
-      }
-    }
-  }
-
-  .post-type {
-    display: block;
-  }
-
-  .post-type a {
-    display: inline-block;
-    border-bottom: 0;
-  }
-
   .post-excerpt {
-    margin-bottom: 40px;
-
-    p:last-child {
-      margin-bottom: 0;
-    }
+    margin-bottom: $single-gutter;
   }
 
   .featured-image {
-    margin-left: -45px;
-    margin-right: -45px;
-    margin-bottom: 25px;
+    margin-bottom: $single-gutter;
   }
 }

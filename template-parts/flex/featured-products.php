@@ -30,28 +30,9 @@ if ( $posts ) {
 		<ul class="products row">
 			<?php
 			foreach ($posts as $key => $post) {
+				$post = get_post( $product['product'] );
 				setup_postdata( $post );
-
-				$id = get_the_id();
-				$product = new WC_Product( $id );
-				$columns = ($post_count > 6) ? 'col-3':'col';
-				?>
-
-				<li class="<?= $columns ?> product">
-					<a class="woocommerce-LoopProduct-link" href="<?php the_permalink(); ?>">
-					<?= get_the_post_thumbnail( $id, 'large', array('class' => 'img-fluid') ); ?>
-					<?php the_title('<h2 class="woocommerce-loop-product__title">', '</h2>'); ?>
-					<div class="price">
-						<?= $product->get_price_html(); ?>
-					</div>
-					<?= wc_get_rating_html( $product->get_average_rating() ); ?>
-					</a>
-					<a class="btn btn-primary" href="<?php the_permalink(); ?>">
-						View Product
-					</a>
-				</li>
-
-				<?php
+  			wc_get_template_part( 'content', 'product' );
 				wp_reset_postdata();
 			}
 			?>

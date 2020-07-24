@@ -4,7 +4,7 @@ if ($logos) {
   ?>
   <section class="flex-logos">
     <div class="container">
-      <div class="row">
+      <div class="row align-items-center">
         <?php
         foreach ($logos as $key => $logo) {
           ?>

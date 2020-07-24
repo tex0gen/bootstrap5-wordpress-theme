@@ -42,7 +42,7 @@
 
   .owl-dots {
     position: absolute;
-    bottom: 0;
+    bottom: $single-gutter;
     left: 0;
     right: 0;
     text-align: center;
@@ -78,10 +78,13 @@
       top: 0;
       bottom: 0;
       z-index: 5;
-      color: rgba(255, 255, 255, .5);
 
-      &:hover {
-        color: rgba(255, 255, 255, 1);
+      span {
+        color: rgba(255, 255, 255, .5);
+
+        &:hover {
+          color: rgba(255, 255, 255, 1);
+        }
       }
     }
 
@@ -114,9 +117,5 @@
 }
 
 header + .flex-carousel {
-  margin-top: -$spacing-bottom;
-}
-
-.flex-carousel + .bg-color {
   margin-top: -$spacing-bottom;
 }

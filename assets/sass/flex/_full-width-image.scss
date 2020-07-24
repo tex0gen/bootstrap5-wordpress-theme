@@ -1,5 +1,11 @@
 .full-width-image {
+  margin-bottom: $spacing-bottom;
+
   img {
     height: auto;
   }
+}
+
+.full-width-image + .flex-content-block {
+  margin-top: -$spacing-bottom;
 }

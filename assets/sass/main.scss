@@ -22,7 +22,7 @@
 // @import "../../node_modules/bootstrap/scss/custom-forms";
 @import "../../node_modules/bootstrap/scss/nav";
 @import "../../node_modules/bootstrap/scss/navbar";
-// @import "../../node_modules/bootstrap/scss/card";
+@import "../../node_modules/bootstrap/scss/card";
 @import "../../node_modules/bootstrap/scss/breadcrumb";
 @import "../../node_modules/bootstrap/scss/pagination";
 // @import "../../node_modules/bootstrap/scss/badge";
@@ -39,7 +39,7 @@
 @import "../../node_modules/bootstrap/scss/utilities";
 
 // Extras
-@import "../../node_modules/owl.carousel/dist/assets/owl.carousel"; // Owl Carousel
+@import "../../node_modules/owl.carousel/dist/assets/owl.carousel.min"; // Owl Carousel
 
 // Font Awesome
 @import "./font-awesome/scss/variables";
@@ -66,6 +66,7 @@
 @import './base/base';
 @import './base/buttons';
 @import './base/wordpress-defaults';
+@import './base/utils';
 
 // Component Styles
 @import './components/header';
@@ -80,9 +81,8 @@
 @import './flex/featured-products';
 @import './flex/content-block';
 @import './flex/card';
-@import './flex/imagetext-block'; // Exists?
 @import './flex/alternating-rows';
-@import './flex/content-image-split'; // Need to explore options for this
 @import './flex/full-width-image';
 @import './flex/latest-posts';
 @import './flex/slider';
+@import './flex/logos';
