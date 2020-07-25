@@ -3,6 +3,25 @@
     "title": "Main Content",
     "fields": [
         {
+            "key": "field_5f1c3692f57fb",
+            "label": "Landing Page",
+            "name": "landing_page",
+            "type": "true_false",
+            "instructions": "If ticked, this option will remove the title and allow you to build pages as you want.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
             "key": "field_591a2df9a0852",
             "label": "Main Content Flex",
             "name": "main_content_flex",
@@ -1105,5 +1124,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1595629398
+    "modified": 1595684594
 }

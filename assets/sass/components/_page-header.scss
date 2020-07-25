@@ -1,0 +1,16 @@
+.page-header {
+  background-size: cover;
+  padding: $spacing-bottom 0;
+  position: relative;
+  color: $white;
+  margin-bottom: $spacing-bottom;
+
+  .overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, .6);
+  }
+}
