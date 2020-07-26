@@ -1,6 +1,6 @@
 <?php
 // Allows robot indexing after dev database has been pushed
-$url = get_bloginfo('siteurl');
+$url = get_bloginfo('url');
 
 if (strpos($url, 'localhost') || strpos($url, 'dev.')) {
 	if ( get_option('blog_public') === "1" ) {

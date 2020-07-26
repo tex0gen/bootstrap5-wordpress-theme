@@ -34,8 +34,11 @@ gulp.task('minify', function() {
     .pipe(gulp.dest('./assets/build/css/'));
 });
 
+/*
+* Required
+*/
 // Concat & Minify JS
-gulp.task('scripts', function() {
+gulp.task('global-scripts', function() {
   return gulp.src([
     bootstrap,
     owlcarousel,
@@ -48,31 +51,37 @@ gulp.task('scripts', function() {
   .pipe(gulp.dest('./assets/build/js/'));
 });
 
-gulp.task('uglify', function() {
+gulp.task('uglify-required', function() {
   return gulp.src('./assets/build/js/scripts.js')
     .pipe(uglify())
     .pipe(gulp.dest('./assets/build/js/'))
-    .pipe( notify( { message: 'JS task complete.' } ) );
+    .pipe( notify( { message: 'JS required task complete.' } ) );
 });
 
-gulp.task('optimise', function(done) {
-  gulp.src('./')
-    .pipe(imageOptim.optimize().on('error', console.log('ERROR')))
-    .pipe(gulp.dest('./'));
-  done();
+
+/*
+* Selectable
+*/
+gulp.task('selectable-scripts', function() {
+  return gulp.src([
+    './assets/js/selectable/*.js'
+  ])
+  .pipe(babel({
+    presets: ['@babel/env'],
+  }))
+  .pipe(gulp.dest('./assets/build/js/selectable'));
+});
+
+gulp.task('uglify', function() {
+  return gulp.src('./assets/build/js/selectable/*.js')
+    .pipe(uglify())
+    .pipe(gulp.dest('./assets/build/js/selectable/'))
+    .pipe( notify( { message: 'JS optional task complete.' } ) );
 });
 
 // Watch task
 gulp.task('default',function() {
   gulp.watch(['assets/sass/**/*.scss'], gulp.series('sass', 'minify'));
-  gulp.watch(['assets/js/**/*.js'], gulp.series('scripts', 'uglify'));
+  gulp.watch(['assets/js/required/*.js', 'assets/js/main.js'], gulp.series('global-scripts', 'uglify-required'));
+  gulp.watch(['assets/js/selectable/*.js'], gulp.series('selectable-scripts', 'uglify'));
 });
-
-gulp.task('images', function(done) {
-  gulp.parallel('optimise');
-  done();
-});
-
-// gulp.task('build',function() {
-//   gulp.watch(['assets/sass/**/*.scss', 'assets/js/**/*.js'], ['sass', 'purify', 'scripts']);
-// });

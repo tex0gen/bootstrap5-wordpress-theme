@@ -6,37 +6,36 @@ $args = array(
 	'post_type' => 'product',
 	'numberposts' => $number_posts,
 	'tax_query'  => array(
-        array(
+    array(
 			'taxonomy' => 'product_visibility',
 			'field'    => 'name',
 			'terms'    => 'featured',
 			'operator' => 'IN',
 		)
-    )
+  )
 );
 
-$posts = get_posts($args);
-$post_count = count($posts);
+$featured_products = get_posts( $args );
 
-if ( $posts ) {
-?>
-<section class="flex-featured-products">
-	<div class="container">
-		<div class="row">
-			<div class="col-12 section-title">
-				<h2>Featured Products</h2>
+if ( $featured_products ) {
+	?>
+	<section class="flex-featured-products">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 section-title">
+					<h2>Featured Products</h2>
+				</div>
 			</div>
+			<ul class="products row">
+				<?php
+				foreach ( $featured_products as $key => $post ) {
+					setup_postdata( $post );
+	  			wc_get_template_part( 'content', 'product' );
+					wp_reset_postdata();
+				}
+				?>
+			</ul>
 		</div>
-		<ul class="products row">
-			<?php
-			foreach ($posts as $key => $post) {
-				$post = get_post( $product['product'] );
-				setup_postdata( $post );
-  			wc_get_template_part( 'content', 'product' );
-				wp_reset_postdata();
-			}
-			?>
-		</ul>
-	</div>
-</section>
-<?php } ?>
+	</section>
+	<?php
+}

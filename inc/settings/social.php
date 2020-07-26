@@ -4,7 +4,7 @@ function do_social() {
   if ($social_icons) {
     foreach($social_icons as $key => $icon) {
       ?>
-      <a href="<?= $icon['social_url'] ?>" target="_blank"><i class="<?= $icon['social_icon'] ?>"></i></a>
+      <a href="<?= $icon['social_url'] ?>" rel="noopener" target="_blank"><i class="<?= $icon['social_icon'] ?>"></i></a>
       <?php
     }
   }

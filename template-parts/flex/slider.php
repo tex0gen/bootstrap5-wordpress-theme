@@ -16,12 +16,17 @@ if ($slides) {
 		<?php
 		foreach ($slides as $key => $slide) {
 			?>
-			<div class="has-desktop <?= ($slide['mobile_image']['ID']) ? 'has-mobile':'no-mobile'; ?>">
-				<?= wp_get_attachment_image( $slide['image']['ID'], 'slider', false, array('class' => 'img-fluid desktop-img') ); ?>
-				<?= wp_get_attachment_image( $slide['mobile_image']['ID'], 'large', false, array('class' => 'img-fluid mobile-img') ); ?>
-				
+			<div class="has-desktop<?= ($slide['mobile_image']) ? ' has-mobile':''; ?>">
 				<?php
-				if (get_sub_field('call_to_action')) {
+				if ( $slide['image'] ) {
+					echo wp_get_attachment_image( $slide['image']['ID'], 'slider', false, array('class' => 'img-fluid desktop-img') );
+				}
+
+				if ( $slide['mobile_image'] ) {
+					echo wp_get_attachment_image( $slide['mobile_image']['ID'], 'large', false, array('class' => 'img-fluid mobile-img') );
+				}
+
+				if ( get_sub_field( 'call_to_action' ) ) {
 					$align = $slide['alignment'];
 					switch ($align) {
 						case 'left':

@@ -1,13 +1,17 @@
 <footer>
   <div class="container">
     <div class="row">
-      <div class="col-12 col-md-4">
+      <div class="col-12 col-md-3">
         <h3>Column 1</h3>
       </div>
-      <div class="col-12 col-md-4">
+      <div class="col-12 col-md-3">
         <h3>Column 2</h3>
       </div>
-      <div class="col-12 col-md-4">
+      <div class="col-12 col-md-3">
+        <h3>Column 3</h3>
+        <?php do_social(); ?>
+      </div>
+      <div class="col-12 col-md-3">
         <h3>Social</h3>
         <?php do_social(); ?>
       </div>

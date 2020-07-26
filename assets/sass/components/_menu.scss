@@ -1,7 +1,20 @@
-.menu-item {
-	@extend .nav-item;
-	
-	a {
-		@extend .nav-link;
-	}
+nav {
+  transition: background-color .5s ease-in-out;
+
+  &.sticky {
+    background-color: $white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+  }
+
+  .menu-item {
+  	@extend .nav-item;
+  	
+  	a {
+  		@extend .nav-link;
+  	}
+  }
 }

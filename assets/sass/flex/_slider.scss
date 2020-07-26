@@ -49,10 +49,10 @@
 
     .owl-dot {
       background-color: rgba(255, 255, 255, .5);
-      width: $single-gutter;
-      height: $single-gutter;
+      width: 8px;
+      height: 8px;
       display: inline-block;
-      border-radius: $single-gutter;
+      border-radius: 8px;
       margin: 0 3px;
       transition: background-color .25s ease-in-out;
       outline: 0;
@@ -64,6 +64,10 @@
   }
 
   .owl-nav {
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+
     .owl-prev,
     .owl-next {
       position: absolute;

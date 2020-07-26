@@ -11,3 +11,9 @@ select {
 input[type="checkbox"] {
   @extend .form-check-input;
 }
+
+input[type="submit"],
+button[type="submit"],
+button {
+  @extend .btn, .btn-primary;
+}

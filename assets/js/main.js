@@ -23,6 +23,31 @@ jQuery(document).ready(function($) {
     $(elem).outerHeight(height);
   }
 
+  // Sticky Menu
+  function sticky_menu(elem) {
+    var nav = $(elem);
+
+    if (nav.length) {
+      var navTop = nav.offset().top,
+          navContainer = nav.parent(),
+          navContainerHeight = navContainer.outerHeight();
+
+      $(document).on('scroll', function(e) {
+        var scrollPos = $(document).scrollTop();
+
+        if (scrollPos >= navTop) {
+          nav.addClass('sticky');
+          navContainer.height(navContainerHeight);
+        } else {
+          nav.removeClass('sticky');      
+          navContainer.height();
+        }
+      });
+    }
+  }
+
+  $(window).on('load, resize', sticky_menu('.sticky-nav'));
+
   /*
   * Woocommerce
   */
@@ -51,5 +76,4 @@ jQuery(document).ready(function($) {
   }
 
   oc.owlCarousel( $.extend( defaults, ocOptions) );
-  console.log($.extend( defaults, ocOptions));
 });

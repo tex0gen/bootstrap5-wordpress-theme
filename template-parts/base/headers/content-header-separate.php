@@ -1,4 +1,4 @@
-<header>
+<header class="header-separate">
   <div class="container">
     <div class="row">
       <div class="col-6 col-md-4">
@@ -16,13 +16,13 @@
       </div>
       <div class="col-6 col-md-4">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <i class="fas fa-bars"></i>
         </button>
       </div>
     </div>
   </div>
 
-  <nav class="navbar navbar-expand-sm">
+  <nav class="navbar navbar-expand-sm sticky-nav">
     <div class="container">
       <div class="row">
         <div class="col-12">

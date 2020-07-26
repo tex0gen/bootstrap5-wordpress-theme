@@ -1,0 +1,60 @@
+{
+    "key": "group_5f1cb0a015df8",
+    "title": "Page",
+    "fields": [
+        {
+            "key": "field_5f1cb0ad1bc73",
+            "label": "Javascript",
+            "name": "javascript",
+            "type": "repeater",
+            "instructions": "Advanced use only. Select individual javascript files to be run on this page specifically.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_5f1cb121f1447",
+                    "label": "JS Loader",
+                    "name": "js_loader",
+                    "type": "JS_LOADER_EXT",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "font_size": 14
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1595717146
+}

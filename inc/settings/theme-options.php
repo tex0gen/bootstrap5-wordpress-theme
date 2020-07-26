@@ -39,23 +39,26 @@ function clean_style_tag( $input ) {
 }
 add_filter( 'style_loader_tag',  'clean_style_tag'  );
 
-/*
-* Move scripts to footer
-*/
-function remove_head_scripts() { 
-  remove_action('wp_head', 'wp_print_scripts'); 
-  remove_action('wp_head', 'wp_print_head_scripts', 9); 
-  remove_action('wp_head', 'wp_enqueue_scripts', 1);
+// Async load JS
+function async_parsing_of_js( $url ) {
+  if ( is_admin() ) return $url; // Switch off for WP Admin
+  // Some plugins have issues if JS is deferred or async loaded. List them here..
+  // Should include a part of the url string.
+  $plugins = array(
+    'jquery.js',
+    'contact-form-7',
+  );
 
-  add_action('wp_footer', 'wp_print_scripts', 5);
-  add_action('wp_footer', 'wp_enqueue_scripts', 5);
-  add_action('wp_footer', 'wp_print_head_scripts', 5); 
-} 
-add_action( 'wp_enqueue_scripts', 'remove_head_scripts' );
+  foreach ($plugins as $key => $plugin) {
+    if ( strpos( $url, $plugin ) ) return $url;
+  }
 
-/*
-* Remove WP version
-*/
+  if ( strpos( $url, '.js' ) === FALSE ) return $url; // If NOT a js file
+  return str_replace( ' src', ' async src', $url );
+}
+add_filter( 'script_loader_tag', 'async_parsing_of_js', 10 );
+
+// Remove WP version
 function wpbeginner_remove_version() {
   return '';
 }
@@ -85,11 +88,14 @@ function my_custom_disable_author_page() {
 }
 
 function my_mce4_options( $init ) {
-  $default_colours = '
-  "1E68FF", "Blue",
-  ';
+  $defaultColours = colour_list();
+  if ( $defaultColours ) {
+    foreach ( $defaultColours as $key => $val ) {
+      $colours .= '"'.$key.'","'.$val.'",';
+    }
+  }
 
-  $init['textcolor_map'] = '['.$default_colours.']';
+  $init['textcolor_map'] = '['.str_replace('#', '', $colours).']';
   $init['textcolor_rows'] = 6;
   return $init;
 }
@@ -134,11 +140,6 @@ function for_get_products_most_viewed_category() {
   }
 }
 
-function for_remove_admin_links() {
-  remove_menu_page( 'wpclever' );
-}
-add_action( 'admin_menu', 'for_remove_admin_links' );
-
 function prefix_disable_comment_url($fields) { 
   unset($fields['url']);
   unset($fields['cookies']);
@@ -146,14 +147,14 @@ function prefix_disable_comment_url($fields) {
 }
 add_filter('comment_form_default_fields','prefix_disable_comment_url');
 
-function for_move_comment_field_to_bottom( $fields ) {
+function themestrap_move_comment_field_to_bottom( $fields ) {
   $comment_field = $fields['comment'];
   unset( $fields['comment'] );
   $fields['comment'] = $comment_field;
   return $fields;
 }
 
-add_filter( 'comment_form_fields', 'for_move_comment_field_to_bottom' );
+add_filter( 'comment_form_fields', 'themestrap_move_comment_field_to_bottom' );
 
 /*
 * Modify TinyMCE editor to remove H1
@@ -290,8 +291,17 @@ function for_numeric_posts_nav() {
 }
 
 // Remove empty p tags
-add_filter('the_content', 'remove_empty_p', 20, 1);
 function remove_empty_p($content){
   $content = force_balance_tags($content);
   return preg_replace('#<p>\s*+(<br\s*/*>)?\s*</p>#i', '', $content);
 }
+add_filter('the_content', 'remove_empty_p', 20, 1);
+
+function wps_deregister_styles() {
+  wp_deregister_style( 'contact-form-7' );
+  wp_dequeue_style( 'wp-block-library' );
+  wp_dequeue_style( 'wp-block-library-theme' );
+  wp_dequeue_style( 'wc-block-style' ); // Remove WooCommerce block CSS
+  wp_dequeue_style( 'wc-block-vendors-style' ); // Remove WooCommerce block CSS
+}
+add_action( 'wp_print_styles', 'wps_deregister_styles', 100 );
