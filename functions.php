@@ -14,18 +14,6 @@ function theme_enqueue_styles() {
   // Javascript
   // ADD ANY LOCAL SCRIPTS TO THE GULP FILE SO THAT THEY CAN BE CONCATENATED AND MINIFIED
   wp_enqueue_script( 'mainjs', get_template_directory_uri() . '/assets/build/js/scripts.js', array('jquery'), null, false );
-
-  // This enqueues the selected javascript from the ACF JS Loader plugin.
-  if ( class_exists('themestrap_ext_acf_field_js_loader') ) {
-    global $post;
-    $js_to_enqueue = get_field('javascript', $post->ID);
-
-    if ( $js_to_enqueue ) {
-      foreach ( $js_to_enqueue as $key => $file ) {
-        wp_enqueue_script( str_replace('.', '', $file['js_loader']), get_template_directory_uri() . '/assets/build/js/selectable/'.$file['js_loader'], array('jquery'), null, true );
-      }
-    }
-  }
 }
 
 // Include Setup
