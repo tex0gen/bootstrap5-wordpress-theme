@@ -2,7 +2,7 @@
 $alt_rows = get_sub_field('rows');
 if ($alt_rows) {
   ?>
-  <section class="alternating">
+  <section class="flex-alternating">
     <div class="container">
       <?php if (get_sub_field('title')) { ?>
         <div class="row">
@@ -22,11 +22,11 @@ if ($alt_rows) {
         $class = "";
       }
       ?>
-      <div class="alternating-item" <?= ($bgColor) ? 'style="background-color: '.$bgColor.'"':''; ?>>
+      <div class="flex-alternating-item<?= ($bgColor) ? ' bg-color':''; ?>" <?= ($bgColor) ? 'style="background-color: '.$bgColor.'"':''; ?>>
         <div class="container">
           <div class="row align-items-center">
             <div class="col-12 col-md-6<?= $class ?>">
-              <?= wp_get_attachment_image( $row['image']['ID'], 'alt-image', false, array('class' => 'img-fluid') ); ?>
+              <?= wp_get_attachment_image( $row['image']['ID'], 'alt-rows', false, array('class' => 'img-fluid') ); ?>
             </div>
             <div class="col-12 col-md-6">
               <h3><?= $row['heading'] ?></h3>

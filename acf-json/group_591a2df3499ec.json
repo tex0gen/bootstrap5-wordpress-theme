@@ -500,6 +500,25 @@
                                     "mime_types": ""
                                 },
                                 {
+                                    "key": "field_5a820fe0fc22a",
+                                    "label": "Heading",
+                                    "name": "heading",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
                                     "key": "field_5a820fe5fc22b",
                                     "label": "Text",
                                     "name": "text",
@@ -555,6 +574,21 @@
                                     "allow_null": 0,
                                     "allow_archives": 1,
                                     "multiple": 0
+                                },
+                                {
+                                    "key": "field_5f198af2f94c1",
+                                    "label": "Background Colour",
+                                    "name": "background_colour",
+                                    "type": "COLOR_PICKER_EXT",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "font_size": 14
                                 }
                             ]
                         }
