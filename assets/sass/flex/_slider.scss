@@ -117,3 +117,8 @@
 header + .flex-carousel {
   margin-top: -$spacing-bottom;
 }
+
+.bg-image + .flex-carousel,
+.bg-color + .flex-carousel {
+  margin-top: -$spacing-bottom;
+}

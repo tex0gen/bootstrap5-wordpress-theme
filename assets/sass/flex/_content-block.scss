@@ -1,5 +1,6 @@
 .flex-content-block {
   margin-bottom: $spacing-bottom;
+  background-size: cover;
 
   .content {
     p:last-child {
@@ -8,4 +9,30 @@
       }
     }
   }
+
+  &.o-light,
+  &.o-dark {
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+    }
+  }
+
+  &.o-light {
+    background-color: rgba(255, 255, 255, .65);
+  }
+
+  &.o-dark {
+    background-color: rgba(0, 0, 0, .65);
+  }
+}
+
+.flex-full-width-image + .flex-content-block {
+  margin-top: -$spacing-bottom;
 }
