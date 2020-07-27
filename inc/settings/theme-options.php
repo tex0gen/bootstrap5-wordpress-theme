@@ -298,27 +298,40 @@ function remove_empty_p($content){
 }
 add_filter('the_content', 'remove_empty_p', 20, 1);
 
-function wps_deregister_styles() {
-  wp_deregister_style( 'contact-form-7' );
-  wp_dequeue_style( 'wp-block-library' );
-  wp_dequeue_style( 'wp-block-library-theme' );
-  wp_dequeue_style( 'wc-block-style' ); // Remove WooCommerce block CSS
-  wp_dequeue_style( 'wc-block-vendors-style' ); // Remove WooCommerce block CSS
-}
-add_action( 'wp_print_styles', 'wps_deregister_styles', 100 );
-
 // Update jQuery
-// add_action('wp_enqueue_scripts', 'themestrap_modern_jquery');
-
-// function themestrap_modern_jquery() {
-//     global $wp_scripts;
-//     if(is_admin()) return;
-//     $wp_scripts->registered['jquery-core']->src = 'https://code.jquery.com/jquery-3.5.1.min.js';
-//     $wp_scripts->registered['jquery']->deps = ['jquery-core'];
-// }
-
 add_action( 'wp_enqueue_scripts', 'themestrap_modern_jquery', 5 );
 function themestrap_modern_jquery() {
   wp_deregister_script( 'jquery' );
   wp_enqueue_script( 'jquery', 'https://code.jquery.com/jquery-3.5.1.min.js' );
+}
+
+add_action( 'wp_enqueue_scripts', 'themestrap_disable_loading_css_js' );
+function themestrap_disable_loading_css_js() {
+  wp_deregister_style( 'contact-form-7' );
+  wp_dequeue_style( 'wp-block-library' );
+  wp_dequeue_style( 'wp-block-library-theme' );
+  
+  // Check if WooCommerce plugin is active
+  if( function_exists( 'is_woocommerce' ) ){
+    
+    wp_dequeue_style( 'wc-block-style' );
+    wp_dequeue_style( 'wc-block-vendors-style' ); // Remove WooCommerce block CSS
+    // Check if it's any of WooCommerce page
+    if(! is_woocommerce() && ! is_cart() && ! is_checkout() ) {     
+      
+      ## Dequeue WooCommerce styles
+      wp_dequeue_style('woocommerce-layout'); 
+      wp_dequeue_style('woocommerce-general'); 
+      wp_dequeue_style('woocommerce-smallscreen');  
+ 
+      ## Dequeue WooCommerce scripts
+      wp_dequeue_script('wc-cart-fragments');
+      wp_dequeue_script('woocommerce'); 
+      wp_dequeue_script('wc-add-to-cart'); 
+    
+      wp_deregister_script( 'js-cookie' );
+      wp_dequeue_script( 'js-cookie' );
+ 
+    }
+  } 
 }
