@@ -46,6 +46,7 @@ function async_parsing_of_js( $url ) {
   // Should include a part of the url string.
   $plugins = array(
     'jquery.js',
+    'https://code.jquery.com/',
     'contact-form-7',
   );
 
@@ -305,3 +306,19 @@ function wps_deregister_styles() {
   wp_dequeue_style( 'wc-block-vendors-style' ); // Remove WooCommerce block CSS
 }
 add_action( 'wp_print_styles', 'wps_deregister_styles', 100 );
+
+// Update jQuery
+// add_action('wp_enqueue_scripts', 'themestrap_modern_jquery');
+
+// function themestrap_modern_jquery() {
+//     global $wp_scripts;
+//     if(is_admin()) return;
+//     $wp_scripts->registered['jquery-core']->src = 'https://code.jquery.com/jquery-3.5.1.min.js';
+//     $wp_scripts->registered['jquery']->deps = ['jquery-core'];
+// }
+
+add_action( 'wp_enqueue_scripts', 'themestrap_modern_jquery', 5 );
+function themestrap_modern_jquery() {
+  wp_deregister_script( 'jquery' );
+  wp_enqueue_script( 'jquery', 'https://code.jquery.com/jquery-3.5.1.min.js' );
+}
