@@ -112,13 +112,51 @@
       }
     }
   }
+
+  &.showcase {
+    padding: $spacing-bottom * 2 0;
+    overflow-x: hidden;
+    
+    .owl-stage-outer {
+      overflow: visible !important;
+    }
+
+    .has-desktop {
+      transition: all .25s ease-in-out;
+    }
+
+    .owl-item {
+      position: relative;
+
+      &.active {
+        .has-desktop {
+          position: absolute;
+          left: 0;
+          top: 0;
+          right: 0;
+        }
+
+        &.center {
+          z-index: 999;
+
+          .has-desktop {
+            left: -$spacing-bottom;
+            right: -$spacing-bottom;
+            top: -$spacing-bottom / 3;
+            z-index: 999;
+          }
+        }
+      }
+    }
+  }
 }
 
+header + .flex-carousel,
 header + .flex-carousel {
   margin-top: -$spacing-bottom;
 }
 
-.bg-image + .flex-carousel,
+.bg-img + .flex-carousel,
 .bg-color + .flex-carousel {
   margin-top: -$spacing-bottom;
 }
