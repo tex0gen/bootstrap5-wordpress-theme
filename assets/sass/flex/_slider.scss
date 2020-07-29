@@ -3,22 +3,21 @@
   position: relative;
 
   .carousel-text {
-    background-color: rgba(0, 0, 0, .5);
     position: absolute;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
-    font-size: 22px;
-    color: $white;
-
-    h2 {
-      font-size: 42px;
-    }
 
     .container,
     .row {
       height: 100%;
+    }
+  }
+
+  .no-bg {
+    .carousel-text {
+      position: static;
     }
   }
 
