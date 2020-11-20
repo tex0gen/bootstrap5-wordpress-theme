@@ -4,12 +4,13 @@
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles', 5 );
 function theme_enqueue_styles() {
   // CSS
-  $url = get_bloginfo('url');
-  if (strpos($url, 'localhost') || strpos($url, 'dev.')) {
-    wp_enqueue_style( 'main', get_template_directory_uri() . '/assets/build/css/main.css' );
-  } else {
+  // This will return shortly..
+  // $url = get_bloginfo('url');
+  // if (strpos($url, 'localhost') || strpos($url, 'dev.')) {
+  //   wp_enqueue_style( 'main', get_template_directory_uri() . '/assets/build/css/main.css' );
+  // } else {
     wp_enqueue_style( 'main', get_template_directory_uri() . '/assets/build/css/main.min.css' );
-  }
+  // }
 
   // Javascript
   // ADD ANY LOCAL SCRIPTS TO THE GULP FILE SO THAT THEY CAN BE CONCATENATED AND MINIFIED
