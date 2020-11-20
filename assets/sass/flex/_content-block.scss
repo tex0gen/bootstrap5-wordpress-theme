@@ -1,38 +1,40 @@
 .flex-content-block {
-  margin-bottom: $spacing-bottom;
-  background-size: cover;
+	background-size: cover;
+	margin-bottom: $spacing-bottom;
 
-  .content {
-    p:last-child {
-      @include media-breakpoint-up(md) {
-        margin-bottom: 0;
-      }
-    }
-  }
+	.content {
 
-  &.o-light,
-  &.o-dark {
-    position: relative;
+		p:last-child {
 
-    &:before {
-      content: "";
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      top: 0;
-    }
-  }
+			@include media-breakpoint-up(md) {
+				margin-bottom: 0;
+			}
+		}
+	}
 
-  &.o-light {
-    background-color: rgba(255, 255, 255, .65);
-  }
+	&.o-light,
+	&.o-dark {
+		position: relative;
 
-  &.o-dark {
-    background-color: rgba(0, 0, 0, .65);
-  }
+		&::before {
+			bottom: 0;
+			content: "";
+			left: 0;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+	}
+
+	&.o-light {
+		background-color: rgba(255, 255, 255, 0.65);
+	}
+
+	&.o-dark {
+		background-color: rgba(0, 0, 0, 0.65);
+	}
 }
 
 .flex-full-width-image + .flex-content-block {
-  margin-top: -$spacing-bottom;
+	margin-top: -$spacing-bottom;
 }

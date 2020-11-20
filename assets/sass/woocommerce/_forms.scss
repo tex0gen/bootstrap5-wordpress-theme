@@ -1,8 +1,11 @@
 .comment-form {
+
 	.comment-form-comment {
+
 		@extend .form-group;
 
 		textarea {
+
 			@extend .form-control;
 		}
 	}
@@ -11,14 +14,18 @@
 .woocommerce-form-login,
 .woocommerce-form-register {
 	margin-bottom: $spacing-bottom;
+
 	.form-row {
+
 		@extend .form-group;
 
 		input.input-text {
+
 			@extend .form-control;
 		}
 
 		.button {
+
 			@extend .btn-primary;
 		}
 	}
@@ -26,19 +33,22 @@
 
 .woocommerce-address-fields,
 .edit-account {
+
 	.form-row {
+
 		@extend .form-group;
 
 		input,
 		textarea {
+
 			@extend .form-control;
 		}
 	}
 
 	.form-row-first,
 	.form-row-last {
-		width: 50%;
 		float: left;
+		width: 50%;
 	}
 
 	.form-row-first {
@@ -50,6 +60,7 @@
 	}
 
 	.button {
+
 		@extend .btn-primary;
 	}
 }
@@ -78,6 +89,7 @@
 }
 
 .form-row {
+
 	@extend .form-group;
 	padding: 5px;
 }

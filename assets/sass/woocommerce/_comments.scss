@@ -3,6 +3,7 @@
 	padding: 0;
 
 	.comment_container {
+
 		@extend .row;
 		border-bottom: 1px solid $light-gray;
 
@@ -10,16 +11,18 @@
 			border-bottom: none;
 		}
 
-
 		.gravatar-wrap {
+
 			@extend .col-2, .col-sm-1;
 
 			img {
+
 				@extend .img-fluid;
 			}
 		}
 
 		.comment-text {
+
 			@extend .col-10, .col-sm-11;
 		}
 	}

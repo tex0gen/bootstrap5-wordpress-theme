@@ -5,15 +5,18 @@ input[type="tel"],
 input[type="number"],
 textarea,
 select {
-  @extend .form-control;
+
+	@extend .form-control;
 }
 
 input[type="checkbox"] {
-  @extend .form-check-input;
+
+	@extend .form-check-input;
 }
 
 input[type="submit"],
 button[type="submit"],
 button {
-  @extend .btn, .btn-primary;
+
+	@extend .btn, .btn-primary;
 }

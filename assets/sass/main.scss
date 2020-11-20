@@ -1,5 +1,5 @@
 // Main Theme Variable Overrides
-@import './base/_variables'; 
+@import "./base/_variables";
 
 // Bootstrap (Select only what you need to keep final css file minimal)
 @import "../../node_modules/bootstrap/scss/functions";
@@ -39,7 +39,7 @@
 @import "../../node_modules/bootstrap/scss/utilities";
 
 // Extras
-@import "../../node_modules/owl.carousel/dist/assets/owl.carousel.min"; // Owl Carousel
+// @import "../../node_modules/owl.carousel/dist/assets/owl.carousel.min"; // Owl Carousel
 
 // Font Awesome
 // @import "./font-awesome/scss/variables";
@@ -60,12 +60,12 @@
 // @import "./font-awesome/scss/solid";
 
 // Font Awesome 5 Pro
-@import "./font-awesome/scss/fontawesome";
-@import "./font-awesome/scss/animated";
-@import "./font-awesome/scss/light";
-@import "./font-awesome/scss/regular";
-@import "./font-awesome/scss/solid";
-@import "./font-awesome/scss/brands";
+// @import "./font-awesome/scss/fontawesome";
+// @import "./font-awesome/scss/animated";
+// @import "./font-awesome/scss/light";
+// @import "./font-awesome/scss/regular";
+// @import "./font-awesome/scss/solid";
+// @import "./font-awesome/scss/brands";
 // @import "./font-awesome/scss/bordered-pulled";
 // @import "./font-awesome/scss/core";
 // @import "./font-awesome/scss/fixed-width";
@@ -80,31 +80,31 @@
 // @import "./font-awesome/scss/v4-shims";
 
 // Plugin Styles
-@import './woocommerce/woocommerce';
+@import "./woocommerce/woocommerce";
 
 // Base Styles
-@import './base/base';
-@import './base/buttons';
-@import './base/forms';
-@import './base/wordpress-defaults';
-@import './base/utils';
+@import "./base/base";
+@import "./base/buttons";
+@import "./base/forms";
+@import "./base/wordpress-defaults";
+@import "./base/utils";
 
 // Component Styles
-@import './components/header';
-@import './components/menu';
-@import './components/breadcrumbs';
-@import './components/page-header';
-@import './components/sidebar';
-@import './components/post-item';
-@import './components/footer';
+@import "./components/header";
+@import "./components/menu";
+@import "./components/breadcrumbs";
+@import "./components/page-header";
+@import "./components/sidebar";
+@import "./components/post-item";
+@import "./components/footer";
 
 // Flex components
-@import './flex/product-category-list';
-@import './flex/featured-products';
-@import './flex/content-block';
-@import './flex/card';
-@import './flex/alternating-rows';
-@import './flex/full-width-image';
-@import './flex/latest-posts';
-@import './flex/slider';
-@import './flex/logos';
+@import "./flex/product-category-list";
+@import "./flex/featured-products";
+@import "./flex/content-block";
+@import "./flex/card";
+@import "./flex/alternating-rows";
+@import "./flex/full-width-image";
+@import "./flex/latest-posts";
+@import "./flex/slider";
+@import "./flex/logos";

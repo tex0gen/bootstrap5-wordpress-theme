@@ -1,32 +1,33 @@
 .flex-product-category-list {
 	margin-bottom: $spacing-bottom;
-	
+
 	.grid-item {
+
 		.term-item {
-			height: 200px;
-			position: relative;
 			background-position: bottom;
 			background-size: cover;
+			height: 200px;
 			margin-bottom: $double-gutter;
-			
+			position: relative;
+
 			.overlay {
-				position: absolute;
+				bottom: 0;
 				left: 0;
+				position: absolute;
 				right: 0;
 				top: 0;
-				bottom: 0;
 				z-index: 5;
 			}
 
 			h3 {
 				background-color: rgba(0, 0, 0, 0.4);
+				bottom: 0;
+				color: $white;
+				left: 0;
+				margin-bottom: 0;
 				padding: 15px;
 				position: absolute;
-				bottom: 0;
-				left: 0;
 				right: 0;
-				margin-bottom: 0;
-				color: $white;
 			}
 		}
 	}

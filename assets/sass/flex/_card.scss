@@ -1,11 +1,12 @@
 .flex-cards {
 	margin-bottom: $spacing-bottom;
 
-  .card {
-    @include media-breakpoint-down(sm) {
-      margin-bottom: $spacing-bottom-half;
-    }
-  }
+	.card {
+
+		@include media-breakpoint-down(sm) {
+			margin-bottom: $spacing-bottom-half;
+		}
+	}
 
 	img {
 		margin-bottom: $single-gutter;

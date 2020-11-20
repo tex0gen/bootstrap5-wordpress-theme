@@ -1,14 +1,19 @@
 .woocommerce-cart-form {
 
 	.shop_table {
+
 		@extend .table;
 		margin-bottom: $spacing-bottom;
 		width: 100%;
 
 		td {
+
 			&.product-quantity {
+
 				.quantity {
+
 					input {
+
 						@extend .form-control;
 						width: 80px;
 					}
@@ -17,19 +22,21 @@
 
 			&.product-thumbnail {
 				min-width: 150px;
+
 				img {
+
 					@extend .img-fluid;
 				}
 			}
-
-
 		}
 
 		.button {
+
 			@extend .float-right, .btn-primary;
 		}
 
 		.coupon {
+
 			@extend .float-left;
 
 			label {
@@ -37,12 +44,14 @@
 			}
 
 			.input-text {
+
 				@extend .form-control;
 				display: inline-block;
 				width: 59%;
 			}
 
 			.button {
+
 				@extend .btn-secondary;
 			}
 		}
@@ -50,13 +59,16 @@
 }
 
 .cart-collaterals {
+
 	@extend .row;
 	margin-bottom: $spacing-bottom;
 
 	.cart_totals {
+
 		@extend .col-sm-6, .offset-sm-6;
 
 		.shop_table {
+
 			@extend .table;
 
 			td {
@@ -65,6 +77,7 @@
 		}
 
 		.checkout-button {
+
 			@extend .float-right;
 		}
 	}

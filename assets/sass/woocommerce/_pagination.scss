@@ -2,9 +2,11 @@
 	margin-bottom: $spacing-bottom;
 
 	.page-numbers {
+
 		@extend .pagination;
 
 		li {
+
 			@extend .page-item;
 
 			// .current {
@@ -12,6 +14,7 @@
 			// }
 
 			* {
+
 				@extend .page-link;
 			}
 		}

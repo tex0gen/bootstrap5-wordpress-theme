@@ -1,17 +1,19 @@
-@import '_buttons';
-@import '_cart';
-@import '_checkout';
-@import '_comments';
-@import '_forms';
-@import '_image-gallery';
-@import '_nav-tabs';
-@import '_message';
-@import '_pagination';
-@import '_product-lists';
-@import '_ratings';
+@import "_buttons";
+@import "_cart";
+@import "_checkout";
+@import "_comments";
+@import "_forms";
+@import "_image-gallery";
+@import "_nav-tabs";
+@import "_message";
+@import "_pagination";
+@import "_product-lists";
+@import "_ratings";
 
 .woocommerce {
+
 	.content-area {
+
 		@extend .container;
 	}
 }
@@ -19,6 +21,7 @@
 // Archive Pages
 .woocommerce-result-count,
 .woocommerce-ordering {
+
 	@extend .col-sm-6;
 }
 
@@ -28,20 +31,23 @@
 
 // Woocommerce Global Styles
 .summary.entry-summary {
+
 	@extend .col-sm-6;
 }
 
 .comment-reply-title {
+
 	@extend h4;
 }
 
 // My Account
 .woocommerce-Addresses {
+
 	@extend .row;
 
 	.col-1,
 	.col-2 {
+
 		@extend .col-6;
 	}
 }
-

@@ -1,13 +1,13 @@
 // Overrides default margins on all blocks with background colours/images set
 .bg-color,
 .bg-img {
-  padding: $spacing-bottom 0 !important;
-  // margin-top: -$spacing-bottom !important;
+	padding: $spacing-bottom 0 !important;
+	// margin-top: -$spacing-bottom !important;
 }
 
 .bg-color + .bg-color,
 .bg-color + .bg-img,
 .bg-img + .bg-color,
 .bg-img + .bg-img {
-  margin-top: -$spacing-bottom !important;
+	margin-top: -$spacing-bottom !important;
 }

@@ -1,19 +1,19 @@
 jQuery(document).ready(function($) {
   /*
-  * Utilities
-  */
-  
+   * Utilities
+   */
+
   // Heightmatcher
   function heightmatcher(elem, breakpoint) {
-    breakpoint = typeof a !== 'undefined' ? a : 0;
+    breakpoint = typeof a !== "undefined" ? a : 0;
 
-    var height = 0,
-        windowWidth = $(window).width();
+    let height = 0,
+      windowWidth = $(window).width();
 
     if (windowWidth > breakpoint) {
       $(elem).each(function() {
-        var thisHeight = $(this).outerHeight();
-        
+        const thisHeight = $(this).outerHeight();
+
         if (thisHeight > height) {
           height = thisHeight;
         }
@@ -25,55 +25,55 @@ jQuery(document).ready(function($) {
 
   // Sticky Menu
   function sticky_menu(elem) {
-    var nav = $(elem);
+    const nav = $(elem);
 
     if (nav.length) {
-      var navTop = nav.offset().top,
-          navContainer = nav.parent(),
-          navContainerHeight = navContainer.outerHeight();
+      const navTop = nav.offset().top,
+        navContainer = nav.parent(),
+        navContainerHeight = navContainer.outerHeight();
 
-      $(document).on('scroll', function(e) {
-        var scrollPos = $(document).scrollTop();
+      $(document).on("scroll", function(e) {
+        const scrollPos = $(document).scrollTop();
 
         if (scrollPos >= navTop) {
-          nav.addClass('sticky');
+          nav.addClass("sticky");
           navContainer.height(navContainerHeight);
         } else {
-          nav.removeClass('sticky');      
+          nav.removeClass("sticky");
           navContainer.height();
         }
       });
     }
   }
 
-  $(window).on('load, resize', sticky_menu('.sticky-nav'));
+  $(window).on("load, resize", sticky_menu(".sticky-nav"));
 
   /*
-  * Woocommerce
-  */
-  $('.woocommerce-review-link').on('click', function(e) {
+   * Woocommerce
+   */
+  $(".woocommerce-review-link").on("click", function(e) {
     e.preventDefault();
 
-    var anchorToScroll = $('.woocommerce-tabs'),
-        scrollToPoint = $(anchorToScroll).offset().top;
+    const anchorToScroll = $(".woocommerce-tabs"),
+      scrollToPoint = $(anchorToScroll).offset().top;
 
-    $('body').animate({
-      scrollTop: (scrollToPoint - 60)
+    $("body").animate({
+      scrollTop: scrollToPoint - 60
     });
   });
 
   /*
-  * Carousel
-  */
-  var oc = $('.owl-carousel');
-  var ocOptions = oc.data('carousel-options');
-  var defaults = {
+   * Carousel
+   */
+  const oc = $(".owl-carousel");
+  const ocOptions = oc.data("carousel-options");
+  const defaults = {
     items: 1,
     loop: true,
     autoplay: true,
     autoplayHoverPause: true,
     checkVisible: false
-  }
+  };
 
-  oc.owlCarousel( $.extend( defaults, ocOptions) );
+  oc.owlCarousel($.extend(defaults, ocOptions));
 });
