@@ -1,16 +1,16 @@
 .flex-alternating {
-  margin-bottom: $spacing-bottom;
+	margin-bottom: $spacing-bottom;
 
-  h2 {
-    margin-bottom: $spacing-bottom-half;
-  }
+	h2 {
+		margin-bottom: $spacing-bottom-half;
+	}
 
-  img {
-    margin-bottom: $single-gutter;
-  }
+	img {
+		margin-bottom: $single-gutter;
+	}
 
-  &-item {
-    padding-bottom: $spacing-bottom-half;
-    padding-top: $spacing-bottom-half;
-  }
+	&-item {
+		padding-bottom: $spacing-bottom-half;
+		padding-top: $spacing-bottom-half;
+	}
 }

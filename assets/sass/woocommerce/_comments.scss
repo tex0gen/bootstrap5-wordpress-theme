@@ -1,25 +1,25 @@
 .commentlist {
-  list-style-type: none;
-  padding: 0;
+	list-style-type: none;
+	padding: 0;
 
-  .comment_container {
-    @extend .row;
-    border-bottom: 1px solid $light-gray;
+	.comment_container {
+		@extend .row;
+		border-bottom: 1px solid $light-gray;
 
-    &:last-child {
-      border-bottom: none;
-    }
+		&:last-child {
+			border-bottom: none;
+		}
 
-    .gravatar-wrap {
-      @extend .col-2, .col-sm-1;
+		.gravatar-wrap {
+			@extend .col-2, .col-sm-1;
 
-      img {
-        @extend .img-fluid;
-      }
-    }
+			img {
+				@extend .img-fluid;
+			}
+		}
 
-    .comment-text {
-      @extend .col-10, .col-sm-11;
-    }
-  }
+		.comment-text {
+			@extend .col-10, .col-sm-11;
+		}
+	}
 }

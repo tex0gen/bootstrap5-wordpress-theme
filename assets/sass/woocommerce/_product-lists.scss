@@ -1,38 +1,38 @@
 ul.products {
-  @extend .row;
-  list-style-type: none;
-  padding: 0;
+	@extend .row;
+	list-style-type: none;
+	padding: 0;
 
-  .product {
-    @extend .col-sm-3;
-    margin-bottom: $double-gutter;
+	.product {
+		@extend .col-sm-3;
+		margin-bottom: $double-gutter;
 
-    .woocommerce-LoopProduct-link {
-      position: relative;
-      text-decoration: none;
+		.woocommerce-LoopProduct-link {
+			position: relative;
+			text-decoration: none;
 
-      .onsale {
-        position: absolute;
-      }
+			.onsale {
+				position: absolute;
+			}
 
-      img {
-        @extend .img-fluid;
-        margin-bottom: 15px;
-      }
+			img {
+				@extend .img-fluid;
+				margin-bottom: 15px;
+			}
 
-      .price {
-        display: block;
-        margin-bottom: $single-gutter;
+			.price {
+				display: block;
+				margin-bottom: $single-gutter;
 
-        del,
-        ins {
-          display: inline-block;
-        }
-      }
-    }
+				del,
+				ins {
+					display: inline-block;
+				}
+			}
+		}
 
-    .button {
-      @extend .btn, .btn-primary;
-    }
-  }
+		.button {
+			@extend .btn, .btn-primary;
+		}
+	}
 }

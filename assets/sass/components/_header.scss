@@ -1,11 +1,11 @@
 header {
-  margin-bottom: $spacing-bottom;
+	margin-bottom: $spacing-bottom;
 
-  &.header {
-    &-inline {
-      .navbar-brand {
-        max-width: 260px;
-      }
-    }
-  }
+	&.header {
+		&-inline {
+			.navbar-brand {
+				max-width: 260px;
+			}
+		}
+	}
 }

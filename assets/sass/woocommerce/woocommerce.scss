@@ -11,36 +11,36 @@
 @import "_ratings";
 
 .woocommerce {
-  .content-area {
-    @extend .container;
-  }
+	.content-area {
+		@extend .container;
+	}
 }
 
 // Archive Pages
 .woocommerce-result-count,
 .woocommerce-ordering {
-  @extend .col-sm-6;
+	@extend .col-sm-6;
 }
 
 .woocommerce-ordering {
-  text-align: right;
+	text-align: right;
 }
 
 // Woocommerce Global Styles
 .summary.entry-summary {
-  @extend .col-sm-6;
+	@extend .col-sm-6;
 }
 
 .comment-reply-title {
-  @extend h4;
+	@extend h4;
 }
 
 // My Account
 .woocommerce-Addresses {
-  @extend .row;
+	@extend .row;
 
-  .col-1,
-  .col-2 {
-    @extend .col-6;
-  }
+	.col-1,
+	.col-2 {
+		@extend .col-6;
+	}
 }

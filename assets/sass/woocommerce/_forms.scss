@@ -1,89 +1,89 @@
 .comment-form {
-  .comment-form-comment {
-    @extend .form-group;
+	.comment-form-comment {
+		@extend .form-group;
 
-    textarea {
-      @extend .form-control;
-    }
-  }
+		textarea {
+			@extend .form-control;
+		}
+	}
 }
 
 .woocommerce-form-login,
 .woocommerce-form-register {
-  margin-bottom: $spacing-bottom;
+	margin-bottom: $spacing-bottom;
 
-  .form-row {
-    @extend .form-group;
+	.form-row {
+		@extend .form-group;
 
-    input.input-text {
-      @extend .form-control;
-    }
+		input.input-text {
+			@extend .form-control;
+		}
 
-    .button {
-      @extend .btn-primary;
-    }
-  }
+		.button {
+			@extend .btn-primary;
+		}
+	}
 }
 
 .woocommerce-address-fields,
 .edit-account {
-  .form-row {
-    @extend .form-group;
+	.form-row {
+		@extend .form-group;
 
-    input,
-    textarea {
-      @extend .form-control;
-    }
-  }
+		input,
+		textarea {
+			@extend .form-control;
+		}
+	}
 
-  .form-row-first,
-  .form-row-last {
-    float: left;
-    width: 50%;
-  }
+	.form-row-first,
+	.form-row-last {
+		float: left;
+		width: 50%;
+	}
 
-  .form-row-first {
-    padding-right: 15px;
-  }
+	.form-row-first {
+		padding-right: 15px;
+	}
 
-  .form-row-last {
-    padding-left: 15px;
-  }
+	.form-row-last {
+		padding-left: 15px;
+	}
 
-  .button {
-    @extend .btn-primary;
-  }
+	.button {
+		@extend .btn-primary;
+	}
 }
 
 .woocommerce-billing-fields__field-wrapper,
 .woocommerce-shipping-fields__field-wrapper {
-  display: flex;
-  flex-wrap: wrap;
+	display: flex;
+	flex-wrap: wrap;
 
-  .form-row-first,
-  .form-row-last {
-    flex-basis: 50%;
-  }
+	.form-row-first,
+	.form-row-last {
+		flex-basis: 50%;
+	}
 
-  .form-row-first {
-    padding-right: $single-gutter;
-  }
+	.form-row-first {
+		padding-right: $single-gutter;
+	}
 
-  .form-row-last {
-    padding-left: $single-gutter;
-  }
+	.form-row-last {
+		padding-left: $single-gutter;
+	}
 
-  .form-row-wide {
-    flex-basis: 100%;
-  }
+	.form-row-wide {
+		flex-basis: 100%;
+	}
 }
 
 .form-row {
-  @extend .form-group;
-  padding: 5px;
+	@extend .form-group;
+	padding: 5px;
 }
 
 .woocommerce-input-wrapper {
-  display: block;
-  width: 100%;
+	display: block;
+	width: 100%;
 }

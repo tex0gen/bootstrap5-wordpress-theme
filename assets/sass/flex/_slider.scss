@@ -1,160 +1,160 @@
 .flex-carousel {
-  margin-bottom: $spacing-bottom;
-  position: relative;
+	margin-bottom: $spacing-bottom;
+	position: relative;
 
-  .carousel-text {
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
+	.carousel-text {
+		bottom: 0;
+		left: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
 
-    .container,
-    .row {
-      height: 100%;
-    }
-  }
+		.container,
+		.row {
+			height: 100%;
+		}
+	}
 
-  .no-bg {
-    .carousel-text {
-      position: static;
-    }
-  }
+	.no-bg {
+		.carousel-text {
+			position: static;
+		}
+	}
 
-  .has-mobile {
-    .mobile-img {
-      @include media-breakpoint-up(md) {
-        display: none !important;
-      }
-    }
+	.has-mobile {
+		.mobile-img {
+			@include media-breakpoint-up(md) {
+				display: none !important;
+			}
+		}
 
-    .desktop-img {
-      @include media-breakpoint-down(sm) {
-        display: none !important;
-      }
-    }
-  }
+		.desktop-img {
+			@include media-breakpoint-down(sm) {
+				display: none !important;
+			}
+		}
+	}
 
-  .owl-carousel .owl-stage-outer {
-    overflow: hidden;
-  }
+	.owl-carousel .owl-stage-outer {
+		overflow: hidden;
+	}
 
-  .owl-dots {
-    bottom: $single-gutter;
-    left: 0;
-    position: absolute;
-    right: 0;
-    text-align: center;
+	.owl-dots {
+		bottom: $single-gutter;
+		left: 0;
+		position: absolute;
+		right: 0;
+		text-align: center;
 
-    .owl-dot {
-      background-color: rgba(255, 255, 255, 0.5);
-      border-radius: 8px;
-      display: inline-block;
-      height: 8px;
-      margin: 0 3px;
-      outline: 0;
-      transition: background-color 0.25s ease-in-out;
-      width: 8px;
+		.owl-dot {
+			background-color: rgba(255, 255, 255, 0.5);
+			border-radius: 8px;
+			display: inline-block;
+			height: 8px;
+			margin: 0 3px;
+			outline: 0;
+			transition: background-color 0.25s ease-in-out;
+			width: 8px;
 
-      &.active {
-        background-color: rgba(255, 255, 255, 1);
-      }
-    }
-  }
+			&.active {
+				background-color: rgba(255, 255, 255, 1);
+			}
+		}
+	}
 
-  .owl-nav {
-    @include media-breakpoint-down(sm) {
-      display: none;
-    }
+	.owl-nav {
+		@include media-breakpoint-down(sm) {
+			display: none;
+		}
 
-    .owl-prev,
-    .owl-next {
-      bottom: 0;
-      font-size: 60px !important;
-      outline: 0;
-      position: absolute;
-      top: 0;
-      z-index: 5;
+		.owl-prev,
+		.owl-next {
+			bottom: 0;
+			font-size: 60px !important;
+			outline: 0;
+			position: absolute;
+			top: 0;
+			z-index: 5;
 
-      span {
-        color: rgba(255, 255, 255, 0.5);
+			span {
+				color: rgba(255, 255, 255, 0.5);
 
-        &:hover {
-          color: rgba(255, 255, 255, 1);
-        }
-      }
-    }
+				&:hover {
+					color: rgba(255, 255, 255, 1);
+				}
+			}
+		}
 
-    .owl-prev {
-      left: $single-gutter;
-    }
+		.owl-prev {
+			left: $single-gutter;
+		}
 
-    .owl-next {
-      right: $single-gutter;
-    }
-  }
+		.owl-next {
+			right: $single-gutter;
+		}
+	}
 
-  .carousel-buttons {
-    a {
-      margin-right: 6px;
+	.carousel-buttons {
+		a {
+			margin-right: 6px;
 
-      &:last-child {
-        margin-right: 0;
-      }
-    }
-  }
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
 
-  .text-right {
-    .carousel-buttons {
-      a:last-child {
-        margin-right: 0;
-      }
-    }
-  }
+	.text-right {
+		.carousel-buttons {
+			a:last-child {
+				margin-right: 0;
+			}
+		}
+	}
 
-  &.showcase {
-    overflow-x: hidden;
-    padding: $spacing-bottom * 2 0;
+	&.showcase {
+		overflow-x: hidden;
+		padding: $spacing-bottom * 2 0;
 
-    .owl-stage-outer {
-      overflow: visible !important;
-    }
+		.owl-stage-outer {
+			overflow: visible !important;
+		}
 
-    .has-desktop {
-      transition: all 0.25s ease-in-out;
-    }
+		.has-desktop {
+			transition: all 0.25s ease-in-out;
+		}
 
-    .owl-item {
-      position: relative;
+		.owl-item {
+			position: relative;
 
-      &.active {
-        .has-desktop {
-          left: 0;
-          position: absolute;
-          right: 0;
-          top: 0;
-        }
+			&.active {
+				.has-desktop {
+					left: 0;
+					position: absolute;
+					right: 0;
+					top: 0;
+				}
 
-        &.center {
-          z-index: 999;
+				&.center {
+					z-index: 999;
 
-          .has-desktop {
-            left: -$spacing-bottom;
-            right: -$spacing-bottom;
-            top: -$spacing-bottom / 3;
-            z-index: 999;
-          }
-        }
-      }
-    }
-  }
+					.has-desktop {
+						left: -$spacing-bottom;
+						right: -$spacing-bottom;
+						top: -$spacing-bottom / 3;
+						z-index: 999;
+					}
+				}
+			}
+		}
+	}
 }
 
 header + .flex-carousel {
-  margin-top: -$spacing-bottom;
+	margin-top: -$spacing-bottom;
 }
 
 .bg-img + .flex-carousel,
 .bg-color + .flex-carousel {
-  margin-top: -$spacing-bottom;
+	margin-top: -$spacing-bottom;
 }

@@ -1,93 +1,93 @@
 // Product Ratings
 .star-rating {
-  font-family: fontAwesome;
-  font-size: 1em;
-  height: 1em;
-  line-height: 1;
-  margin-bottom: $single-gutter;
-  overflow: hidden;
-  position: relative;
-  width: 74px;
+	font-family: fontAwesome;
+	font-size: 1em;
+	height: 1em;
+	line-height: 1;
+	margin-bottom: $single-gutter;
+	overflow: hidden;
+	position: relative;
+	width: 74px;
 
-  &::before {
-    color: #d3ced2;
-    content: "\f006\f006\f006\f006\f006";
-    float: left;
-    left: 0;
-    position: absolute;
-    top: 0;
-  }
+	&::before {
+		color: #d3ced2;
+		content: "\f006\f006\f006\f006\f006";
+		float: left;
+		left: 0;
+		position: absolute;
+		top: 0;
+	}
 
-  span {
-    float: left;
-    left: 0;
-    overflow: hidden;
-    padding-top: 1.5em;
-    position: absolute;
-    top: 0;
+	span {
+		float: left;
+		left: 0;
+		overflow: hidden;
+		padding-top: 1.5em;
+		position: absolute;
+		top: 0;
 
-    &::before {
-      content: "\f005\f005\f005\f005\f005";
-      left: 0;
-      position: absolute;
-      top: 0;
-    }
-  }
+		&::before {
+			content: "\f005\f005\f005\f005\f005";
+			left: 0;
+			position: absolute;
+			top: 0;
+		}
+	}
 }
 
 // Comment Ratings
 p.stars {
-  a {
-    display: inline-block;
-    height: 1em;
-    position: relative;
-    text-decoration: none;
-    text-indent: -999em;
-    width: 1em;
+	a {
+		display: inline-block;
+		height: 1em;
+		position: relative;
+		text-decoration: none;
+		text-indent: -999em;
+		width: 1em;
 
-    &::before {
-      content: "\f006";
-      display: block;
-      font-family: fontAwesome;
-      height: 1em;
-      left: 0;
-      line-height: 1;
-      position: absolute;
-      text-indent: 0;
-      top: 0;
-      width: 1em;
-    }
+		&::before {
+			content: "\f006";
+			display: block;
+			font-family: fontAwesome;
+			height: 1em;
+			left: 0;
+			line-height: 1;
+			position: absolute;
+			text-indent: 0;
+			top: 0;
+			width: 1em;
+		}
 
-    &:hover {
-      ~ a::before {
-        content: "\f006";
-      }
-    }
-  }
+		&:hover {
+			~ a::before {
+				content: "\f006";
+			}
+		}
+	}
 
-  &:hover {
-    a {
-      &::before {
-        content: "\f005";
-      }
-    }
-  }
+	&:hover {
+		a {
+			&::before {
+				content: "\f005";
+			}
+		}
+	}
 
-  &.selected {
-    a.active {
-      &::before {
-        content: "\f005";
-      }
+	&.selected {
+		a.active {
+			&::before {
+				content: "\f005";
+			}
 
-      ~ a::before {
-        content: "\f006";
-      }
-    }
+			~ a::before {
+				content: "\f006";
+			}
+		}
 
-    a:not(.active) {
-      &::before {
-        content: "\f005";
-      }
-    }
-  }
+		a:not(.active) {
+			&::before {
+				content: "\f005";
+			}
+		}
+	}
 }
