@@ -1,10 +1,9 @@
 .btn {
+  &-primary {
+    color: $white;
+  }
 
-	&-primary {
-		color: $white;
-	}
-
-	&-secondary {
-		color: $white;
-	}
+  &-secondary {
+    color: $white;
+  }
 }

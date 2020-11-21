@@ -1,15 +1,15 @@
 .flex-latest-posts {
-	padding: $spacing-bottom 0 $spacing-bottom * 2;
+  padding: $spacing-bottom 0 $spacing-bottom * 2;
 
-	@include media-breakpoint-down(md) {
-		padding: $spacing-bottom-half 0 $spacing-bottom;
-	}
+  @include media-breakpoint-down(md) {
+    padding: $spacing-bottom-half 0 $spacing-bottom;
+  }
 
-	.post-excerpt {
-		margin-bottom: $single-gutter;
-	}
+  .post-excerpt {
+    margin-bottom: $single-gutter;
+  }
 
-	.featured-image {
-		margin-bottom: $single-gutter;
-	}
+  .featured-image {
+    margin-bottom: $single-gutter;
+  }
 }

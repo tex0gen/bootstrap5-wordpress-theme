@@ -1,34 +1,33 @@
 .flex-product-category-list {
-	margin-bottom: $spacing-bottom;
+  margin-bottom: $spacing-bottom;
 
-	.grid-item {
+  .grid-item {
+    .term-item {
+      background-position: bottom;
+      background-size: cover;
+      height: 200px;
+      margin-bottom: $double-gutter;
+      position: relative;
 
-		.term-item {
-			background-position: bottom;
-			background-size: cover;
-			height: 200px;
-			margin-bottom: $double-gutter;
-			position: relative;
+      .overlay {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 5;
+      }
 
-			.overlay {
-				bottom: 0;
-				left: 0;
-				position: absolute;
-				right: 0;
-				top: 0;
-				z-index: 5;
-			}
-
-			h3 {
-				background-color: rgba(0, 0, 0, 0.4);
-				bottom: 0;
-				color: $white;
-				left: 0;
-				margin-bottom: 0;
-				padding: 15px;
-				position: absolute;
-				right: 0;
-			}
-		}
-	}
+      h3 {
+        background-color: rgba(0, 0, 0, 0.4);
+        bottom: 0;
+        color: $white;
+        left: 0;
+        margin-bottom: 0;
+        padding: 15px;
+        position: absolute;
+        right: 0;
+      }
+    }
+  }
 }

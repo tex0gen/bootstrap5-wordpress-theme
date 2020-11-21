@@ -1,28 +1,10 @@
-jQuery(document).ready(function($) {
-  /*
-   * Utilities
-   */
+import heightMatcher from "./utilities/heightMatcher";
+import Swiper from "swiper";
 
-  // Heightmatcher
-  function heightmatcher(elem, breakpoint) {
-    breakpoint = typeof a !== "undefined" ? a : 0;
+const swiper = new Swiper(".owl-carousel");
 
-    let height = 0,
-      windowWidth = $(window).width();
-
-    if (windowWidth > breakpoint) {
-      $(elem).each(function() {
-        const thisHeight = $(this).outerHeight();
-
-        if (thisHeight > height) {
-          height = thisHeight;
-        }
-      });
-    }
-
-    $(elem).outerHeight(height);
-  }
-
+// Will be working to get rid of jQuery
+jQuery(document).ready(function ($) {
   // Sticky Menu
   function sticky_menu(elem) {
     const nav = $(elem);
@@ -32,7 +14,7 @@ jQuery(document).ready(function($) {
         navContainer = nav.parent(),
         navContainerHeight = navContainer.outerHeight();
 
-      $(document).on("scroll", function(e) {
+      $(document).on("scroll", function (e) {
         const scrollPos = $(document).scrollTop();
 
         if (scrollPos >= navTop) {
@@ -51,29 +33,30 @@ jQuery(document).ready(function($) {
   /*
    * Woocommerce
    */
-  $(".woocommerce-review-link").on("click", function(e) {
+  $(".woocommerce-review-link").on("click", function (e) {
     e.preventDefault();
 
     const anchorToScroll = $(".woocommerce-tabs"),
       scrollToPoint = $(anchorToScroll).offset().top;
 
     $("body").animate({
-      scrollTop: scrollToPoint - 60
+      scrollTop: scrollToPoint - 60,
     });
   });
 
-  /*
-   * Carousel
-   */
-  const oc = $(".owl-carousel");
-  const ocOptions = oc.data("carousel-options");
-  const defaults = {
-    items: 1,
-    loop: true,
-    autoplay: true,
-    autoplayHoverPause: true,
-    checkVisible: false
-  };
+  // OWL CAROUSEL REMOVED
+  // /*
+  //  * Carousel
+  //  */
+  // const oc = $(".owl-carousel");
+  // const ocOptions = oc.data("carousel-options");
+  // const defaults = {
+  //   items: 1,
+  //   loop: true,
+  //   autoplay: true,
+  //   autoplayHoverPause: true,
+  //   checkVisible: false
+  // };
 
-  oc.owlCarousel($.extend(defaults, ocOptions));
+  // oc.owlCarousel($.extend(defaults, ocOptions));
 });

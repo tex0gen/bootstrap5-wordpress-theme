@@ -2,17 +2,14 @@
 ** NOTE: Button styles for messages are found in _message.scss
 */
 .button {
+  @extend .btn;
 
-	@extend .btn;
-
-	&.single_add_to_cart_button,
-	&.checkout-button {
-
-		@extend .btn-primary;
-	}
+  &.single_add_to_cart_button,
+  &.checkout-button {
+    @extend .btn-primary;
+  }
 }
 
 .submit {
-
-	@extend .btn, .btn-primary;
+  @extend .btn, .btn-primary;
 }

@@ -1,170 +1,160 @@
 .flex-carousel {
-	margin-bottom: $spacing-bottom;
-	position: relative;
+  margin-bottom: $spacing-bottom;
+  position: relative;
 
-	.carousel-text {
-		bottom: 0;
-		left: 0;
-		position: absolute;
-		right: 0;
-		top: 0;
+  .carousel-text {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
 
-		.container,
-		.row {
-			height: 100%;
-		}
-	}
+    .container,
+    .row {
+      height: 100%;
+    }
+  }
 
-	.no-bg {
+  .no-bg {
+    .carousel-text {
+      position: static;
+    }
+  }
 
-		.carousel-text {
-			position: static;
-		}
-	}
+  .has-mobile {
+    .mobile-img {
+      @include media-breakpoint-up(md) {
+        display: none !important;
+      }
+    }
 
-	.has-mobile {
+    .desktop-img {
+      @include media-breakpoint-down(sm) {
+        display: none !important;
+      }
+    }
+  }
 
-		.mobile-img {
+  .owl-carousel .owl-stage-outer {
+    overflow: hidden;
+  }
 
-			@include media-breakpoint-up(md) {
-				display: none !important;
-			}
-		}
+  .owl-dots {
+    bottom: $single-gutter;
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
 
-		.desktop-img {
+    .owl-dot {
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 8px;
+      display: inline-block;
+      height: 8px;
+      margin: 0 3px;
+      outline: 0;
+      transition: background-color 0.25s ease-in-out;
+      width: 8px;
 
-			@include media-breakpoint-down(sm) {
-				display: none !important;
-			}
-		}
-	}
+      &.active {
+        background-color: rgba(255, 255, 255, 1);
+      }
+    }
+  }
 
-	.owl-carousel .owl-stage-outer {
-		overflow: hidden;
-	}
+  .owl-nav {
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
 
-	.owl-dots {
-		bottom: $single-gutter;
-		left: 0;
-		position: absolute;
-		right: 0;
-		text-align: center;
+    .owl-prev,
+    .owl-next {
+      bottom: 0;
+      font-size: 60px !important;
+      outline: 0;
+      position: absolute;
+      top: 0;
+      z-index: 5;
 
-		.owl-dot {
-			background-color: rgba(255, 255, 255, 0.5);
-			border-radius: 8px;
-			display: inline-block;
-			height: 8px;
-			margin: 0 3px;
-			outline: 0;
-			transition: background-color 0.25s ease-in-out;
-			width: 8px;
+      span {
+        color: rgba(255, 255, 255, 0.5);
 
-			&.active {
-				background-color: rgba(255, 255, 255, 1);
-			}
-		}
-	}
+        &:hover {
+          color: rgba(255, 255, 255, 1);
+        }
+      }
+    }
 
-	.owl-nav {
+    .owl-prev {
+      left: $single-gutter;
+    }
 
-		@include media-breakpoint-down(sm) {
-			display: none;
-		}
+    .owl-next {
+      right: $single-gutter;
+    }
+  }
 
-		.owl-prev,
-		.owl-next {
-			bottom: 0;
-			font-size: 60px !important;
-			outline: 0;
-			position: absolute;
-			top: 0;
-			z-index: 5;
+  .carousel-buttons {
+    a {
+      margin-right: 6px;
 
-			span {
-				color: rgba(255, 255, 255, 0.5);
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
 
-				&:hover {
-					color: rgba(255, 255, 255, 1);
-				}
-			}
-		}
+  .text-right {
+    .carousel-buttons {
+      a:last-child {
+        margin-right: 0;
+      }
+    }
+  }
 
-		.owl-prev {
-			left: $single-gutter;
-		}
+  &.showcase {
+    overflow-x: hidden;
+    padding: $spacing-bottom * 2 0;
 
-		.owl-next {
-			right: $single-gutter;
-		}
-	}
+    .owl-stage-outer {
+      overflow: visible !important;
+    }
 
-	.carousel-buttons {
+    .has-desktop {
+      transition: all 0.25s ease-in-out;
+    }
 
-		a {
-			margin-right: 6px;
+    .owl-item {
+      position: relative;
 
-			&:last-child {
-				margin-right: 0;
-			}
-		}
-	}
+      &.active {
+        .has-desktop {
+          left: 0;
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
 
-	.text-right {
+        &.center {
+          z-index: 999;
 
-		.carousel-buttons {
-
-			a:last-child {
-				margin-right: 0;
-			}
-		}
-	}
-
-	&.showcase {
-		overflow-x: hidden;
-		padding: $spacing-bottom * 2 0;
-
-		.owl-stage-outer {
-			overflow: visible !important;
-		}
-
-		.has-desktop {
-			transition: all 0.25s ease-in-out;
-		}
-
-		.owl-item {
-			position: relative;
-
-			&.active {
-
-				.has-desktop {
-					left: 0;
-					position: absolute;
-					right: 0;
-					top: 0;
-				}
-
-				&.center {
-					z-index: 999;
-
-					.has-desktop {
-						left: -$spacing-bottom;
-						right: -$spacing-bottom;
-						top: -$spacing-bottom / 3;
-						z-index: 999;
-					}
-				}
-			}
-		}
-	}
+          .has-desktop {
+            left: -$spacing-bottom;
+            right: -$spacing-bottom;
+            top: -$spacing-bottom / 3;
+            z-index: 999;
+          }
+        }
+      }
+    }
+  }
 }
 
-header + .flex-carousel,
 header + .flex-carousel {
-	margin-top: -$spacing-bottom;
+  margin-top: -$spacing-bottom;
 }
 
 .bg-img + .flex-carousel,
 .bg-color + .flex-carousel {
-	margin-top: -$spacing-bottom;
+  margin-top: -$spacing-bottom;
 }

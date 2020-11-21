@@ -1,22 +1,19 @@
 .woocommerce-pagination {
-	margin-bottom: $spacing-bottom;
+  margin-bottom: $spacing-bottom;
 
-	.page-numbers {
+  .page-numbers {
+    @extend .pagination;
 
-		@extend .pagination;
+    li {
+      @extend .page-item;
 
-		li {
+      // .current {
+      // 	@extend .page-link, .active;
+      // }
 
-			@extend .page-item;
-
-			// .current {
-			// 	@extend .page-link, .active;
-			// }
-
-			* {
-
-				@extend .page-link;
-			}
-		}
-	}
+      * {
+        @extend .page-link;
+      }
+    }
+  }
 }

@@ -1,54 +1,43 @@
 .tabs.wc-tabs {
+  @extend .nav-tabs, .nav;
+  margin-bottom: $single-gutter;
 
-	@extend .nav-tabs, .nav;
-	margin-bottom: $single-gutter;
+  li {
+    @extend .nav-item;
 
-	li {
+    a {
+      @extend .nav-link;
+    }
 
-		@extend .nav-item;
-
-		&.active {
-
-			a {
-
-				@extend .active;
-			}
-		}
-
-		a {
-
-			@extend .nav-link;
-		}
-	}
+    &.active {
+      a {
+        @extend .active;
+      }
+    }
+  }
 }
 
 .woocommerce-Tabs-panel.panel {
-	margin-bottom: $spacing-bottom;
+  margin-bottom: $spacing-bottom;
 }
 
 .woocommerce-MyAccount-navigation {
+  ul {
+    @extend .nav-tabs, .nav;
+    margin-bottom: $single-gutter;
 
-	ul {
+    li {
+      @extend .nav-item;
 
-		@extend .nav-tabs, .nav;
-		margin-bottom: $single-gutter;
+      &.is-active {
+        a {
+          @extend .active;
+        }
+      }
 
-		li {
-
-			@extend .nav-item;
-
-			&.is-active {
-
-				a {
-
-					@extend .active;
-				}
-			}
-
-			a {
-
-				@extend .nav-link;
-			}
-		}
-	}
+      a {
+        @extend .nav-link;
+      }
+    }
+  }
 }

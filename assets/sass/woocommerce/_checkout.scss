@@ -1,89 +1,78 @@
 // TODO: Fixes to be applied here since WC3.2
 form.checkout {
+  @extend .row;
 
-	@extend .row;
+  .col2-set {
+    @extend .col-12, .col-sm-6;
+    margin-bottom: $spacing-bottom;
 
-	.col2-set {
+    .col-1,
+    .col-2 {
+      padding-left: 0;
+      padding-right: 0;
+      width: 100%;
 
-		@extend .col-12, .col-sm-6;
-		margin-bottom: $spacing-bottom;
+      .form-row {
+        @extend .form-group;
 
-		.col-1,
-		.col-2 {
-			padding-left: 0;
-			padding-right: 0;
-			width: 100%;
+        input,
+        textarea {
+          @extend .form-control;
+        }
+      }
 
-			.form-row {
+      .form-row-first,
+      .form-row-last {
+        float: left;
+        width: 50%;
+      }
 
-				@extend .form-group;
+      .form-row-first {
+        padding-right: 15px;
+      }
 
-				input,
-				textarea {
+      .form-row-last {
+        padding-left: 15px;
+      }
+    }
+  }
 
-					@extend .form-control;
-				}
-			}
+  .order_review_wrapper {
+    @extend .col-12, .col-sm-6;
+  }
 
-			.form-row-first,
-			.form-row-last {
-				float: left;
-				width: 50%;
-			}
-
-			.form-row-first {
-				padding-right: 15px;
-			}
-
-			.form-row-last {
-				padding-left: 15px;
-			}
-		}
-	}
-
-	.order_review_wrapper {
-
-		@extend .col-12, .col-sm-6;
-	}
-
-	.woocommerce-NoticeGroup-checkout {
-
-		@extend .col-12;
-	}
+  .woocommerce-NoticeGroup-checkout {
+    @extend .col-12;
+  }
 }
 
 .woocommerce-checkout-review-order {
+  table {
+    @extend .table;
 
-	table {
+    th {
+      &.product-total {
+        text-align: right;
+      }
+    }
 
-		@extend .table;
+    td {
+      text-align: right;
 
-		th {
+      &.product-name {
+        text-align: left;
+      }
+    }
+  }
 
-			&.product-total {
-				text-align: right;
-			}
-		}
+  .payment_methods {
+    list-style-type: none;
+    padding: 0;
+  }
 
-		td {
-			text-align: right;
-
-			&.product-name {
-				text-align: left;
-			}
-		}
-	}
-
-	.payment_methods {
-		list-style-type: none;
-		padding: 0;
-	}
-
-	.place-order {
-
-		.button {
-
-			@extend .btn-primary;
-		}
-	}
+  .place-order {
+    .button {
+      @extend .btn-primary;
+    }
+  }
 }

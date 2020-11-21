@@ -1,12 +1,12 @@
 footer {
-	background-color: $dark-gray;
-	color: $white;
-	padding: 15px 0;
+  background-color: $dark-gray;
+  color: $white;
+  padding: 15px 0;
 }
 
 .bg-image + footer,
 .bg-color + footer,
 .flex-carousel + footer,
 .flex-full-width-image + footer {
-	margin-top: -$spacing-bottom;
+  margin-top: -$spacing-bottom;
 }
