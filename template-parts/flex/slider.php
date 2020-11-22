@@ -15,67 +15,70 @@ if ($slides) {
 	);
 ?>
 <section class="flex-carousel<?= ($carousel_type) ? ' '.$carousel_type:''; ?>">
-	<div class="owl-carousel" data-carousel-options='<?= json_encode($opts) ?>'>
-		<?php
-		foreach ($slides as $key => $slide) {
-			?>
-			<div class="has-desktop<?= ($slide['mobile_image']['ID']) ? ' has-mobile':''; ?><?= (!$slide['mobile_image'] || !$slide['background_image']) ? ' no-bg':''; ?>">
-				<?= wp_get_attachment_image( $slide['background_image']['ID'], 'full-width', false, array('class' => 'img-fluid desktop-img') ); ?>
-				<?= wp_get_attachment_image( $slide['mobile_image']['ID'], 'large', false, array('class' => 'img-fluid mobile-img') ); ?>
-				
-				<?php
-				if ($carousel_type === 'cta') {
-					$foreground_image = $slide['foreground_image'];
-					$alignment = $slide['alignment'];
-					switch ($alignment) {
-						case 'left':
-							$textalign = '';
-							break;
-						case 'center':
-							$textalign = ' offset-md-3';
-							$imgalign = ' offset-md-3';
-							break;
-						case 'right':
-							$textalign = ($foreground_image) ? ' order-md-1':' offset-md-6';
-							break;
-						default:
-							$textalign = '';
-							break;
-					}
-					?>
-					<div class="carousel-text">
-						<div class="container">
-							<div class="row align-items-center">
-								<div class="col-12 col-md-6<?= $textalign ?>">
-									<?php
-									if ($slide['text']) {
-										echo $slide['text'];
-									}
-									?>
-									
-									<?php if ( $slide['buttons'] ) { ?>
-										<div class="carousel-buttons">
-											<?php
-											foreach ( $slide['buttons'] as $btnkey => $button ) {
-												echo '<a href="' . $button['button_link'] . '" class="btn btn-primary btn-lg button' . ($btnkey + 1) . '">'.$button['button_text'].'</a>';
-											}
-											?>
-									</div>
+	<div class="slider" data-carousel-options='<?= json_encode($opts) ?>'>
+		<div class="swiper-wrapper">
+		
+			<?php
+			foreach ($slides as $key => $slide) {
+				?>
+				<div class="swiper-slide has-desktop<?= ($slide['mobile_image']['ID']) ? ' has-mobile':''; ?><?= (!$slide['background_image']) ? ' no-bg':''; ?>">
+					<?= wp_get_attachment_image( $slide['background_image']['ID'], 'full-width', false, array('class' => 'img-fluid desktop-img') ); ?>
+					<?= wp_get_attachment_image( $slide['mobile_image']['ID'], 'large', false, array('class' => 'img-fluid mobile-img') ); ?>
+					
+					<?php
+					if ($carousel_type === 'cta') {
+						$foreground_image = $slide['foreground_image'];
+						$alignment = $slide['alignment'];
+						switch ($alignment) {
+							case 'left':
+								$textalign = '';
+								break;
+							case 'center':
+								$textalign = ' offset-md-3';
+								$imgalign = ' offset-md-3';
+								break;
+							case 'right':
+								$textalign = ($foreground_image) ? ' order-md-1':' offset-md-6';
+								break;
+							default:
+								$textalign = '';
+								break;
+						}
+						?>
+						<div class="carousel-text">
+							<div class="container">
+								<div class="row align-items-center">
+									<div class="col-12 col-md-6<?= $textalign ?>">
+										<?php
+										if ($slide['text']) {
+											echo $slide['text'];
+										}
+										?>
+										
+										<?php if ( $slide['buttons'] ) { ?>
+											<div class="carousel-buttons">
+												<?php
+												foreach ( $slide['buttons'] as $btnkey => $button ) {
+													echo '<a href="' . $button['button_link'] . '" class="btn btn-primary btn-lg button' . ($btnkey + 1) . '">'.$button['button_text'].'</a>';
+												}
+												?>
+										</div>
 										<?php } ?>
-								</div>
-								<?php if ($foreground_image) { ?>
-									<div class="col-12 col-md-6<?= $imgalign ?>">
-										<?= wp_get_attachment_image( $foreground_image, 'large', false, array('class' => 'img-fluid') ); ?>
 									</div>
-								<?php } ?>
+									<?php if ($foreground_image) { ?>
+										<div class="col-12 col-md-6<?= $imgalign ?>">
+											<?= wp_get_attachment_image( $foreground_image, 'large', false, array('class' => 'img-fluid') ); ?>
+										</div>
+									<?php } ?>
+								</div>
 							</div>
 						</div>
-					</div>
-				<?php } ?>
-			</div>
-			<?php
-		}
-		?>
+					<?php } ?>
+				</div>
+				<?php
+			}
+			?>
+		</div>
 	</div>
 </section>
 <?php

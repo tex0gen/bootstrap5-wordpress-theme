@@ -1,26 +1,3 @@
-.tabs.wc-tabs {
-	@extend .nav-tabs, .nav;
-	margin-bottom: $single-gutter;
-
-	li {
-		@extend .nav-item;
-
-		a {
-			@extend .nav-link;
-		}
-
-		&.active {
-			a {
-				@extend .active;
-			}
-		}
-	}
-}
-
-.woocommerce-Tabs-panel.panel {
-	margin-bottom: $spacing-bottom;
-}
-
 .woocommerce-MyAccount-navigation {
 	ul {
 		@extend .nav-tabs, .nav;
@@ -29,15 +6,39 @@
 		li {
 			@extend .nav-item;
 
+			a {
+				@extend .nav-link;
+			}
+
 			&.is-active {
 				a {
 					@extend .active;
 				}
 			}
+		}
+	}
+}
+
+.tabs.wc-tabs {
+	@extend .nav-tabs, .nav;
+	margin-bottom: $single-gutter;
+	ul {
+		li {
+			@extend .nav-item;
 
 			a {
 				@extend .nav-link;
 			}
+
+			&.active {
+				a {
+					@extend .active;
+				}
+			}
 		}
 	}
+}
+
+.woocommerce-Tabs-panel.panel {
+	margin-bottom: $spacing-bottom;
 }

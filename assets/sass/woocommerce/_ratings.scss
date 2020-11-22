@@ -1,6 +1,6 @@
 // Product Ratings
 .star-rating {
-	font-family: fontAwesome;
+	font-family: fontAwesome, sans-serif;
 	font-size: 1em;
 	height: 1em;
 	line-height: 1;
@@ -48,7 +48,7 @@ p.stars {
 		&::before {
 			content: "\f006";
 			display: block;
-			font-family: fontAwesome;
+			font-family: fontAwesome, sans-serif;
 			height: 1em;
 			left: 0;
 			line-height: 1;
@@ -65,15 +65,13 @@ p.stars {
 		}
 	}
 
-	&:hover {
-		a {
+	&.selected {
+		a:not(.active) {
 			&::before {
 				content: "\f005";
 			}
 		}
-	}
 
-	&.selected {
 		a.active {
 			&::before {
 				content: "\f005";
@@ -81,12 +79,6 @@ p.stars {
 
 			~ a::before {
 				content: "\f006";
-			}
-		}
-
-		a:not(.active) {
-			&::before {
-				content: "\f005";
 			}
 		}
 	}

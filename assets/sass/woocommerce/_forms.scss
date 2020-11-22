@@ -8,21 +8,9 @@
 	}
 }
 
-.woocommerce-form-login,
-.woocommerce-form-register {
-	margin-bottom: $spacing-bottom;
-
-	.form-row {
-		@extend .form-group;
-
-		input.input-text {
-			@extend .form-control;
-		}
-
-		.button {
-			@extend .btn-primary;
-		}
-	}
+.form-row {
+	@extend .form-group;
+	padding: 5px;
 }
 
 .woocommerce-address-fields,
@@ -55,6 +43,23 @@
 	}
 }
 
+.woocommerce-form-login,
+.woocommerce-form-register {
+	margin-bottom: $spacing-bottom;
+
+	.form-row {
+		@extend .form-group;
+
+		input.input-text {
+			@extend .form-control;
+		}
+
+		.button {
+			@extend .btn-primary;
+		}
+	}
+}
+
 .woocommerce-billing-fields__field-wrapper,
 .woocommerce-shipping-fields__field-wrapper {
 	display: flex;
@@ -76,11 +81,6 @@
 	.form-row-wide {
 		flex-basis: 100%;
 	}
-}
-
-.form-row {
-	@extend .form-group;
-	padding: 5px;
 }
 
 .woocommerce-input-wrapper {

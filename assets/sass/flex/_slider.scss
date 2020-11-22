@@ -2,6 +2,10 @@
 	margin-bottom: $spacing-bottom;
 	position: relative;
 
+	.slider {
+		overflow: hidden;
+	}
+
 	.carousel-text {
 		bottom: 0;
 		left: 0;
@@ -35,65 +39,6 @@
 		}
 	}
 
-	.owl-carousel .owl-stage-outer {
-		overflow: hidden;
-	}
-
-	.owl-dots {
-		bottom: $single-gutter;
-		left: 0;
-		position: absolute;
-		right: 0;
-		text-align: center;
-
-		.owl-dot {
-			background-color: rgba(255, 255, 255, 0.5);
-			border-radius: 8px;
-			display: inline-block;
-			height: 8px;
-			margin: 0 3px;
-			outline: 0;
-			transition: background-color 0.25s ease-in-out;
-			width: 8px;
-
-			&.active {
-				background-color: rgba(255, 255, 255, 1);
-			}
-		}
-	}
-
-	.owl-nav {
-		@include media-breakpoint-down(sm) {
-			display: none;
-		}
-
-		.owl-prev,
-		.owl-next {
-			bottom: 0;
-			font-size: 60px !important;
-			outline: 0;
-			position: absolute;
-			top: 0;
-			z-index: 5;
-
-			span {
-				color: rgba(255, 255, 255, 0.5);
-
-				&:hover {
-					color: rgba(255, 255, 255, 1);
-				}
-			}
-		}
-
-		.owl-prev {
-			left: $single-gutter;
-		}
-
-		.owl-next {
-			right: $single-gutter;
-		}
-	}
-
 	.carousel-buttons {
 		a {
 			margin-right: 6px;
@@ -116,34 +61,28 @@
 		overflow-x: hidden;
 		padding: $spacing-bottom * 2 0;
 
-		.owl-stage-outer {
-			overflow: visible !important;
-		}
-
 		.has-desktop {
 			transition: all 0.25s ease-in-out;
 		}
 
-		.owl-item {
+		.swiper-slide {
 			position: relative;
 
-			&.active {
+			.has-desktop {
+				left: 0;
+				position: absolute;
+				right: 0;
+				top: 0;
+			}
+
+			&.center {
+				z-index: 999;
+
 				.has-desktop {
-					left: 0;
-					position: absolute;
-					right: 0;
-					top: 0;
-				}
-
-				&.center {
+					left: -$spacing-bottom;
+					right: -$spacing-bottom;
+					top: -$spacing-bottom / 3;
 					z-index: 999;
-
-					.has-desktop {
-						left: -$spacing-bottom;
-						right: -$spacing-bottom;
-						top: -$spacing-bottom / 3;
-						z-index: 999;
-					}
 				}
 			}
 		}

@@ -4,6 +4,11 @@
   "rules": {
     "order/properties-alphabetical-order": true,
     selector-class-pattern: null,
-    "max-line-length": 120
-  }
+    "max-line-length": 120,
+    "rule-empty-line-before": null,
+    "at-rule-empty-line-before": null
+  },
+  "ignoreFiles": [
+    "assets/build/**/*.css"
+  ]
 }
