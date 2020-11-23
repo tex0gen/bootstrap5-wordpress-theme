@@ -1,4 +1,13 @@
-<?php get_header(); ?>
+<?php
+/**
+ * Archive Template
+ *
+ * The archive page template.
+ *
+ * @package Themestrap
+ * @since 1.0.0
+ */
+get_header(); ?>
 
 <div class="container">
 	<div class="row">

@@ -2,6 +2,7 @@
 
 # Themestrap - Bootstrap 4 Wordpress Theme
 Note: This theme is not a complete theme. It is made as a boilerplate for rapid bespoke theme development.
+Uses Webpack 5 to build SASS and use ES6 transpiled JS. Also has linting for both styles and javascript to ensure your theme conforms to the WordPress code standards.
 
 This theme includes support for Woocommerce.
 

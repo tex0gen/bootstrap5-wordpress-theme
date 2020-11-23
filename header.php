@@ -1,3 +1,13 @@
+<?php
+/**
+ * Header Template
+ *
+ * The header template.
+ *
+ * @package Themestrap
+ * @since 1.0.0
+ */
+?>
 <!DOCTYPE html>
 <html lang="en-US">
 	<head>

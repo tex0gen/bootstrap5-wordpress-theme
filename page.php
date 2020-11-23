@@ -1,5 +1,14 @@
 <?php
-get_header();
+/**
+ * Default Page Template
+ *
+ * The default page template.
+ *
+ * @package Themestrap
+ * @since 1.0.0
+ */
+
+ get_header();
 
 if (
 	class_exists( 'WooCommerce' ) && is_woocommerce() ||
