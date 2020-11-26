@@ -14,7 +14,7 @@ function theme_enqueue_styles() {
 
 	// Javascript
 	// ADD ANY LOCAL SCRIPTS TO THE GULP FILE SO THAT THEY CAN BE CONCATENATED AND MINIFIED
-	wp_enqueue_script( 'mainjs', get_template_directory_uri() . '/assets/build/js/scripts.js', array('jquery'), null, false );
+	wp_enqueue_script( 'mainjs', get_template_directory_uri() . '/assets/build/js/scripts.js', null, null, true );
 }
 
 // Include Setup

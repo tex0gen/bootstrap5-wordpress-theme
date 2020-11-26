@@ -13,6 +13,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "assets/build"),
     filename: "js/scripts.js",
+    publicPath: './',
   },
   mode: "development",
   module: {
@@ -35,7 +36,23 @@ module.exports = {
         test: /\.(png|jpe?g|gif)$/i,
         use: [
           {
-            loader: "file-loader",
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: './images/',
+            },
+          },
+        ],
+      },
+      {
+        test: /\.(svg|eot|woff|woff2|ttf)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'webfonts/',
+            },
           },
         ],
       },

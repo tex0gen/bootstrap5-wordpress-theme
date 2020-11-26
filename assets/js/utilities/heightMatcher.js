@@ -1,12 +1,13 @@
 const heightMatcher = (elem, breakpoint) => {
-	breakpoint = typeof a !== 'undefined' ? a : 0;
+	breakpoint = typeof breakpoint === 'undefined' ? 0 : breakpoint;
 
-  const windowWidth = document.body.clientWidth;
+	const elements = document.querySelectorAll(elem);
+	const windowWidth = document.body.clientWidth;
 	let height = 0;
 
 	if (windowWidth > breakpoint) {
-		$(elem).each(function () {
-			const thisHeight = $(this).outerHeight();
+		elements.forEach((el) => {
+			const thisHeight = el.clientHeight;
 
 			if (thisHeight > height) {
 				height = thisHeight;
@@ -14,7 +15,10 @@ const heightMatcher = (elem, breakpoint) => {
 		});
 	}
 
-	$(elem).outerHeight(height);
+	let i;
+	for (i = 0; i < elements.length; i++) {
+		elements[i].style.height = height + 'px';
+	}
 };
 
 export default heightMatcher;
