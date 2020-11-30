@@ -1,10 +1,13 @@
 const path = require('path');
+const glob = require('glob-all');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const PurgecssPlugin = require('purgecss-webpack-plugin');
+const purgecssWordpress = require('purgecss-with-wordpress');
 
 module.exports = {
   context: __dirname,
@@ -16,7 +19,7 @@ module.exports = {
     filename: 'js/scripts.js',
     publicPath: './',
   },
-  mode: 'development',
+  mode: 'production',
   module: {
     rules: [
       {
@@ -73,6 +76,23 @@ module.exports = {
     }),
     new MiniCssExtractPlugin({
       filename: 'css/main.min.css',
+    }),
+    new PurgecssPlugin({
+      paths: glob.sync([
+        './**/*.php',
+        './template-parts/**/*.php',
+        './assets/js/**/*.js',
+      ]),
+      safelist: [
+        ...purgecssWordpress.safelist,
+        'sub-menu',
+        'textarea',
+        'label',
+        /^(menu-item)(.*)?$/,
+        /^wpcf7(.*)?$/,
+      ],
+      whitelist: ['pr3', 'pv2', 'ph3', 'mb1', 'input', 'tracked-mega'],
+      variables: true,
     }),
   ],
   optimization: {
