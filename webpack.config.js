@@ -48,8 +48,10 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: '[name].[ext]',
-              outputPath: './images/',
+              name: f => {
+                let dirNameInsideAssets = path.relative(path.join(__dirname, 'assets'), path.dirname(f));
+                return `${dirNameInsideAssets}/[name].[ext]`;
+              }
             },
           },
         ],
@@ -60,8 +62,11 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: '[name].[ext]',
-              outputPath: 'webfonts/',
+              name: f => {
+                let dirNameInsideAssets = path.relative(path.join(__dirname, 'assets'), path.dirname(f));
+                console.log(dirNameInsideAssets);
+                return `${dirNameInsideAssets}/[name].[ext]`;
+              }
             },
           },
         ],

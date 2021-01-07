@@ -9,16 +9,14 @@ new Swiper('.slider', {
 	effect: 'slide',
 	loop: true,
 	autoplay: {
-		delay: 5000
+		delay: 5000,
 	},
 });
-
-
 
 // Will be working to get rid of jQuery
 jQuery(document).ready(function ($) {
 	// Sticky Menu
-	function sticky_menu(elem) {
+	function stickyMenu(elem) {
 		const nav = $(elem);
 
 		if (nav.length) {
@@ -26,7 +24,7 @@ jQuery(document).ready(function ($) {
 				navContainer = nav.parent(),
 				navContainerHeight = navContainer.outerHeight();
 
-			$(document).on('scroll', function (e) {
+			$(document).on('scroll', function () {
 				const scrollPos = $(document).scrollTop();
 
 				if (scrollPos >= navTop) {
@@ -40,7 +38,7 @@ jQuery(document).ready(function ($) {
 		}
 	}
 
-	$(window).on('load, resize', sticky_menu('.sticky-nav'));
+	$(window).on('load, resize', stickyMenu('.sticky-nav'));
 
 	/*
 	 * Woocommerce
