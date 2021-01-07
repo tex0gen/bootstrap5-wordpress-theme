@@ -1,4 +1,14 @@
-<?php get_header(); ?>
+<?php
+/**
+ * Single Page Post Type Template
+ *
+ * The default single page post type template.
+ *
+ * @package Themestrap
+ * @since 1.0.0
+ */
+
+get_header(); ?>
 
 <div class="container">
 	<div class="row">

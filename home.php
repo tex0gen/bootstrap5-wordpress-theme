@@ -1,4 +1,14 @@
-<?php get_header(); ?>
+<?php
+/**
+ * Blog Archive Template
+ *
+ * The default blog archive template.
+ *
+ * @package Themestrap
+ * @since 1.0.0
+ */
+
+get_header(); ?>
 
 <div class="container">
 	<div class="row">
