@@ -54,5 +54,4 @@ if (
 	endif;
 }
 
-
 get_footer();

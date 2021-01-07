@@ -17,7 +17,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'assets/build'),
     filename: 'js/scripts.js',
-    publicPath: './',
+    publicPath: '../',
   },
   mode: 'production',
   module: {
@@ -64,7 +64,6 @@ module.exports = {
             options: {
               name: f => {
                 let dirNameInsideAssets = path.relative(path.join(__dirname, 'assets'), path.dirname(f));
-                console.log(dirNameInsideAssets);
                 return `${dirNameInsideAssets}/[name].[ext]`;
               }
             },

@@ -1,9 +1,6 @@
 # Travis CI (MIT License) configuration file for the Themestrap WordPress theme.
 # @link https://travis-ci.org/
 
-# For use with the Underscores WordPress theme.
-# @link https://github.com/Automattic/_s
-
 # Ditch sudo and use containers.
 # @link https://docs.travis-ci.com/user/migrating-from-legacy/#Why-migrate-to-container-based-infrastructure%3F
 # @link https://docs.travis-ci.com/user/workers/container-based-infrastructure/#Routing-your-build-to-container-based-infrastructure
@@ -28,6 +25,7 @@ matrix:
         - php: '7.2'
         - php: '7.3'
         - php: '7.4'
+        - php: '8.0'
         # bleeding edge PHP
         - php: 'nightly'
 
