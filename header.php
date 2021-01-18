@@ -20,8 +20,8 @@
 
 		<?php
 		// Include Header
-		get_template_part( 'template-parts/base/headers/content', 'header-inline' );
-		// get_template_part( 'template-parts/base/headers/content', 'header-separate' );
+		// get_template_part( 'template-parts/base/headers/content', 'header-inline' );
+		get_template_part( 'template-parts/base/headers/content', 'header-separate' );
 		?>
 
 		<?php
