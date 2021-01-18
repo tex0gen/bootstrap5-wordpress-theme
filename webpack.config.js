@@ -78,29 +78,42 @@ module.exports = {
     new BrowserSyncPlugin({
       files: ['**/*.php'],
     }),
-    new MiniCssExtractPlugin({
-      filename: 'css/main.min.css',
-    }),
-    new PurgecssPlugin({
-      paths: glob.sync([
-        './**/*.php',
-        './template-parts/**/*.php',
-        './assets/js/**/*.js',
-      ]),
-      safelist: [
-        ...purgecssWordpress.safelist,
-        'sub-menu',
-        'textarea',
-        'label',
-        /^(menu-item)(.*)?$/,
-        /^wpcf7(.*)?$/,
-      ],
-      whitelist: ['pr3', 'pv2', 'ph3', 'mb1', 'input', 'tracked-mega'],
-      variables: true,
-    }),
+		new MiniCssExtractPlugin({
+			filename: 'css/main.min.css',
+		}),
+		new PurgecssPlugin({
+			paths: glob.sync([
+				'./**/*.php',
+				'./assets/js/**/*.js',
+			]),
+			safelist: [
+				...purgecssWordpress.safelist,
+				'sub-menu',
+				'textarea',
+				'label',
+				'input',
+				'button',
+				/^(input)(.*)?$/,
+				/^(button)(.*)?$/,
+				/^(menu-item)(.*)?$/,
+				/^wpcf7(.*)?$/,
+			],
+			whitelist: ['pr3', 'pv2', 'ph3', 'mb1', 'input', 'tracked-mega'],
+			variables: true,
+		}),
   ],
   optimization: {
-    minimize: true,
-    minimizer: [new TerserPlugin(), new CssMinimizerPlugin()],
-  },
+    minimize: false,
+		minimizer: [
+			new TerserPlugin({
+				parallel: true,
+			}),
+			new CssMinimizerPlugin()
+		],
+	},
+	performance: {
+		hints: false,
+		maxEntrypointSize: 512000,
+		maxAssetSize: 512000
+	},
 };

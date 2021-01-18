@@ -9,6 +9,8 @@
     "at-rule-empty-line-before": null
   },
   "ignoreFiles": [
-    "assets/build/**/*.css"
+    "assets/build/**/*.css",
+		"node_modules/**/*.css",
+		"assets/sass/font-awesome/**/*.scss",
   ]
 }
