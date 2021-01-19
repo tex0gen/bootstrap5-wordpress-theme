@@ -10,6 +10,7 @@
 @import "_product-lists";
 @import "_ratings";
 
+/*! purgecss ignore */
 .woocommerce {
 	.content-area {
 		@extend .container;

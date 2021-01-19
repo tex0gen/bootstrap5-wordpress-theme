@@ -81,26 +81,26 @@ module.exports = {
 		new MiniCssExtractPlugin({
 			filename: 'css/main.min.css',
 		}),
-		new PurgecssPlugin({
-			paths: glob.sync([
-				'./**/*.php',
-				'./assets/js/**/*.js',
-			]),
-			safelist: [
-				...purgecssWordpress.safelist,
-				'sub-menu',
-				'textarea',
-				'label',
-				'input',
-				'button',
-				/^(input)(.*)?$/,
-				/^(button)(.*)?$/,
-				/^(menu-item)(.*)?$/,
-				/^wpcf7(.*)?$/,
-			],
-			whitelist: ['pr3', 'pv2', 'ph3', 'mb1', 'input', 'tracked-mega'],
-			variables: true,
-		}),
+		// new PurgecssPlugin({
+		// 	paths: glob.sync([
+		// 		'./**/*.php',
+		// 		'./assets/js/**/*.js',
+		// 	]),
+		// 	safelist: [
+		// 		...purgecssWordpress.safelist,
+		// 		'sub-menu',
+		// 		'textarea',
+		// 		'label',
+		// 		'input',
+		// 		'button',
+		// 		/^(input)(.*)?$/,
+		// 		/^(button)(.*)?$/,
+		// 		/^(menu-item)(.*)?$/,
+		// 		/^wpcf7(.*)?$/,
+		// 	],
+		// 	whitelist: ['pr3', 'pv2', 'ph3', 'mb1', 'input', 'tracked-mega'],
+		// 	variables: true,
+		// }),
   ],
   optimization: {
     minimize: false,

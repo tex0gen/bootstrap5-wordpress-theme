@@ -62,7 +62,11 @@
 @import "./font-awesome/scss/v4-shims";
 
 // Plugin Styles
-// @import "./woocommerce/woocommerce";
+
+/*! purgecss start ignore */
+@import "./woocommerce/woocommerce";
+
+/*! purgecss end ignore */
 
 // Base Styles
 @import "./base/base";

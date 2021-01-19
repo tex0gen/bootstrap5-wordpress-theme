@@ -6,7 +6,8 @@
 			.woocommerce-product-gallery__wrapper {
 				margin-bottom: 0;
 
-				.woocommerce-product-gallery__image {
+				.woocommerce-product-gallery__image,
+				.woocommerce-product-gallery__image--placeholder {
 					margin-bottom: $single-gutter;
 
 					&:nth-child(n + 2) {
