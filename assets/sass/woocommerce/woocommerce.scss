@@ -7,14 +7,13 @@
 @import "_nav-tabs";
 @import "_message";
 @import "_pagination";
+@import "_product";
 @import "_product-lists";
 @import "_ratings";
 
-/*! purgecss ignore */
-.woocommerce {
-	.content-area {
-		@extend .container;
-	}
+/*! purgecss start ignore */
+.content-area {
+	@extend .container;
 }
 
 // Archive Pages
@@ -45,3 +44,5 @@
 		@extend .col-6;
 	}
 }
+
+/*! purgecss end ignore */

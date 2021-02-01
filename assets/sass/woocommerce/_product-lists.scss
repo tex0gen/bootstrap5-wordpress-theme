@@ -16,8 +16,9 @@ ul.products {
 			}
 
 			img {
-				@extend .img-fluid;
+				height: auto;
 				margin-bottom: 15px;
+				max-width: 100%;
 			}
 
 			.price {

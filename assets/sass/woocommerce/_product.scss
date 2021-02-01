@@ -1,0 +1,10 @@
+.product {
+	form.cart {
+		@extend .d-flex;
+
+		.quantity {
+			margin-right: $single-gutter;
+			max-width: 65px;
+		}
+	}
+}

@@ -19,21 +19,20 @@
 	}
 }
 
-.tabs.wc-tabs {
+ul.tabs.wc-tabs {
 	@extend .nav-tabs, .nav;
 	margin-bottom: $single-gutter;
-	ul {
-		li {
-			@extend .nav-item;
 
+	li {
+		@extend .nav-item;
+
+		a {
+			@extend .nav-link;
+		}
+
+		&.active {
 			a {
-				@extend .nav-link;
-			}
-
-			&.active {
-				a {
-					@extend .active;
-				}
+				@extend .active;
 			}
 		}
 	}

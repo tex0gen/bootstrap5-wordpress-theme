@@ -14,7 +14,8 @@
 			@extend .col-2, .col-sm-1;
 
 			img {
-				@extend .img-fluid;
+				height: auto;
+				max-width: 100%;
 			}
 		}
 

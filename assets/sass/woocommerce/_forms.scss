@@ -6,6 +6,10 @@
 			@extend .form-control;
 		}
 	}
+
+	.comment-form-cookies-consent {
+		@extend .form-check;
+	}
 }
 
 .form-row {

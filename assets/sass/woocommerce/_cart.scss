@@ -5,6 +5,8 @@
 		width: 100%;
 
 		td {
+			vertical-align: middle;
+
 			&.product-quantity {
 				.quantity {
 					input {
@@ -15,10 +17,11 @@
 			}
 
 			&.product-thumbnail {
-				min-width: 150px;
+				max-width: 80px;
 
 				img {
-					@extend .img-fluid;
+					height: auto;
+					max-width: 100%;
 				}
 			}
 		}
