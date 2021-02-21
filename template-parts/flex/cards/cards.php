@@ -12,7 +12,7 @@ if ($cards) {
 					?>
 					<div class="col-12 col-md">
 						<div class="card" id="card-<?= $key + 1 ?>">
-							<?= wp_get_attachment_image( $card['card_image']['ID'], 'card', false, array('class' => 'img-fluid card-img-top') ); ?>
+							<?= ($card['card_image']) ? wp_get_attachment_image( $card['card_image']['ID'], 'card', false, array('class' => 'img-fluid card-img-top') ):''; ?>
 							<div class="card-body">
 								<h3 class="card-title"><?= $card['card_title']; ?></h3>
 								<h5 class="card-title"><?= $card['card_subtitle']; ?></h5>

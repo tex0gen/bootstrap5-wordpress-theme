@@ -27,7 +27,11 @@ require_once 'inc/settings/widgets.php';
 require_once 'inc/settings/image-sizes.php';
 require_once 'inc/settings/colour-list.php';
 require_once 'inc/settings/other/site_opts.php';
+
+// Plugins
 require_once 'inc/plugins/tgm-ip.php';
+require_once 'inc/plugins/acfe.php';
+
 
 // Include Woocommerce Customisations
 if ( class_exists( 'WooCommerce' ) ) {
