@@ -28,11 +28,23 @@ ul.tabs.wc-tabs {
 
 		a {
 			@extend .nav-link;
+			color: var(--primary-color);
 		}
 
 		&.active {
 			a {
 				@extend .active;
+			}
+		}
+
+		@include media-breakpoint-down(md) {
+			width: 100%;
+
+			.active {
+				background-color: var(--primary-color);
+				color: white;
+				border: 0;
+				border-radius: 4px;
 			}
 		}
 	}

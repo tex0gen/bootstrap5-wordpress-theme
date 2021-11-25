@@ -4,17 +4,9 @@
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles', 5 );
 function theme_enqueue_styles() {
 	// CSS
-	// This will return shortly..
-	// $url = get_bloginfo('url');
-	// if (strpos($url, 'localhost') || strpos($url, 'dev.')) {
-	//   wp_enqueue_style( 'main', get_template_directory_uri() . '/assets/build/css/main.css' );
-	// } else {
-	wp_enqueue_style( 'main', get_template_directory_uri() . '/assets/build/css/main.min.css' );
-	// }
-
+	wp_enqueue_style( 'main', get_template_directory_uri() . '/assets/build/frontend.css' );
 	// Javascript
-	// ADD ANY LOCAL SCRIPTS TO THE GULP FILE SO THAT THEY CAN BE CONCATENATED AND MINIFIED
-	wp_enqueue_script( 'mainjs', get_template_directory_uri() . '/assets/build/js/scripts.js', null, null, true );
+	wp_enqueue_script( 'mainjs', get_template_directory_uri() . '/assets/build/frontend.js', null, null, true );
 }
 
 // Include Setup

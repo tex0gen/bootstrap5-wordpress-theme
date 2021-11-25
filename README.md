@@ -29,3 +29,6 @@ Step 5. Start developing.
 - Pre-built components for use with the ACF Flex Content Editor for maximum flexibility in building pages. Easily modify, extend and remove components.
 - Updated often to include more components and features.
 - 404 Page.
+
+## Note:
+Woocommerce support temporarily removed while some fixes to the theme are put in place for Bootstrap v5.

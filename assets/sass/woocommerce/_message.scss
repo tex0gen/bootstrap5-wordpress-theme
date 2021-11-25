@@ -3,7 +3,8 @@
 	margin-bottom: $single-gutter;
 
 	.button {
-		@extend .btn-info, .float-right;
+		@extend .btn, .btn-info;
+		float: right;
 	}
 }
 
@@ -13,21 +14,31 @@
 	margin-bottom: $single-gutter;
 
 	.button {
-		@extend .btn-danger, .float-right, .btn-sm;
+		@extend .btn, .btn-danger, .btn-sm;
+		float: right;
 	}
 }
 
 .woocommerce-message {
 	@extend .alert-success, .alert;
+	display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 5px 15px;
 	margin-bottom: $single-gutter;
 
 	.button {
-		@extend .btn-success, .float-right, .btn-sm;
+		@extend .btn, .btn-sm;
+	}
+
+	span {
+		flex: 1;
 	}
 
 	&.woocommerce-info {
 		.button {
-			@extend .btn-info, .float-right;
+			@extend .btn, .btn-info;
+			float: right;
 		}
 	}
 }

@@ -37,12 +37,12 @@
             "acfe_flexible_clone": 0,
             "acfe_flexible_copy_paste": 0,
             "acfe_flexible_toggle": 0,
-            "acfe_flexible_close_button": 0,
+            "acfe_flexible_close_button": 1,
             "acfe_flexible_remove_add_button": 0,
             "acfe_flexible_remove_duplicate_button": 0,
             "acfe_flexible_remove_delete_button": 0,
             "acfe_flexible_lock": 0,
-            "acfe_flexible_modal_edition": 0,
+            "acfe_flexible_modal_edition": 1,
             "acfe_flexible_modal": {
                 "acfe_flexible_modal_enabled": "1",
                 "acfe_flexible_modal_title": "",
@@ -461,9 +461,9 @@
                     "max": "",
                     "acfe_flexible_thumbnail": "",
                     "acfe_flexible_category": false,
-                    "acfe_flexible_render_template": false,
-                    "acfe_flexible_render_style": false,
-                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_render_template": "",
+                    "acfe_flexible_render_style": "",
+                    "acfe_flexible_render_script": "",
                     "acfe_flexible_settings": false,
                     "acfe_flexible_settings_size": "medium"
                 },
@@ -633,9 +633,9 @@
                     "max": "",
                     "acfe_flexible_thumbnail": "",
                     "acfe_flexible_category": false,
-                    "acfe_flexible_render_template": false,
-                    "acfe_flexible_render_style": false,
-                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_render_template": "",
+                    "acfe_flexible_render_style": "",
+                    "acfe_flexible_render_script": "",
                     "acfe_flexible_settings": false,
                     "acfe_flexible_settings_size": "medium"
                 },
@@ -672,9 +672,9 @@
                     "max": "",
                     "acfe_flexible_thumbnail": "",
                     "acfe_flexible_category": false,
-                    "acfe_flexible_render_template": false,
-                    "acfe_flexible_render_style": false,
-                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_render_template": "",
+                    "acfe_flexible_render_style": "",
+                    "acfe_flexible_render_script": "",
                     "acfe_flexible_settings": false,
                     "acfe_flexible_settings_size": "medium"
                 },
@@ -710,9 +710,9 @@
                     "max": "",
                     "acfe_flexible_thumbnail": "",
                     "acfe_flexible_category": false,
-                    "acfe_flexible_render_template": false,
-                    "acfe_flexible_render_style": false,
-                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_render_template": "",
+                    "acfe_flexible_render_style": "",
+                    "acfe_flexible_render_script": "",
                     "acfe_flexible_settings": false,
                     "acfe_flexible_settings_size": "medium"
                 },
@@ -1021,9 +1021,9 @@
                     "max": "",
                     "acfe_flexible_thumbnail": "",
                     "acfe_flexible_category": false,
-                    "acfe_flexible_render_template": false,
-                    "acfe_flexible_render_style": false,
-                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_render_template": "",
+                    "acfe_flexible_render_style": "",
+                    "acfe_flexible_render_script": "",
                     "acfe_flexible_settings": false,
                     "acfe_flexible_settings_size": "medium"
                 },
@@ -1062,9 +1062,9 @@
                     "max": "",
                     "acfe_flexible_thumbnail": "",
                     "acfe_flexible_category": false,
-                    "acfe_flexible_render_template": false,
-                    "acfe_flexible_render_style": false,
-                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_render_template": "",
+                    "acfe_flexible_render_style": "",
+                    "acfe_flexible_render_script": "",
                     "acfe_flexible_settings": false,
                     "acfe_flexible_settings_size": "medium"
                 },
@@ -1143,9 +1143,9 @@
                     "max": "",
                     "acfe_flexible_thumbnail": "",
                     "acfe_flexible_category": false,
-                    "acfe_flexible_render_template": false,
-                    "acfe_flexible_render_style": false,
-                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_render_template": "",
+                    "acfe_flexible_render_style": "",
+                    "acfe_flexible_render_script": "",
                     "acfe_flexible_settings": false,
                     "acfe_flexible_settings_size": "medium"
                 },
@@ -1300,9 +1300,9 @@
                     "max": "",
                     "acfe_flexible_thumbnail": "",
                     "acfe_flexible_category": false,
-                    "acfe_flexible_render_template": false,
-                    "acfe_flexible_render_style": false,
-                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_render_template": "",
+                    "acfe_flexible_render_style": "",
+                    "acfe_flexible_render_script": "",
                     "acfe_flexible_settings": false,
                     "acfe_flexible_settings_size": "medium"
                 },
@@ -1357,9 +1357,9 @@
                     "max": "",
                     "acfe_flexible_thumbnail": "",
                     "acfe_flexible_category": false,
-                    "acfe_flexible_render_template": false,
-                    "acfe_flexible_render_style": false,
-                    "acfe_flexible_render_script": false,
+                    "acfe_flexible_render_template": "",
+                    "acfe_flexible_render_style": "",
+                    "acfe_flexible_render_script": "",
                     "acfe_flexible_settings": false,
                     "acfe_flexible_settings_size": "medium"
                 }
@@ -1386,7 +1386,7 @@
     "hide_on_screen": [
         "the_content"
     ],
-    "active": 1,
+    "active": true,
     "description": "",
     "acfe_display_title": "",
     "acfe_autosync": [
@@ -1395,5 +1395,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1613920859
+    "modified": 1613951535
 }

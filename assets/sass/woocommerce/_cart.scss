@@ -10,7 +10,6 @@
 			&.product-quantity {
 				.quantity {
 					input {
-						@extend .form-control;
 						width: 80px;
 					}
 				}
@@ -27,24 +26,24 @@
 		}
 
 		.button {
-			@extend .float-right, .btn-primary;
+			@extend .btn, .btn-primary;
+			float: right;
 		}
 
 		.coupon {
-			@extend .float-left;
+			float: left;
 
 			label {
 				display: none;
 			}
 
 			.input-text {
-				@extend .form-control;
 				display: inline-block;
-				width: 59%;
+				width: 58%;
 			}
 
 			.button {
-				@extend .btn-secondary;
+				@extend .btn, .btn-secondary;
 			}
 		}
 	}
@@ -66,7 +65,7 @@
 		}
 
 		.checkout-button {
-			@extend .float-right;
+			float: right;
 		}
 	}
 }

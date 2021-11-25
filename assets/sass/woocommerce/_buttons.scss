@@ -1,13 +1,17 @@
 /*
 ** NOTE: Button styles for messages are found in _message.scss
 */
-.button {
+.woocommerce a.button {
 	@extend .btn;
 
 	&.single_add_to_cart_button,
 	&.checkout-button {
 		@extend .btn-primary;
 	}
+}
+
+.add_to_cart_button {
+	@extend .btn, .btn-secondary;
 }
 
 .submit {

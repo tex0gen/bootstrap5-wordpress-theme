@@ -10,6 +10,7 @@ ul.products {
 		.woocommerce-LoopProduct-link {
 			position: relative;
 			text-decoration: none;
+			display: block;
 
 			.onsale {
 				position: absolute;
@@ -37,3 +38,37 @@ ul.products {
 		}
 	}
 }
+
+.Posts .product {
+		margin-bottom: $double-gutter;
+
+		.woocommerce-LoopProduct-link {
+			position: relative;
+			text-decoration: none;
+			display: block;
+
+			.onsale {
+				position: absolute;
+			}
+
+			img {
+				height: auto;
+				margin-bottom: 15px;
+				max-width: 100%;
+			}
+
+			.price {
+				display: block;
+				margin-bottom: $single-gutter;
+
+				del,
+				ins {
+					display: inline-block;
+				}
+			}
+		}
+
+		.button {
+			@extend .btn, .btn-primary;
+		}
+	}

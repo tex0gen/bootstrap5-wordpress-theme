@@ -1,6 +1,6 @@
 // Product Ratings
 .star-rating {
-	font-family: fontAwesome, sans-serif;
+	font-family: 'Font Awesome\ 5 Pro', sans-serif;
 	font-size: 1em;
 	height: 1em;
 	line-height: 1;
@@ -10,6 +10,7 @@
 	width: 74px;
 
 	&::before {
+		font-family: 'Font Awesome\ 5 Pro', sans-serif;
 		color: #d3ced2;
 		content: "\f006\f006\f006\f006\f006";
 		float: left;
@@ -48,7 +49,7 @@ p.stars {
 		&::before {
 			content: "\f006";
 			display: block;
-			font-family: fontAwesome, sans-serif;
+			font-family: 'Font Awesome\ 5 Pro', sans-serif;
 			height: 1em;
 			left: 0;
 			line-height: 1;

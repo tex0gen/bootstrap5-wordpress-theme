@@ -1,4 +1,3 @@
-// TODO: Fixes to be applied here since WC3.2
 form.checkout {
 	@extend .row;
 
@@ -12,14 +11,14 @@ form.checkout {
 			padding-right: 0;
 			width: 100%;
 
-			.form-row {
-				@extend .form-group;
+			// .form-row {
+			// 	@extend .form-group;
 
-				input,
-				textarea {
-					@extend .form-control;
-				}
-			}
+			// 	input,
+			// 	textarea {
+			// 		@extend .form-control;
+			// 	}
+			// }
 
 			.form-row-first,
 			.form-row-last {
@@ -72,7 +71,13 @@ form.checkout {
 
 	.place-order {
 		.button {
-			@extend .btn-primary;
+			@extend .btn, .btn-primary;
 		}
+	}
+}
+
+.place-order {
+	.button {
+		width: 100%;
 	}
 }

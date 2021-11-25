@@ -11,9 +11,12 @@
 @import "_product-lists";
 @import "_ratings";
 
-/*! purgecss start ignore */
 .content-area {
 	@extend .container;
+}
+
+.contain {
+	position: relative;
 }
 
 // Archive Pages
@@ -45,4 +48,18 @@
 	}
 }
 
-/*! purgecss end ignore */
+.attachment-woocommerce_thumbnail {
+	@extend .img-fluid;
+}
+
+.woocommerce-breadcrumb {
+	margin-bottom: 30px;
+}
+
+.onsale {
+	position: absolute;
+	top: 10px;
+	background-color: red;
+	color: white;
+	padding: 5px 10px;
+}

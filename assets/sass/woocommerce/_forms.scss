@@ -1,32 +1,32 @@
-.comment-form {
-	.comment-form-comment {
-		@extend .form-group;
+// .comment-form {
+// .comment-form-comment {
+// 	@extend .form-group;
 
-		textarea {
-			@extend .form-control;
-		}
-	}
+// 	textarea {
+// 		@extend .form-control;
+// 	}
+// }
 
-	.comment-form-cookies-consent {
-		@extend .form-check;
-	}
-}
+// .comment-form-cookies-consent {
+// 	@extend .form-check;
+// }
+// }
 
 .form-row {
-	@extend .form-group;
+	// @extend .form-group;
 	padding: 5px;
 }
 
 .woocommerce-address-fields,
 .edit-account {
-	.form-row {
-		@extend .form-group;
+	// .form-row {
+	// 	@extend .form-group;
 
-		input,
-		textarea {
-			@extend .form-control;
-		}
-	}
+	// 	input,
+	// 	textarea {
+	// 		@extend .form-control;
+	// 	}
+	// }
 
 	.form-row-first,
 	.form-row-last {
@@ -43,7 +43,7 @@
 	}
 
 	.button {
-		@extend .btn-primary;
+		@extend .btn, .btn-primary;
 	}
 }
 
@@ -52,14 +52,14 @@
 	margin-bottom: $spacing-bottom;
 
 	.form-row {
-		@extend .form-group;
+		// @extend .form-group;
 
-		input.input-text {
-			@extend .form-control;
-		}
+		// input.input-text {
+		// 	@extend .form-control;
+		// }
 
 		.button {
-			@extend .btn-primary;
+			@extend .btn, .btn-primary;
 		}
 	}
 }
