@@ -12,7 +12,7 @@ Step 1. `git clone https://github.com/tex0gen/bootstrap4-wordpress-theme.git --r
 
 Step 2. Run `npm install` inside the theme directory.
 
-Step 3. Run `npm run-script dev`.
+Step 3. Run `npm start`.
 
 Step 3. Install Advanced Custom Fields Pro plugin. https://www.advancedcustomfields.com/pro/
 
