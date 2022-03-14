@@ -4,6 +4,7 @@
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles', 5 );
 function theme_enqueue_styles() {
 	// CSS
+	wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/assets/fontawesome/css/all.min.css' );
 	wp_enqueue_style( 'main', get_template_directory_uri() . '/assets/build/frontend.css' );
 	// Javascript
 	wp_enqueue_script( 'mainjs', get_template_directory_uri() . '/assets/build/frontend.js', null, null, true );
