@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.com/tex0gen/bootstrap4-wordpress-theme.svg?branch=master)](https://travis-ci.com/tex0gen/bootstrap4-wordpress-theme)
 
-# Themestrap - Bootstrap 4 Wordpress Theme
+# Themestrap - Bootstrap 5 Wordpress Theme
 Note: This theme is not a complete theme. It is made as a boilerplate for rapid bespoke theme development.
 Uses Webpack 5 to build SASS and use ES6 transpiled JS. Also has linting for both styles and javascript to ensure your theme conforms to the WordPress code standards.
 
@@ -21,7 +21,7 @@ Step 4. Activate Theme.
 Step 5. Start developing.
 
 ## Features
-- Uses Bootstrap 4.5
+- Uses Bootstrap 5
 - Webpack for linting, transpiling SASS, JS and more.
 - Woocommerce support built in.
 - Woocommerce templates mostly untouched. Bootstrap classes added to woocommerce via the `@extend` directive so you can update your woocommerce trouble free.
