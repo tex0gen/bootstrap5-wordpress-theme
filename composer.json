@@ -1,0 +1,12 @@
+{
+    "name": "tex0gen/wp-themestrap",
+    "authors": [
+        {
+            "name": "Steve",
+            "email": "tex0gen@gmail.com"
+        }
+    ],
+    "require": {
+        "stoutlogic/acf-builder": "^1.12"
+    }
+}

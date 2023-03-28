@@ -1,42 +1,50 @@
 const path = require('path');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const TerserWebPackPlugin = require('terser-webpack-plugin');
-const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const defaultConfig = require('@wordpress/scripts/config/webpack.config.js');
+const glob = require('glob');
 
-module.exports = {
+var sharedConfig = {
 	...defaultConfig,
+	externals: {
+		jquery: 'jQuery',
+	},
+};
+
+const allConfig = [];
+const entries = {};
+const files = glob.sync('./template-parts/flex/**/*.scss');
+
+files.forEach((file) => {
+	const blockName = file.split('/').slice(-2, -1)[0];
+	entries[blockName] = path.resolve(__dirname, file);
+
+	let entry = Object.assign({}, sharedConfig, {
+		name: blockName,
+		entry: glob.sync('./template-parts/flex/**/*.scss'),
+		output: {
+			path: path.resolve(
+				__dirname,
+				'./template-parts/flex/' + blockName + '/build/'
+			),
+		},
+	});
+
+	allConfig.push(entry);
+});
+
+const primaryConfig = Object.assign({}, sharedConfig, {
+	name: "main",
 	entry: {
-		frontend: ['./assets/js/main.js', './assets/sass/main.scss'],
+		frontend: [
+			'./assets/js/main.js',
+			'./assets/sass/main.scss'
+		],
 	},
 	output: {
 		path: path.resolve(__dirname, './assets/build'),
 	},
-	optimization: {
-		...defaultConfig.optimization,
-		minimize: true,
-		minimizer: [
-			new CssMinimizerPlugin(),
-			new TerserWebPackPlugin(),
-		],
-		splitChunks: {
-			cacheGroups: {
-				default: false,
-				frontend: {
-					chunks: 'all',
-					enforce: true,
-					name: 'frontend',
-					test: /main\.s[ac]ss$/i,
-				},
-			},
-		},
-	},
-	plugins: [
-		...defaultConfig.plugins,
-		new MiniCssExtractPlugin(),
-	],
-	externals: {
-		jquery: 'jQuery',
-		isotope: 'isotope',
-	},
-};
+});
+
+allConfig.push(primaryConfig);
+
+
+module.exports = allConfig;
