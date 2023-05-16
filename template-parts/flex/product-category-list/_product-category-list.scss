@@ -1,12 +1,14 @@
+@import '../../../assets/sass/block-includes';
+
 .flex-product-category-list {
-	margin-bottom: $spacing-bottom;
+	margin-bottom: var(--spacing-bottom);
 
 	.grid-item {
 		.term-item {
 			background-position: bottom;
 			background-size: cover;
 			height: 200px;
-			margin-bottom: $double-gutter;
+			margin-bottom: var(--double-gutter);
 			position: relative;
 
 			.overlay {

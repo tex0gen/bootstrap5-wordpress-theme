@@ -1,6 +1,6 @@
 .woocommerce-info {
 	@extend .alert-info, .alert;
-	margin-bottom: $single-gutter;
+	margin-bottom: var(--single-gutter);
 
 	.button {
 		@extend .btn, .btn-info;
@@ -11,7 +11,7 @@
 .woocommerce-error {
 	@extend .alert-danger, .alert;
 	list-style-type: none;
-	margin-bottom: $single-gutter;
+	margin-bottom: var(--single-gutter);
 
 	.button {
 		@extend .btn, .btn-danger, .btn-sm;
@@ -25,7 +25,7 @@
     flex-wrap: wrap;
     align-items: center;
     padding: 5px 15px;
-	margin-bottom: $single-gutter;
+	margin-bottom: var(--single-gutter);
 
 	.button {
 		@extend .btn, .btn-sm;

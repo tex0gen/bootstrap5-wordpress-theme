@@ -7,7 +7,7 @@
 			@extend .d-flex;
 
 			.quantity {
-				margin-right: $single-gutter;
+				margin-right: var(--single-gutter);
 				max-width: 65px;
 			}
 		}

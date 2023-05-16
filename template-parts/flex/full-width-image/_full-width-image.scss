@@ -1,0 +1,9 @@
+@import '../../../assets/sass/block-includes';
+
+.flex-full-width-image {
+	margin-bottom: var(--spacing-bottom);
+
+	img {
+		height: auto;
+	}
+}

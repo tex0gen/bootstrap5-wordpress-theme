@@ -1,6 +1,8 @@
+@import '../../../assets/sass/block-includes';
+
 .flex-content-block {
 	background-size: cover;
-	margin-bottom: $spacing-bottom;
+	margin-bottom: var(--spacing-bottom);
 
 	.content {
 		p:last-child {
@@ -34,5 +36,5 @@
 }
 
 .flex-full-width-image + .flex-content-block {
-	margin-top: -$spacing-bottom;
+	margin-top: -var(--spacing-bottom);
 }

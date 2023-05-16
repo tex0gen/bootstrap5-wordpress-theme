@@ -1,7 +1,7 @@
 .woocommerce-cart-form {
 	.shop_table {
 		@extend .table;
-		margin-bottom: $spacing-bottom;
+		margin-bottom: var(--spacing-bottom);
 		width: 100%;
 
 		td {
@@ -51,7 +51,7 @@
 
 .cart-collaterals {
 	@extend .row;
-	margin-bottom: $spacing-bottom;
+	margin-bottom: var(--spacing-bottom);
 
 	.cart_totals {
 		@extend .col-sm-6, .offset-sm-6;

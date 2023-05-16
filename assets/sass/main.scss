@@ -5,6 +5,7 @@
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/maps";
 @import "~bootstrap/scss/utilities";
 // Layout & components
 @import "~bootstrap/scss/root";
@@ -43,7 +44,7 @@
 @import "~bootstrap/scss/utilities/api";
 
 // Extras
-@import "~swiper/swiper.scss";
+@import "~swiper/swiper.css";
 
 // Plugin Styles
 // @import "./woocommerce/woocommerce";
@@ -63,14 +64,3 @@
 @import "./components/sidebar";
 @import "./components/post-item";
 @import "./components/footer";
-
-// Flex components
-@import "./flex/product-category-list";
-@import "./flex/featured-products";
-@import "./flex/content-block";
-@import "./flex/card";
-@import "./flex/alternating-rows";
-@import "./flex/full-width-image";
-@import "./flex/latest-posts";
-@import "./flex/slider";
-@import "./flex/logos";

@@ -49,7 +49,7 @@
 
 .woocommerce-form-login,
 .woocommerce-form-register {
-	margin-bottom: $spacing-bottom;
+	margin-bottom: var(--spacing-bottom);
 
 	.form-row {
 		// @extend .form-group;
@@ -75,11 +75,11 @@
 	}
 
 	.form-row-first {
-		padding-right: $single-gutter;
+		padding-right: var(--single-gutter);
 	}
 
 	.form-row-last {
-		padding-left: $single-gutter;
+		padding-left: var(--single-gutter);
 	}
 
 	.form-row-wide {

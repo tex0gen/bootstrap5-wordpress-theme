@@ -1,8 +1,8 @@
 .post-item {
-	margin-bottom: $double-gutter;
-	padding-bottom: $double-gutter;
+	margin-bottom: var(--double-gutter);
+	padding-bottom: var(--double-gutter);
 
 	.post-meta {
-		margin-bottom: $single-gutter;
+		margin-bottom: var(--single-gutter);
 	}
 }

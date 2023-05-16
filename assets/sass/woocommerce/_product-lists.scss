@@ -5,7 +5,7 @@ ul.products {
 
 	.product {
 		@extend .col-sm-3;
-		margin-bottom: $double-gutter;
+		margin-bottom: var(--double-gutter);
 
 		.woocommerce-LoopProduct-link {
 			position: relative;
@@ -24,7 +24,7 @@ ul.products {
 
 			.price {
 				display: block;
-				margin-bottom: $single-gutter;
+				margin-bottom: var(--single-gutter);
 
 				del,
 				ins {
@@ -40,7 +40,7 @@ ul.products {
 }
 
 .Posts .product {
-		margin-bottom: $double-gutter;
+		margin-bottom: var(--double-gutter);
 
 		.woocommerce-LoopProduct-link {
 			position: relative;
@@ -59,7 +59,7 @@ ul.products {
 
 			.price {
 				display: block;
-				margin-bottom: $single-gutter;
+				margin-bottom: var(--single-gutter);
 
 				del,
 				ins {

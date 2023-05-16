@@ -44,7 +44,7 @@
 
 				.woocommerce-product-gallery__image,
 				.woocommerce-product-gallery__image--placeholder {
-					margin-bottom: $single-gutter;
+					margin-bottom: var(--single-gutter);
 
 					&:nth-child(n + 2) {
 						display: inline-block;

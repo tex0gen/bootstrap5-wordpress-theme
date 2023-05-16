@@ -19,11 +19,13 @@ files.forEach((file) => {
 
 	let entry = Object.assign({}, sharedConfig, {
 		name: blockName,
-		entry: glob.sync('./template-parts/flex/**/*.scss'),
+		entry: {
+			block: ['./template-parts/flex/' + blockName + '/_' + blockName + '.scss'],
+		},
 		output: {
 			path: path.resolve(
 				__dirname,
-				'./template-parts/flex/' + blockName + '/build/'
+				'./template-parts/flex/' + blockName + '/build/',
 			),
 		},
 	});
@@ -44,7 +46,19 @@ const primaryConfig = Object.assign({}, sharedConfig, {
 	},
 });
 
-allConfig.push(primaryConfig);
+const adminConfig = Object.assign({}, sharedConfig, {
+	name: "admin",
+	entry: {
+		admin: [
+			'./assets/sass/admin.scss'
+		],
+	},
+	output: {
+		path: path.resolve(__dirname, './assets/admin/build'),
+	},
+});
 
+allConfig.push(primaryConfig);
+allConfig.push(adminConfig);
 
 module.exports = allConfig;

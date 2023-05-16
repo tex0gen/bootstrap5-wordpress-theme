@@ -1,7 +1,7 @@
 .woocommerce-MyAccount-navigation {
 	ul {
 		@extend .nav-tabs, .nav;
-		margin-bottom: $single-gutter;
+		margin-bottom: var(--single-gutter);
 
 		li {
 			@extend .nav-item;
@@ -21,7 +21,7 @@
 
 ul.tabs.wc-tabs {
 	@extend .nav-tabs, .nav;
-	margin-bottom: $single-gutter;
+	margin-bottom: var(--single-gutter);
 
 	li {
 		@extend .nav-item;
@@ -51,5 +51,5 @@ ul.tabs.wc-tabs {
 }
 
 .woocommerce-Tabs-panel.panel {
-	margin-bottom: $spacing-bottom;
+	margin-bottom: var(--spacing-bottom);
 }

@@ -1,0 +1,18 @@
+@import '../../../assets/sass/block-includes';
+
+.flex-alternating {
+	margin-bottom: var(--spacing-bottom);
+
+	h2 {
+		margin-bottom: var(--spacing-bottom-half);
+	}
+
+	img {
+		margin-bottom: var(--single-gutter);
+	}
+
+	&-item {
+		padding-bottom: var(--spacing-bottom-half);
+		padding-top: var(--spacing-bottom-half);
+	}
+}

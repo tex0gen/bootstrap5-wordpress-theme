@@ -12,11 +12,11 @@ add_action( 'acf/init', 'themestrap_acfe_modules' );
 function themestrap_acfe_modules() {
 	if ( function_exists( 'acf_update_setting' ) ) {
 		acf_update_setting( 'acfe/modules/author', false );
-		acf_update_setting( 'acfe/modules/dynamic_taxonomies', false );
-		acf_update_setting( 'acfe/modules/dynamic_post_types', false );
-		acf_update_setting( 'acfe/modules/dynamic_forms', false );
+		acf_update_setting( 'acfe/modules/taxonomies', false );
+		acf_update_setting( 'acfe/modules/post_types', false );
+		acf_update_setting( 'acfe/modules/forms', false );
 		acf_update_setting( 'acfe/modules/categories', false );
-		acf_update_setting( 'acfe/modules/dynamic_options_pages', false );
+		acf_update_setting( 'acfe/modules/options_pages', false );
 		acf_update_setting( 'acfe/modules/multilang', false );
 		acf_update_setting( 'acfe/modules/options', false );
 		acf_update_setting( 'acfe/php', false );
@@ -42,6 +42,6 @@ function my_acf_layout_thumbnail( $thumbnail, $field, $layout ) {
 add_filter( 'acfe/flexible/render/style', 'my_acf_layout_style', 10, 4 );
 function my_acf_layout_style( $file, $field, $layout, $is_preview ) {
 	$file_name = str_replace('_', '-', $layout['name']);
-	$file = get_stylesheet_directory() . '/template-parts/flex/' . $file_name . '/' . $file_name . '-preview.css';
+	$file = get_stylesheet_directory() . '/template-parts/flex/' . $file_name . '/build/block.css';
 	return $file;
 }

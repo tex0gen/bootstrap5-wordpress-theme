@@ -1,6 +1,6 @@
 .sidebar {
 	.widget {
-		margin-bottom: $double-gutter;
+		margin-bottom: var(--double-gutter);
 
 		ul {
 			list-style-type: none;

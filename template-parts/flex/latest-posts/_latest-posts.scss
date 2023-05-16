@@ -1,0 +1,17 @@
+@import '../../../assets/sass/block-includes';
+
+.flex-latest-posts {
+	padding: var(--spacing-bottom) 0 var(--spacing-bottom) * 2;
+
+	@include media-breakpoint-down(md) {
+		padding: var(--spacing-bottom-half) 0 var(--spacing-bottom);
+	}
+
+	.post-excerpt {
+		margin-bottom: var(--single-gutter);
+	}
+
+	.featured-image {
+		margin-bottom: var(--single-gutter);
+	}
+}

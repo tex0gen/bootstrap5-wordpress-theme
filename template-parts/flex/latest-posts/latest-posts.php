@@ -15,26 +15,25 @@
         'numberposts' => $show_posts
       );
 
-      $posts = get_posts($args);
-      if ($posts) {
-        $post_total = count($posts);
-        foreach ($posts as $key => $post) {
-          setup_postdata( $post );
+      $post_items = get_posts($args);
+
+	  if ($post_items) {
+        $post_total = count($post_items);
+        foreach ($post_items as $key => $item) {
           ?>
           <div class="col-12 col-lg-4 p-30">
             <div class="news-item">
               <div class="featured-image">
-                <?php the_post_thumbnail( 'card', array('class' => 'img-fluid') ); ?>
+                <?= get_the_post_thumbnail( $item->ID, 'card', array('class' => 'img-fluid') ); ?>
               </div>
-              <?php the_title('<h3>','</h3>'); ?>
+              <h3><?= get_the_title($item->ID); ?></h3>
               <div class="post-excerpt">
-                <?php the_excerpt(); ?>
+                <?php get_the_excerpt( $item->ID ); ?>
               </div>
-              <a href="<?php the_permalink(); ?>" class="btn btn-primary">Read more</a>
+              <a href="<?= get_permalink( $item->ID ); ?>" class="btn btn-primary">Read more</a>
             </div>
           </div>
           <?php
-          wp_reset_postdata();
         }
       }
       ?>

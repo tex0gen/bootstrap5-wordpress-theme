@@ -1,58 +1,49 @@
 {
-  "name": "themestrap",
-  "version": "1.0.0",
-  "description": "Themestrap Theme.",
-  "main": "index.js",
-  "scripts": {
-    "build": "wp-scripts build",
-    "check-engines": "wp-scripts check-engines",
-    "check-licenses": "wp-scripts check-licenses",
-    "format": "wp-scripts format",
-    "lint:css": "wp-scripts lint-style",
-    "lint:js": "wp-scripts lint-js",
-    "lint:md:docs": "wp-scripts lint-md-docs",
-    "lint:md:js": "wp-scripts lint-md-js",
-    "lint:pkg-json": "wp-scripts lint-pkg-json",
-    "packages-update": "wp-scripts packages-update",
-    "start": "wp-scripts start",
-    "test:e2e": "wp-scripts test-e2e",
-    "test:unit": "wp-scripts test-unit-js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tex0gen/bootstrap4-wordpress-theme.git"
-  },
-  "keywords": [
-    "wordpress",
-    "webpack"
-  ],
-  "author": "Steve North",
-  "license": "ISC",
-  "homepage": "https://github.com/tex0gen/bootstrap4-wordpress-theme#readme",
-  "devDependencies": {
-    "@babel/core": "^7.14.3",
-    "@babel/preset-env": "^7.15.8",
-    "@babel/preset-react": "^7.14.5",
-    "@popperjs/core": "^2.9.2",
-    "@wordpress/block-editor": "^7.0.4",
-    "@wordpress/blocks": "^11.1.2",
-    "@wordpress/components": "^19.0.0",
-    "@wordpress/eslint-plugin": "^7.4.0",
-    "@wordpress/hooks": "^3.2.1",
-    "@wordpress/i18n": "^4.2.3",
-    "@wordpress/scripts": "^19.0.0",
-    "@wordpress/stylelint-config": "^19.0.5",
-    "bootstrap": "^5.0.2",
-    "css-minimizer-webpack-plugin": "^3.4.1",
-    "masonry-layout": "^4.2.2",
-    "mini-css-extract-plugin": "^2.6.0",
-    "swiper": "^6.8.4",
-    "terser-webpack-plugin": "^5.3.1",
-    "webpack": "^5.60.0",
-    "webpack-cli": "^4.9.1"
-  },
-  "browserslist": [
-    "> 5%",
-    "last 2 versions"
-  ]
+	"name": "IlariaX",
+	"version": "1.0.0",
+	"description": "IlariaX Theme by Tex0gen",
+	"main": "index.js",
+	"scripts": {
+		"build": "wp-scripts build",
+		"check-engines": "wp-scripts check-engines",
+		"check-licenses": "wp-scripts check-licenses",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"lint:md:docs": "wp-scripts lint-md-docs",
+		"lint:md:js": "wp-scripts lint-md-js",
+		"lint:pkg-json": "wp-scripts lint-pkg-json",
+		"packages-update": "wp-scripts packages-update",
+		"start": "wp-scripts start",
+		"test:e2e": "wp-scripts test-e2e",
+		"test:unit": "wp-scripts test-unit-js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:tex0gen/bootstrap5-wordpress-theme.git"
+	},
+	"keywords": [
+		"wordpress",
+		"webpack"
+	],
+	"author": "Steve North",
+	"license": "ISC",
+	"homepage": "https://github.com/tex0gen/bootstrap5-wordpress-theme",
+	"browserslist": [
+		"> 5%",
+		"last 2 versions"
+	],
+	"devDependencies": {
+		"@wordpress/scripts": "^26.4.0"
+	},
+	"dependencies": {
+		"@fancyapps/ui": "^5.0.17",
+		"bootstrap": "^5.2.3",
+		"gsap": "^3.11.5",
+		"masonry-layout": "^4.2.2",
+		"swiper": "^9.3.2"
+	},
+	"engines": {
+		"node": ">=18.0.0"
+	}
 }

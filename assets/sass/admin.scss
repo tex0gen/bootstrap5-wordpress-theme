@@ -1,0 +1,35 @@
+@import './base/variables';
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/maps";
+@import "~bootstrap/scss/utilities";
+
+#poststuff .acfe-flexible-placeholder {
+	// Layout & components
+	@import "~bootstrap/scss/root";
+	@import "~bootstrap/scss/reboot";
+	@import "~bootstrap/scss/type";
+	@import "~bootstrap/scss/images";
+	@import "~bootstrap/scss/containers";
+	@import "~bootstrap/scss/grid";
+	@import "~bootstrap/scss/tables";
+	@import "~bootstrap/scss/forms";
+	@import "~bootstrap/scss/buttons";
+	@import "~bootstrap/scss/transitions";
+	@import "~bootstrap/scss/dropdown";
+	@import "~bootstrap/scss/button-group";
+	@import "~bootstrap/scss/nav";
+	@import "~bootstrap/scss/navbar";
+	// @import "~bootstrap/scss/card";
+	// @import "~bootstrap/scss/accordion";
+	@import "~bootstrap/scss/breadcrumb";
+	@import "~bootstrap/scss/pagination";
+	// @import "~bootstrap/scss/badge";
+	@import "~bootstrap/scss/alert";
+
+	@import './base/base';
+
+	font-family: var(--font-body);
+}

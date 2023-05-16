@@ -1,24 +1,12 @@
 $fa-font-path: "../fonts";
 
-/* Fonts */
-$font-body: arial, helvetica, sans-serif;
-$font-heading: arial, helvetica, sans-serif;
+$font-body: helvetica, sans-serif;
+$font-heading: helvetica, sans-serif;
 
-/* Colour Variables */
-$white: #fff;
-$light-gray: #eceeef;
-$dark-gray: #353535;
-
-$theme-colors: (
-	primary: $dark-gray,
-);
-
-/* Spacing */
-$single-gutter: 15px;
-$double-gutter: $single-gutter * 2;
-
-$spacing-bottom: 60px;
-$spacing-bottom-half: $spacing-bottom / 2;
+// $theme-colors: (
+// 	primary: var(--primary),
+// 	secondary: var(--secondary),
+// );
 
 // Bootstrap Overrides
 // $grid-columns: 12;

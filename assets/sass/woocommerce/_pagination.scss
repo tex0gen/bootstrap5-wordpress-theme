@@ -1,5 +1,5 @@
 .woocommerce-pagination {
-	margin-bottom: $spacing-bottom;
+	margin-bottom: var(--spacing-bottom);
 
 	.page-numbers {
 		@extend .pagination;

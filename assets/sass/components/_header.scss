@@ -1,5 +1,5 @@
 header {
-	margin-bottom: $spacing-bottom;
+	margin-bottom: var(--spacing-bottom);
 
 	&.header {
 		&-inline {

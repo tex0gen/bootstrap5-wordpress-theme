@@ -1,5 +1,7 @@
+@import '../../../assets/sass/block-includes';
+
 .flex-carousel {
-	margin-bottom: $spacing-bottom;
+	margin-bottom: var(--spacing-bottom);
 	position: relative;
 
 	.slider {
@@ -59,7 +61,7 @@
 
 	&.showcase {
 		overflow-x: hidden;
-		padding: $spacing-bottom * 2 0;
+		padding: calc(var(--spacing-bottom) * 2) 0;
 
 		.has-desktop {
 			transition: all 0.25s ease-in-out;
@@ -79,9 +81,9 @@
 				z-index: 999;
 
 				.has-desktop {
-					left: -$spacing-bottom;
-					right: -$spacing-bottom;
-					top: -$spacing-bottom / 3;
+					left: calc(-1 * var(--spacing-bottom));
+					right: calc(-1 * var(--spacing-bottom));
+					top: calc(-1 * var(--spacing-bottom) / 3);
 					z-index: 999;
 				}
 			}
@@ -90,10 +92,10 @@
 }
 
 header + .flex-carousel {
-	margin-top: -$spacing-bottom;
+	margin-top: calc(-1 * var(--spacing-bottom));
 }
 
 .bg-img + .flex-carousel,
 .bg-color + .flex-carousel {
-	margin-top: -$spacing-bottom;
+	margin-top: calc(-1 * var(--spacing-bottom));
 }

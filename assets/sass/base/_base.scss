@@ -1,10 +1,38 @@
+:root {
+	/* Colour Variables */
+	--primary: #131C29;
+	--secondary: #272C3E;
+	--tertiary: #DCC3FF;
+	--quaternary: #FFF6A3;
+	--white: #fff;
+	--light-gray: #eceeef;
+	--dark-gray: #353535;
+
+	/* Fonts */
+	--font-body: arial, helvetica, sans-serif;
+	--font-heading: arial, helvetica, sans-serif;
+
+	/* Spacing */
+	--single-gutter: 15px;
+	--double-gutter: calc(var(--single-gutter) * 2);
+
+	--spacing-bottom: 100px;
+	--spacing-bottom-half: calc(var(--spacing-bottom) / 2);
+
+	@include media-breakpoint-down(md) {
+		/* Spacing */
+		--spacing-bottom: 50px;
+		--spacing-bottom-half: calc(var(--spacing-bottom) / 2);
+	}
+}
+
 body {
-	font-family: $font-body;
+	font-family: var(--font-body);
 }
 
 h1,
 h2,
 h3,
 h4 {
-	font-family: $font-heading;
+	font-family: var(--font-heading);
 }

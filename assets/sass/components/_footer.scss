@@ -1,5 +1,5 @@
 footer {
-	background-color: $dark-gray;
+	background-color: var(--dark-gray);
 	color: $white;
 	padding: 15px 0;
 }
@@ -8,5 +8,5 @@ footer {
 .bg-color + footer,
 .flex-carousel + footer,
 .flex-full-width-image + footer {
-	margin-top: -$spacing-bottom;
+	margin-top: calc(-1 * var(--spacing-bottom));
 }

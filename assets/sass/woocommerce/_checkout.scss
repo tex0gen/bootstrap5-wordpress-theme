@@ -3,7 +3,7 @@ form.checkout {
 
 	.col2-set {
 		@extend .col-12, .col-sm-6;
-		margin-bottom: $spacing-bottom;
+		margin-bottom: var(--spacing-bottom);
 
 		.col-1,
 		.col-2 {
