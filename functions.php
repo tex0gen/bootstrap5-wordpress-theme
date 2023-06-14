@@ -7,6 +7,7 @@ function theme_enqueue_styles() {
 
 	// CSS
 	wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/assets/fontawesome/css/all.min.css' );
+	wp_enqueue_style( 'cbs', get_template_directory_uri() . '/assets/build/bootstrap.css' );
 	wp_enqueue_style( 'main', get_template_directory_uri() . '/assets/build/frontend.css' );
 	// Javascript
 	wp_enqueue_script( 'mainjs', get_template_directory_uri() . '/assets/build/frontend.js', null, $deps['version'] );
@@ -35,6 +36,7 @@ function themestrap_enqueue_used_block_styles() {
 				$stylesheet_path = get_template_directory_uri() . '/template-parts/flex/' . $tmpl_name . '/build/block.css';
 				$style_array[$tmpl_name] = get_template_directory_uri() . '/template-parts/flex/' . $tmpl_name . '/build/block.css';
 				$deps = require( get_template_directory() . '/template-parts/flex/'.$tmpl_name.'/build/block.asset.php' );
+
 				if ( file_exists( get_template_directory() . '/template-parts/flex/'.$tmpl_name.'/build/block.js' ) ) {
 					wp_enqueue_style( 'flex-' . $tmpl_name, $stylesheet_path, null, $deps['version'] );
 				}
@@ -76,7 +78,7 @@ require_once 'vendor/autoload.php';
 
 require_once 'inc/plugins/tgm-ip.php';
 require_once 'inc/plugins/acfe.php';
-require_once 'inc/plugins/field-builder.php';
+require_once 'inc/fields/field-builder.php';
 
 // Include Woocommerce Customisations
 if ( class_exists( 'WooCommerce' ) ) {

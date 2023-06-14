@@ -1,0 +1,144 @@
+.flex-content-slider {
+	margin-bottom: var(--spacing-bottom);
+	background-color: var(--light-gray);
+	padding: var(--spacing-bottom-half) 0;
+
+	.swiper-wrapper {
+		transition-delay: 0.75s !important;
+
+		.swiper-slide {
+			overflow: hidden;
+		}
+	}
+
+
+
+	&.altrows {
+		padding: 0;
+		background-color: transparent;
+	}
+
+	&.transitioning {
+		.slide-left {
+			opacity: 0;
+			transform: translate3d(-100%, 0, 0);
+		}
+		
+		.slide-right {
+			opacity: 0;
+			transform: translate3d(100%, 0, 0);
+		}
+	}
+
+	.slide-left,
+	.slide-right {
+		opacity: 1;
+		transition: all 0.75s ease-in-out;
+
+		ul li {
+			padding-left: 10px;
+	
+			&::marker {
+				content: '\f81b';
+				font-family: 'Font Awesome 6 Pro';
+			}
+		}
+	}
+
+	.slide-left {
+		transform: translate3d(0, 0, 0);
+
+		.flex-content-slider__image {
+			&:after {
+				clip-path: polygon(92% 0, 100% 0, 100% 100%, 99% 100%);
+			}
+		}
+	}
+
+	.slide-right {
+		transform: translate3d(0, 0, 0);
+
+		.flex-content-slider__image {
+			&:after {
+				clip-path: polygon(0 -8%, 8% 100%, 0 100%, 0 100%);
+			}
+		}
+	}
+
+	&__image {
+		position: relative;
+
+		&:after {
+			content: "";
+			display: block;
+			position: absolute;
+			top: -2px;
+			bottom: -2px;
+			left: -2px;
+			right: -2px;
+			background-color: white;
+			z-index: 5;
+	
+			@include media-breakpoint-down(lg) {
+				display: none;
+			}
+		}
+	}
+
+	&.normal {
+		.flex-content-slider__image {
+			&:after {
+				display: none;
+			}
+		}
+	}
+
+	&__content {
+		padding: 0 80px;
+		max-width: calc(1320px / 1.2);
+
+		@include media-breakpoint-down(lg) {
+			padding: 0 15px;
+			max-width: 100%;
+		}
+	}
+
+	img {
+		position: relative;
+		z-index: 5;
+		width: 100%;
+		height: auto;
+	}
+
+	.swiper-button-next,
+	.swiper-button-prev {
+		position: absolute;
+		font-weight: bold;
+		text-transform: uppercase;
+		display: block;
+		top: 50%;
+		text-decoration: none;
+		z-index: 10;
+		background-color: rgba(255, 255, 255, 0.6);
+		padding: 10px 20px;
+		color: #626262;
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+
+	.swiper-button-next {
+		transform: rotate(90deg);
+		right: 0px;
+	}
+
+	.swiper-button-prev {
+		left: 0px;
+		transform: rotate(-90deg);
+	}
+}
+
+.flex-full-width-image + .flex-content-slider {
+	margin-top: calc( var(--spacing-bottom) * -1);
+}

@@ -1,0 +1,51 @@
+.flex-faqs {
+	margin-bottom: var(--spacing-bottom);
+
+	&--wrapper {
+		border-radius: 5px;
+		border: 2px solid var(--dark-gray);
+		
+	}
+
+	&--item {
+		margin-bottom: 15px;
+	
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&--title {
+		padding: 20px;
+		width: 100%;
+		background-color: transparent;
+		border: 0;
+		color: var(--dark-gray);
+		text-align: left;
+		padding-right: 30px;
+
+		&:after {
+			content: "\f0da";
+			font-family: 'Font Awesome 6 Pro';
+			font-weight: bold;
+			float: right;
+			transition: transform 0.25s ease-in-out;
+		}
+
+		&.active,
+		&:hover {
+			background-color: var(--light-gray);
+			color: var(--dark-gray);
+			transform: none;
+
+			&:after {
+				transform: rotate(90deg);
+			}
+		}
+	}
+
+	&--content {
+		display: none;
+		padding: 20px;
+	}
+}

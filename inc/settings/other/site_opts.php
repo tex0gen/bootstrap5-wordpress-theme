@@ -2,7 +2,7 @@
 // Allows robot indexing after dev database has been pushed
 $url = get_bloginfo('url');
 
-if (strpos($url, 'localhost') || strpos($url, 'dev.')) {
+if (strpos($url, 'localhost') || strpos($url, 'dev.') || strpos($url, 'staging.')) {
 	if ( get_option('blog_public') === "1" ) {
 		update_option('blog_public', "0");
 	}

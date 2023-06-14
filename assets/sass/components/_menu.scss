@@ -11,10 +11,10 @@ nav {
 	}
 
 	.menu-item {
-		@extend .nav-item;
+		// @extend .nav-item;
 
 		a {
-			@extend .nav-link;
+			// @extend .nav-link;
 		}
 	}
 }

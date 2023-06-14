@@ -7,6 +7,14 @@ var sharedConfig = {
 	externals: {
 		jquery: 'jQuery',
 	},
+	resolve: {
+		alias: {
+			Images: path.resolve(__dirname, 'assets/images/'),
+			Fonts: path.resolve(__dirname, 'assets/fonts/'),
+			Assets: path.resolve(__dirname, 'assets/'),
+			// other aliases
+		},
+	},
 };
 
 const allConfig = [];
@@ -20,7 +28,9 @@ files.forEach((file) => {
 	let entry = Object.assign({}, sharedConfig, {
 		name: blockName,
 		entry: {
-			block: ['./template-parts/flex/' + blockName + '/_' + blockName + '.scss'],
+			block: [
+				'./template-parts/flex/' + blockName + '/_' + blockName + '.scss'
+			],
 		},
 		output: {
 			path: path.resolve(
@@ -31,6 +41,18 @@ files.forEach((file) => {
 	});
 
 	allConfig.push(entry);
+});
+
+const bootstrapConfig = Object.assign({}, sharedConfig, {
+	name: "bootstrap",
+	entry: {
+		bootstrap: [
+			'./assets/sass/bootstrap-custom/bootstrap-custom.scss'
+		],
+	},
+	output: {
+		path: path.resolve(__dirname, './assets/build'),
+	},
 });
 
 const primaryConfig = Object.assign({}, sharedConfig, {
@@ -58,6 +80,7 @@ const adminConfig = Object.assign({}, sharedConfig, {
 	},
 });
 
+allConfig.push(bootstrapConfig);
 allConfig.push(primaryConfig);
 allConfig.push(adminConfig);
 

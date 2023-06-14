@@ -1,0 +1,50 @@
+/*!**************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./template-parts/flex/content-block/_content-block-preview.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************/
+/* Fonts */
+.flex-content-block {
+  background-size: cover;
+  margin-bottom: var(--spacing-bottom);
+}
+@media (min-width: 768px) {
+  .flex-content-block .content p:last-child {
+    margin-bottom: 0;
+  }
+}
+.flex-content-block .content-block-title {
+  margin-bottom: 50px;
+  text-align: center;
+}
+.flex-content-block ul {
+  list-style: none;
+}
+.flex-content-block ul li {
+  padding-left: 10px;
+}
+.flex-content-block ul li:before {
+  content: "\f81b";
+  font-family: "Font Awesome 6 Pro";
+}
+.flex-content-block.o-light, .flex-content-block.o-dark {
+  position: relative;
+}
+.flex-content-block.o-light::before, .flex-content-block.o-dark::before {
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.flex-content-block.o-light {
+  background-color: rgba(255, 255, 255, 0.65);
+}
+.flex-content-block.o-dark {
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.flex-full-width-image + .flex-content-block {
+  margin-top: -var(--spacing-bottom);
+}
+
+/*# sourceMappingURL=preview.css.map*/

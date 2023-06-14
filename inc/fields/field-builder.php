@@ -1,22 +1,33 @@
 <?php
 use StoutLogic\AcfBuilder\FieldsBuilder;
 
+$additional_fields = glob( get_stylesheet_directory() . '/inc/fields/additional/*.php' );
 $flex_fields = glob( get_stylesheet_directory() . '/template-parts/flex/**/fields.php' );
 $fields = [];
+$scrollspy = include 'shared/scrollspy.php';
+
+foreach ($additional_fields as $flex_field) {
+	include $flex_field;
+}
 
 foreach ($flex_fields as $flex_field) {
 	$new_field = include $flex_field;
+	$new_field->addFields($scrollspy->getFields());
 	$fields[] = $new_field;
 }
 
-$content = new FieldsBuilder('page_content');
-$content->addFlexibleContent('sections')->addLayouts($fields);
+$content = new FieldsBuilder('main_content');
+$content->addFlexibleContent('main_content_flex')->addLayouts($fields);
 $content->setLocation('post_type', '==', 'page');
+
+$content->setGroupConfig('position', 'acf_after_title');
+$content->setGroupConfig('menu_order', 2);
+$content->setGroupConfig('hide_on_screen', ['the_content']);
 
 add_action('acf/init', function() use ($content) {
 	$build_fields = $content->build();
 
-	// ACF Extended Configuration
+	// // ACF Extended Configuration
 	$build_fields['fields'][0]["acfe_flexible_advanced"] = 1;
 	$build_fields['fields'][0]["acfe_flexible_stylised_button"] = 1;
 	$build_fields['fields'][0]["acfe_flexible_hide_empty_message"] = 0;
@@ -47,5 +58,6 @@ add_action('acf/init', function() use ($content) {
 	$build_fields["acfe_flexible_layouts_state"] = "";
 	$build_fields["acfe_flexible_layouts_remove_collapse"] = 0;
 
+	// acf_add_local_field_group($build_fields);
 	acf_add_local_field_group($build_fields);
 });

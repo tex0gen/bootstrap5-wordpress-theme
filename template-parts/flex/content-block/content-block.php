@@ -1,4 +1,8 @@
 <?php
+$scrollspy = get_sub_field('scrollspy_group');
+$scrollspy_enabled = $scrollspy['scrollspy'];
+$scrollspy_name = strtolower( preg_replace( '/[^a-zA-Z0-9]/', '', $scrollspy['scrollspy_name'] ) );
+
 $content_blocks = get_sub_field( 'content' );
 
 if ($content_blocks) {
@@ -6,17 +10,28 @@ if ($content_blocks) {
 	$bgImg = get_sub_field( 'background_image' );
 	$classes = get_sub_field( 'classes' );
 	$overlay = get_sub_field( 'overlay' );
+	$alignment = get_sub_field('alignment');
+
+	$align = (isset($alignment['alignment_mobile'])) ? ' justify-content-'.$alignment['alignment_mobile']:'';
+	$align .= (isset($alignment['alignment_tablet'])) ? ' justify-content-sm-'.$alignment['alignment_tablet']:'';
+	$align .= (isset($alignment['alignment_desktop'])) ? 'justify-content-md-'.$alignment['alignment_desktop']:'';
+	
 	?>
-	<section class="flex-content-block<?= ($classes) ? ' '.$classes:'' ?><?= ($bgColor) ? ' bg-color':''; ?><?= ($bgImg) ? ' bg-img':''; ?><?= ($overlay) ? ' o-'.$overlay:''; ?>" style="<?= ($bgColor) ? ' background-color: '.$bgColor:''; ?><?= ($bgImg) ? ' background-image: url('.$bgImg['url'].');':''; ?>">
+	<section class="flex-content-block<?= ($classes) ? ' '.$classes:'' ?><?= ($bgColor) ? ' bg-color':''; ?><?= ($bgImg) ? ' bg-img':''; ?><?= ($overlay) ? ' o-'.$overlay:''; ?>" style="<?= ($bgColor) ? ' background-color: '.$bgColor:''; ?><?= ($bgImg) ? ' background-image: url('.$bgImg['url'].');':''; ?>"<?= ($scrollspy) ? ' id="'.str_replace(' ', '-', $scrollspy_name).'"':null; ?>>
 		<div class="container">
-			<div class="row">
+			<div class="row justify-content-<?= $align ?>">
 				<?php
 				foreach ( $content_blocks as $key => $block ) {
-					$width = $block['width'];
-					$offset = $block['offset'];
+					$widths = $block['width'];
+
+					$width = (isset($widths['width_mobile'])) ? 'col-'.$widths['width_mobile']:'';
+					$width .= (isset($widths['width_tablet'])) ? ' col-sm-'.$widths['width_tablet']:'';
+					$width .= (isset($widths['width_desktop'])) ? ' col-md-'.$widths['width_desktop']:'';
+
 					$buttons = $block['buttons'];
 					?>
-				 	<div class="content col-12<?= ($width) ? ' col-md-'.$width:' col-md' ?><?= ($offset) ? ' offset-md-'.$offset:'' ?>" id="content-block-<?= $key + 1 ?>">
+				 	<div class="content col-12<?= $width ?>">
+				 		<?= ($block['title']) ? '<'.$block['title_type'].' class="content-block-title">'.$block['title'].'</'.$block['title_type'].'>':null; ?>
 				 		<?= $block['content_item']; ?>
 						<?php
 						if ( $buttons ) {

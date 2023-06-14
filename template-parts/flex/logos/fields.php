@@ -12,7 +12,7 @@ $logos
 	->addImage('image', [
 		'label' => 'Image',
 		'required' => 1,
-		'return_format' => 'array',
+		'return_format' => 'id',
 		'library' => 'all'
 	])
 	->addLink('link', [

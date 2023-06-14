@@ -1,0 +1,80 @@
+/*!********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./template-parts/flex/alternating-rows/_alternating-rows-preview.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************/
+/* Fonts */
+.flex-alternating {
+  margin-bottom: var(--spacing-bottom);
+  overflow: hidden;
+}
+.flex-alternating h2 {
+  margin-bottom: var(--spacing-bottom-half);
+}
+.flex-alternating .alt-row-image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.flex-alternating .cutouts .img-left,
+.flex-alternating .cutouts .img-right {
+  position: relative;
+}
+.flex-alternating .cutouts .img-left:after,
+.flex-alternating .cutouts .img-right:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  left: -2px;
+  right: -2px;
+  background-color: white;
+}
+@media (max-width: 991.98px) {
+  .flex-alternating .cutouts .img-left:after,
+  .flex-alternating .cutouts .img-right:after {
+    display: none;
+  }
+}
+.flex-alternating .cutouts .img-left:after {
+  -webkit-clip-path: polygon(92% 0, 100% 0, 100% 100%, 99% 100%);
+          clip-path: polygon(92% 0, 100% 0, 100% 100%, 99% 100%);
+}
+.flex-alternating .cutouts .img-right:after {
+  -webkit-clip-path: polygon(0 -8%, 8% 100%, 0 100%, 0 100%);
+          clip-path: polygon(0 -8%, 8% 100%, 0 100%, 0 100%);
+}
+.flex-alternating__button {
+  margin-top: 35px;
+}
+.flex-alternating__text {
+  padding: 0 80px;
+  max-width: 1100px;
+}
+@media (max-width: 991.98px) {
+  .flex-alternating__text {
+    padding: 0 15px;
+    margin-top: 30px;
+    max-width: 100%;
+  }
+}
+.flex-alternating__text ul {
+  list-style: none;
+  position: relative;
+}
+.flex-alternating__text ul li {
+  margin-bottom: 10px;
+}
+.flex-alternating__text ul li:before {
+  content: "\f81b";
+  font-family: "Font Awesome 6 Pro";
+  margin-right: 10px;
+  position: absolute;
+  left: 0;
+}
+
+.flex-alternating + .flex-full-width-image {
+  margin-top: -var(--spacing-bottom);
+}
+
+/*# sourceMappingURL=preview.css.map*/

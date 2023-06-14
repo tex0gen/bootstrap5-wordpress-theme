@@ -1,5 +1,7 @@
 @import '../../../assets/sass/block-includes';
 
+@import "~swiper/swiper.css";
+
 .flex-carousel {
 	margin-bottom: var(--spacing-bottom);
 	position: relative;

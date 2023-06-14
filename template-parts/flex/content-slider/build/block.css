@@ -1,0 +1,132 @@
+/*!****************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./template-parts/flex/content-slider/_content-slider-preview.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************/
+/* Fonts */
+.flex-content-slider {
+  margin-bottom: var(--spacing-bottom);
+  background-color: var(--light-gray);
+  padding: var(--spacing-bottom-half) 0;
+}
+.flex-content-slider .swiper-wrapper {
+  -webkit-transition-delay: 0.75s !important;
+          transition-delay: 0.75s !important;
+}
+.flex-content-slider .swiper-wrapper .swiper-slide {
+  overflow: hidden;
+}
+.flex-content-slider.altrows {
+  padding: 0;
+  background-color: transparent;
+}
+.flex-content-slider.transitioning .slide-left {
+  opacity: 0;
+  -webkit-transform: translate3d(-100%, 0, 0);
+          transform: translate3d(-100%, 0, 0);
+}
+.flex-content-slider.transitioning .slide-right {
+  opacity: 0;
+  -webkit-transform: translate3d(100%, 0, 0);
+          transform: translate3d(100%, 0, 0);
+}
+.flex-content-slider .slide-left,
+.flex-content-slider .slide-right {
+  opacity: 1;
+  -webkit-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
+}
+.flex-content-slider .slide-left ul li,
+.flex-content-slider .slide-right ul li {
+  padding-left: 10px;
+}
+.flex-content-slider .slide-left ul li::marker,
+.flex-content-slider .slide-right ul li::marker {
+  content: "\f81b";
+  font-family: "Font Awesome 6 Pro";
+}
+.flex-content-slider .slide-left {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.flex-content-slider .slide-left .flex-content-slider__image:after {
+  -webkit-clip-path: polygon(92% 0, 100% 0, 100% 100%, 99% 100%);
+          clip-path: polygon(92% 0, 100% 0, 100% 100%, 99% 100%);
+}
+.flex-content-slider .slide-right {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.flex-content-slider .slide-right .flex-content-slider__image:after {
+  -webkit-clip-path: polygon(0 -8%, 8% 100%, 0 100%, 0 100%);
+          clip-path: polygon(0 -8%, 8% 100%, 0 100%, 0 100%);
+}
+.flex-content-slider__image {
+  position: relative;
+}
+.flex-content-slider__image:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  left: -2px;
+  right: -2px;
+  background-color: white;
+  z-index: 5;
+}
+@media (max-width: 991.98px) {
+  .flex-content-slider__image:after {
+    display: none;
+  }
+}
+.flex-content-slider.normal .flex-content-slider__image:after {
+  display: none;
+}
+.flex-content-slider__content {
+  padding: 0 80px;
+  max-width: 1100px;
+}
+@media (max-width: 991.98px) {
+  .flex-content-slider__content {
+    padding: 0 15px;
+    max-width: 100%;
+  }
+}
+.flex-content-slider img {
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  height: auto;
+}
+.flex-content-slider .swiper-button-next,
+.flex-content-slider .swiper-button-prev {
+  position: absolute;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: block;
+  top: 50%;
+  text-decoration: none;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 10px 20px;
+  color: #626262;
+}
+.flex-content-slider .swiper-button-next:hover,
+.flex-content-slider .swiper-button-prev:hover {
+  opacity: 1;
+}
+.flex-content-slider .swiper-button-next {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  right: 0px;
+}
+.flex-content-slider .swiper-button-prev {
+  left: 0px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.flex-full-width-image + .flex-content-slider {
+  margin-top: calc(var(--spacing-bottom) * -1);
+}
+
+/*# sourceMappingURL=block.css.map*/

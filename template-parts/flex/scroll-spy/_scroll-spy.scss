@@ -1,0 +1,29 @@
+.flex-scroll-spy {
+	margin-bottom: var(--spacing-bottom);
+	margin-top: calc(-1 * var(--spacing-bottom));
+	background-color: var(--light-gray);
+	padding: var(--spacing-bottom-half) 0;
+
+	a {
+		color: var(--dark-gray);
+		font-size: 24px;
+		margin: 0 18px;
+
+		&:hover {
+			color: var(--dark-gray);
+		}
+
+	}
+	
+	span {
+		@include media-breakpoint-down(md) {
+			display: block;
+			margin-bottom: 15px;
+			text-align: center;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}

@@ -1,0 +1,51 @@
+/*!************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./template-parts/flex/faqs/_faqs.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************/
+.flex-faqs {
+  margin-bottom: var(--spacing-bottom);
+}
+.flex-faqs--wrapper {
+  border-radius: 5px;
+  border: 2px solid var(--dark-gray);
+}
+.flex-faqs--item {
+  margin-bottom: 15px;
+}
+.flex-faqs--item:last-child {
+  margin-bottom: 0;
+}
+.flex-faqs--title {
+  padding: 20px;
+  width: 100%;
+  background-color: transparent;
+  border: 0;
+  color: var(--dark-gray);
+  text-align: left;
+  padding-right: 30px;
+}
+.flex-faqs--title:after {
+  content: "\f0da";
+  font-family: "Font Awesome 6 Pro";
+  font-weight: bold;
+  float: right;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+  transition: -webkit-transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+}
+.flex-faqs--title.active, .flex-faqs--title:hover {
+  background-color: var(--light-gray);
+  color: var(--dark-gray);
+  -webkit-transform: none;
+          transform: none;
+}
+.flex-faqs--title.active:after, .flex-faqs--title:hover:after {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.flex-faqs--content {
+  display: none;
+  padding: 20px;
+}
+
+/*# sourceMappingURL=block.css.map*/
