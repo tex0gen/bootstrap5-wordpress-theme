@@ -1,7 +1,6 @@
-/*!**************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./template-parts/flex/content-block/_content-block-preview.scss ***!
-  \**************************************************************************************************************************************************************************************************************************************************************************************/
-/* Fonts */
+/*!******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./template-parts/flex/content-block/_content-block.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************/
 .flex-content-block {
   background-size: cover;
   margin-bottom: var(--spacing-bottom);
@@ -25,22 +24,39 @@
   content: "\f81b";
   font-family: "Font Awesome 6 Pro";
 }
-.flex-content-block.o-light, .flex-content-block.o-dark {
+.flex-content-block.overlay-light, .flex-content-block.overlay-dark {
   position: relative;
 }
-.flex-content-block.o-light::before, .flex-content-block.o-dark::before {
+.flex-content-block.overlay-light::before, .flex-content-block.overlay-dark::before {
   bottom: 0;
   content: "";
   left: 0;
   position: absolute;
   right: 0;
   top: 0;
+  z-index: 1;
 }
-.flex-content-block.o-light {
+.flex-content-block.overlay-light .container, .flex-content-block.overlay-dark .container {
+  position: relative;
+  z-index: 2;
+}
+.flex-content-block.overlay-light::before {
   background-color: rgba(255, 255, 255, 0.65);
 }
-.flex-content-block.o-dark {
+.flex-content-block.overlay-dark::before {
   background-color: rgba(0, 0, 0, 0.65);
+}
+.flex-content-block .cutout-circle img {
+  border-radius: 100%;
+}
+.flex-content-block .cutout-blob img {
+  border-top-right-radius: 70% 60%;
+  border-top-left-radius: 30% 40%;
+  border-bottom-left-radius: 30% 60%;
+  border-bottom-right-radius: 70% 40%;
+}
+.flex-content-block .cutout-rounded img {
+  border-radius: 20px;
 }
 
 .flex-full-width-image + .flex-content-block {

@@ -1,25 +1,28 @@
 /******/ (function() { // webpackBootstrap
-/******/ 	var __webpack_modules__ = ({
-
-/***/ "./template-parts/flex/content-block/_content-block.scss":
+/******/ 	"use strict";
+/******/ 	// The require scope
+/******/ 	var __webpack_require__ = {};
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	!function() {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = function(exports) {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/************************************************************************/
+var __webpack_exports__ = {};
 /*!***************************************************************!*\
   !*** ./template-parts/flex/content-block/_content-block.scss ***!
   \***************************************************************/
-/***/ (function() {
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
 
-throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\nHookWebpackError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nSassError: Undefined mixin.\n  ╷\n7 │ ┌             @include media-breakpoint-up(md) {\n8 │ │                 margin-bottom: 0;\n9 │ └             }\n  ╵\n  template-parts/flex/content-block/_content-block.scss 7:4  root stylesheet\n    at tryRunOrWebpackError (/Applications/XAMPP/xamppfiles/htdocs/themestrap/wp-content/themes/wp-themestrap/node_modules/webpack/lib/HookWebpackError.js:88:9)\n    at __webpack_require_module__ (/Applications/XAMPP/xamppfiles/htdocs/themestrap/wp-content/themes/wp-themestrap/node_modules/webpack/lib/Compilation.js:5061:12)\n    at __webpack_require__ (/Applications/XAMPP/xamppfiles/htdocs/themestrap/wp-content/themes/wp-themestrap/node_modules/webpack/lib/Compilation.js:5018:18)\n    at /Applications/XAMPP/xamppfiles/htdocs/themestrap/wp-content/themes/wp-themestrap/node_modules/webpack/lib/Compilation.js:5089:20\n    at symbolIterator (/Applications/XAMPP/xamppfiles/htdocs/themestrap/wp-content/themes/wp-themestrap/node_modules/neo-async/async.js:3485:9)\n    at done (/Applications/XAMPP/xamppfiles/htdocs/themestrap/wp-content/themes/wp-themestrap/node_modules/neo-async/async.js:3527:9)\n    at Hook.eval [as callAsync] (eval at create (/Applications/XAMPP/xamppfiles/htdocs/themestrap/wp-content/themes/wp-themestrap/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:15:1)\n    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/Applications/XAMPP/xamppfiles/htdocs/themestrap/wp-content/themes/wp-themestrap/node_modules/tapable/lib/Hook.js:18:14)\n    at /Applications/XAMPP/xamppfiles/htdocs/themestrap/wp-content/themes/wp-themestrap/node_modules/webpack/lib/Compilation.js:4996:43\n    at symbolIterator (/Applications/XAMPP/xamppfiles/htdocs/themestrap/wp-content/themes/wp-themestrap/node_modules/neo-async/async.js:3482:9)\n-- inner error --\nError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nSassError: Undefined mixin.\n  ╷\n7 │ ┌             @include media-breakpoint-up(md) {\n8 │ │                 margin-bottom: 0;\n9 │ └             }\n  ╵\n  template-parts/flex/content-block/_content-block.scss 7:4  root stylesheet\n    at Object.<anonymous> (/Applications/XAMPP/xamppfiles/htdocs/themestrap/wp-content/themes/wp-themestrap/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!/Applications/XAMPP/xamppfiles/htdocs/themestrap/wp-content/themes/wp-themestrap/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!/Applications/XAMPP/xamppfiles/htdocs/themestrap/wp-content/themes/wp-themestrap/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!/Applications/XAMPP/xamppfiles/htdocs/themestrap/wp-content/themes/wp-themestrap/template-parts/flex/content-block/_content-block.scss:1:7)\n    at /Applications/XAMPP/xamppfiles/htdocs/themestrap/wp-content/themes/wp-themestrap/node_modules/webpack/lib/javascript/JavascriptModulesPlugin.js:439:10\n    at Hook.eval [as call] (eval at create (/Applications/XAMPP/xamppfiles/htdocs/themestrap/wp-content/themes/wp-themestrap/node_modules/tapable/lib/HookCodeFactory.js:19:10), <anonymous>:7:1)\n    at Hook.CALL_DELEGATE [as _call] (/Applications/XAMPP/xamppfiles/htdocs/themestrap/wp-content/themes/wp-themestrap/node_modules/tapable/lib/Hook.js:14:14)\n    at /Applications/XAMPP/xamppfiles/htdocs/themestrap/wp-content/themes/wp-themestrap/node_modules/webpack/lib/Compilation.js:5063:39\n    at tryRunOrWebpackError (/Applications/XAMPP/xamppfiles/htdocs/themestrap/wp-content/themes/wp-themestrap/node_modules/webpack/lib/HookWebpackError.js:83:7)\n    at __webpack_require_module__ (/Applications/XAMPP/xamppfiles/htdocs/themestrap/wp-content/themes/wp-themestrap/node_modules/webpack/lib/Compilation.js:5061:12)\n    at __webpack_require__ (/Applications/XAMPP/xamppfiles/htdocs/themestrap/wp-content/themes/wp-themestrap/node_modules/webpack/lib/Compilation.js:5018:18)\n    at /Applications/XAMPP/xamppfiles/htdocs/themestrap/wp-content/themes/wp-themestrap/node_modules/webpack/lib/Compilation.js:5089:20\n    at symbolIterator (/Applications/XAMPP/xamppfiles/htdocs/themestrap/wp-content/themes/wp-themestrap/node_modules/neo-async/async.js:3485:9)\n\nGenerated code for /Applications/XAMPP/xamppfiles/htdocs/themestrap/wp-content/themes/wp-themestrap/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!/Applications/XAMPP/xamppfiles/htdocs/themestrap/wp-content/themes/wp-themestrap/node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!/Applications/XAMPP/xamppfiles/htdocs/themestrap/wp-content/themes/wp-themestrap/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!/Applications/XAMPP/xamppfiles/htdocs/themestrap/wp-content/themes/wp-themestrap/template-parts/flex/content-block/_content-block.scss\n1 | throw new Error(\"Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\\nSassError: Undefined mixin.\\n  ╷\\n7 │ ┌             @include media-breakpoint-up(md) {\\n8 │ │                 margin-bottom: 0;\\n9 │ └             }\\n  ╵\\n  template-parts/flex/content-block/_content-block.scss 7:4  root stylesheet\");");
-
-/***/ })
-
-/******/ 	});
-/************************************************************************/
-/******/ 	
-/******/ 	// startup
-/******/ 	// Load entry module and return exports
-/******/ 	// This entry module doesn't tell about it's top-level declarations so it can't be inlined
-/******/ 	var __webpack_exports__ = {};
-/******/ 	__webpack_modules__["./template-parts/flex/content-block/_content-block.scss"]();
-/******/ 	
 /******/ })()
 ;
 //# sourceMappingURL=block.js.map

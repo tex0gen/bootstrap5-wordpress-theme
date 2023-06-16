@@ -1,3 +1,5 @@
+@import '../../../assets/sass/block-includes';
+
 .flex-content-block {
 	background-size: cover;
 	margin-bottom: var(--spacing-bottom);
@@ -28,8 +30,8 @@
 		}
 	}
 
-	&.o-light,
-	&.o-dark {
+	&.overlay-light,
+	&.overlay-dark {
 		position: relative;
 
 		&::before {
@@ -39,15 +41,44 @@
 			position: absolute;
 			right: 0;
 			top: 0;
+			z-index: 1;
+		}
+
+		.container {
+			position: relative;
+			z-index: 2;
 		}
 	}
 
-	&.o-light {
+	&.overlay-light::before {
 		background-color: rgba(255, 255, 255, 0.65);
 	}
 
-	&.o-dark {
+	&.overlay-dark::before {
 		background-color: rgba(0, 0, 0, 0.65);
+	}
+
+	.cutout {
+		&-circle {
+			img {
+				border-radius: 100%;
+			}
+		}
+
+		&-blob {
+			img {
+				border-top-right-radius: 70% 60%;
+				border-top-left-radius: 30% 40%;
+				border-bottom-left-radius: 30% 60%;
+				border-bottom-right-radius: 70% 40%;
+			}
+		}
+
+		&-rounded {
+			img {
+				border-radius: 20px;
+			}
+		}
 	}
 }
 
