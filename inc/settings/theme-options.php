@@ -12,40 +12,6 @@ if ( function_exists('acf_add_options_page') ) {
 	acf_add_options_page( $args );
 }
 
-/*
-* Clean style tags
-*/
-add_filter( 'style_loader_tag',  'clean_style_tag' );
-function clean_style_tag( $input ) {
-	preg_match_all( "!<link rel='stylesheet'\s?(id='[^']+')?\s+href='(.*)' type='text/css' media='(.*)' />!", $input, $matches );
-	if ( empty( $matches[2] ) ) {
-		return $input;
-	}
-	// Only display media if it is meaningful
-	$media = $matches[3][0] !== '' && $matches[3][0] !== 'all' ? ' media="' . $matches[3][0] . '"' : '';
-	return '<link rel="stylesheet" href="' . $matches[2][0] . '"' . $media . '>' . "\n";
-}
-
-// Async load JS
-add_filter( 'script_loader_tag', 'async_parsing_of_js', 10 );
-function async_parsing_of_js( $url ) {
-	if ( is_admin() ) return $url; // Switch off for WP Admin
-	// Some plugins have issues if JS is deferred or async loaded. List them here..
-	// Should include a part of the url string.
-	$plugins = array(
-		'jquery.js',
-		'https://code.jquery.com/',
-		'contact-form-7',
-	);
-
-	foreach ($plugins as $key => $plugin) {
-		if ( strpos( $url, $plugin ) ) return $url;
-	}
-
-	if ( strpos( $url, '.js' ) === FALSE ) return $url; // If NOT a js file
-	return str_replace( ' src', ' async src', $url );
-}
-
 // Remove WP version
 add_filter('the_generator', 'wpbeginner_remove_version');
 function wpbeginner_remove_version() {
@@ -133,7 +99,7 @@ function disable_emojis() {
  * Filter function used to remove the tinymce emoji plugin.
  * 
  * @param array $plugins 
- * @return array Difference betwen the two arrays
+ * @return array Difference between the two arrays
  */
 function disable_emojis_tinymce( $plugins ) {
 	if ( is_array( $plugins ) ) {
@@ -172,7 +138,7 @@ function remove_empty_p($content){
 add_action( 'wp_enqueue_scripts', 'themestrap_modern_jquery', 5 );
 function themestrap_modern_jquery() {
 	wp_deregister_script( 'jquery' );
-	wp_enqueue_script( 'jquery', 'https://code.jquery.com/jquery-3.5.1.min.js' );
+	wp_enqueue_script( 'jquery', 'https://code.jquery.com/jquery-3.7.1.min.js' );
 }
 
 add_action( 'wp_enqueue_scripts', 'themestrap_disable_loading_css_js' );
